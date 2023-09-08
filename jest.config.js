@@ -7,8 +7,9 @@
 const config = {
   coverageProvider: 'babel',
   silent: true,
-  collectCoverage: false,
-  coverageReporters: ['json', 'html'],
+  // collectCoverage: false,
+  coverageReporters: ['lcov'],
+  coverageDirectory: './coverage/',
 };
 
 module.exports = config;
