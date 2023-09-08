@@ -76,6 +76,40 @@ const QuillTailwindConfig = {
         "core-4800": "96px",
         "core-4900": "98px",
         "core-5000": "100px",
+        "semantic-paragraphSpacing-heading-hero":
+          "var(--semantic-paragraph-spacing-heading-hero)",
+        "semantic-paragraphSpacing-heading-h1":
+          "var(--semantic-paragraph-spacing-heading-h1)",
+        "semantic-paragraphSpacing-heading-h2":
+          "var(--semantic-paragraph-spacing-heading-h2)",
+        "semantic-paragraphSpacing-heading-h3":
+          "var(--semantic-paragraph-spacing-heading-h3)",
+        "semantic-paragraphSpacing-heading-h4":
+          "var(--semantic-paragraph-spacing-heading-h4)",
+        "semantic-paragraphSpacing-heading-h5":
+          "var(--semantic-paragraph-spacing-heading-h5)",
+        "semantic-paragraphSpacing-heading-h6":
+          "var(--semantic-paragraph-spacing-heading-h6)",
+        "semantic-paragraphSpacing-heading-h7":
+          "var(--semantic-paragraph-spacing-heading-h7)",
+        "semantic-paragraphSpacing-body-xl":
+          "var(--semantic-paragraph-spacing-body-xl)",
+        "semantic-paragraphSpacing-body-lg":
+          "var(--semantic-paragraph-spacing-body-lg)",
+        "semantic-paragraphSpacing-body-md":
+          "var(--semantic-paragraph-spacing-body-md)",
+        "semantic-paragraphSpacing-body-sm":
+          "var(--semantic-paragraph-spacing-body-sm)",
+        "semantic-paragraphSpacing-caption":
+          "var(--semantic-paragraph-spacing-caption)",
+        "semantic-paragraphSpacing-code-xl":
+          "var(--semantic-paragraph-spacing-code-xl)",
+        "semantic-paragraphSpacing-code-lg":
+          "var(--semantic-paragraph-spacing-code-lg)",
+        "semantic-paragraphSpacing-code-md":
+          "var(--semantic-paragraph-spacing-code-md)",
+        "semantic-paragraphSpacing-code-sm":
+          "var(--semantic-paragraph-spacing-code-sm)",
         "core-paragraphSpacing-50": "12px",
         "core-paragraphSpacing-75": "14px",
         "core-paragraphSpacing-100": "16px",
@@ -774,6 +808,43 @@ const QuillTailwindConfig = {
         "core-1300": "1",
       },
       fontSize: {
+        "semantic-heading-hero": "var(--semantic-font-size-heading-hero)",
+        "semantic-heading-h1": "var(--semantic-font-size-heading-h1)",
+        "semantic-heading-h2": "var(--semantic-font-size-heading-h2)",
+        "semantic-heading-h3": "var(--semantic-font-size-heading-h3)",
+        "semantic-heading-h4": "var(--semantic-font-size-heading-h4)",
+        "semantic-heading-h5": "var(--semantic-font-size-heading-h5)",
+        "semantic-heading-h6": "var(--semantic-font-size-heading-h6)",
+        "semantic-heading-h7": "var(--semantic-font-size-heading-h7)",
+        "semantic-body-xl": "var(--semantic-font-size-body-xl)",
+        "semantic-body-lg": "var(--semantic-font-size-body-lg)",
+        "semantic-body-md": "var(--semantic-font-size-body-md)",
+        "semantic-body-sm": "var(--semantic-font-size-body-sm)",
+        "semantic-caption": "var(--semantic-font-size-caption)",
+        "semantic-code-xl": "var(--semantic-font-size-code-xl)",
+        "semantic-code-lg": "var(--semantic-font-size-code-lg)",
+        "semantic-code-md": "var(--semantic-font-size-code-md)",
+        "semantic-code-sm": "var(--semantic-font-size-code-sm)",
+        "semantic-icon-labelPaired-xl":
+          "var(--semantic-font-size-icon-label-paired-xl)",
+        "semantic-icon-labelPaired-lg":
+          "var(--semantic-font-size-icon-label-paired-lg)",
+        "semantic-icon-labelPaired-md":
+          "var(--semantic-font-size-icon-label-paired-md)",
+        "semantic-icon-labelPaired-sm":
+          "var(--semantic-font-size-icon-label-paired-sm)",
+        "semantic-icon-labelPaired-caption":
+          "var(--semantic-font-size-icon-label-paired-caption)",
+        "semantic-icon-standalone-2xl":
+          "var(--semantic-font-size-icon-standalone-2xl)",
+        "semantic-icon-standalone-xl":
+          "var(--semantic-font-size-icon-standalone-xl)",
+        "semantic-icon-standalone-lg":
+          "var(--semantic-font-size-icon-standalone-lg)",
+        "semantic-icon-standalone-md":
+          "var(--semantic-font-size-icon-standalone-md)",
+        "semantic-icon-standalone-sm":
+          "var(--semantic-font-size-icon-standalone-sm)",
         "core-50": "12px",
         "core-75": "14px",
         "core-100": "16px",
@@ -794,6 +865,43 @@ const QuillTailwindConfig = {
         "core-boldItalic": "700 italic",
       },
       lineHeight: {
+        "semantic-heading-hero": "var(--semantic-line-height-heading-hero)",
+        "semantic-heading-h1": "var(--semantic-line-height-heading-h1)",
+        "semantic-heading-h2": "var(--semantic-line-height-heading-h2)",
+        "semantic-heading-h3": "var(--semantic-line-height-heading-h3)",
+        "semantic-heading-h4": "var(--semantic-line-height-heading-h4)",
+        "semantic-heading-h5": "var(--semantic-line-height-heading-h5)",
+        "semantic-heading-h6": "var(--semantic-line-height-heading-h6)",
+        "semantic-heading-h7": "var(--semantic-line-height-heading-h7)",
+        "semantic-body-xl": "var(--semantic-line-height-body-xl)",
+        "semantic-body-lg": "var(--semantic-line-height-body-lg)",
+        "semantic-body-md": "var(--semantic-line-height-body-md)",
+        "semantic-body-sm": "var(--semantic-line-height-body-sm)",
+        "semantic-caption": "var(--semantic-line-height-caption)",
+        "semantic-code-xl": "var(--semantic-line-height-code-xl)",
+        "semantic-code-lg": "var(--semantic-line-height-code-lg)",
+        "semantic-code-md": "var(--semantic-line-height-code-md)",
+        "semantic-code-sm": "var(--semantic-line-height-code-sm)",
+        "semantic-icon-labelPaired-xl":
+          "var(--semantic-line-height-icon-label-paired-xl)",
+        "semantic-icon-labelPaired-lg":
+          "var(--semantic-line-height-icon-label-paired-lg)",
+        "semantic-icon-labelPaired-md":
+          "var(--semantic-line-height-icon-label-paired-md)",
+        "semantic-icon-labelPaired-sm":
+          "var(--semantic-line-height-icon-label-paired-sm)",
+        "semantic-icon-labelPaired-caption":
+          "var(--semantic-line-height-icon-label-paired-caption)",
+        "semantic-icon-standalone-2xl":
+          "var(--semantic-line-height-icon-standalone-2xl)",
+        "semantic-icon-standalone-xl":
+          "var(--semantic-line-height-icon-standalone-xl)",
+        "semantic-icon-standalone-lg":
+          "var(--semantic-line-height-icon-standalone-lg)",
+        "semantic-icon-standalone-md":
+          "var(--semantic-line-height-icon-standalone-md)",
+        "semantic-icon-standalone-sm":
+          "var(--semantic-line-height-icon-standalone-sm)",
         "core-100": "18px",
         "core-200": "22px",
         "core-300": "24px",
