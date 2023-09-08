@@ -1,0 +1,821 @@
+{
+  "core": {
+    "color": {
+      "opacity": {
+        "white": {
+          "100": {
+            "value": "rgba({core.color.solid.slate.50},{core.opacity.100})",
+            "type": "color"
+          },
+          "200": {
+            "value": "rgba({core.color.solid.slate.50},{core.opacity.200})",
+            "type": "color"
+          },
+          "300": {
+            "value": "rgba({core.color.solid.slate.50},{core.opacity.300})",
+            "type": "color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.slate.50},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.slate.50},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.slate.50},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.slate.50},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.slate.50},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "black": {
+          "100": {
+            "value": "rgba({core.color.solid.slate.1400},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.slate.1400},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.slate.1400},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.slate.1400},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.slate.1400},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.slate.1400},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.slate.1400},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.slate.1400},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "red": {
+          "100": {
+            "value": "rgba({core.color.solid.red.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.red.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.red.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.red.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.red.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.red.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.red.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.red.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "orange": {
+          "100": {
+            "value": "rgba({core.color.solid.orange.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.orange.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.orange.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.orange.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.orange.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.orange.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.orange.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.orange.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "yellow": {
+          "100": {
+            "value": "rgba({core.color.solid.yellow.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.yellow.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.yellow.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.yellow.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.yellow.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.yellow.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.yellow.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.yellow.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "mustard": {
+          "100": {
+            "value": "rgba({core.color.solid.mustard.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.mustard.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.mustard.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.mustard.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.mustard.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.mustard.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.mustard.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.mustard.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "olive": {
+          "100": {
+            "value": "rgba({core.color.solid.olive.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.olive.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.olive.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.olive.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.olive.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.olive.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.olive.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.olive.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "green": {
+          "100": {
+            "value": "rgba({core.color.solid.green.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.green.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.green.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.green.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.green.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.green.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.green.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.green.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "emerald": {
+          "100": {
+            "value": "rgba({core.color.solid.emerald.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.emerald.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.emerald.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.emerald.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.emerald.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.emerald.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.emerald.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.emerald.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "tiffany": {
+          "100": {
+            "value": "rgba({core.color.solid.tiffany.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.tiffany.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.tiffany.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.tiffany.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.tiffany.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.tiffany.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.tiffany.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.tiffany.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "teal": {
+          "100": {
+            "value": "rgba({core.color.solid.teal.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.teal.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.teal.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.teal.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.teal.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.teal.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.teal.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.teal.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "seawater": {
+          "100": {
+            "value": "rgba({core.color.solid.seawater.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.seawater.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.seawater.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.seawater.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.seawater.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.seawater.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.seawater.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.seawater.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "blue": {
+          "100": {
+            "value": "rgba({core.color.solid.blue.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.blue.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.blue.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.blue.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.blue.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.blue.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.blue.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.blue.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "sapphire": {
+          "100": {
+            "value": "rgba({core.color.solid.sapphire.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.sapphire.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.sapphire.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.sapphire.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.sapphire.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.sapphire.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.sapphire.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.sapphire.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "blueberry": {
+          "100": {
+            "value": "rgba({core.color.solid.blueberry.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.blueberry.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.blueberry.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.blueberry.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.blueberry.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.blueberry.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.blueberry.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.blueberry.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "grape": {
+          "100": {
+            "value": "rgba({core.color.solid.grape.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.grape.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.grape.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.grape.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.grape.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.grape.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.grape.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.grape.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "magenta": {
+          "100": {
+            "value": "rgba({core.color.solid.magenta.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.magenta.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.magenta.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.magenta.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.magenta.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.magenta.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.magenta.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.magenta.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "cherry": {
+          "100": {
+            "value": "rgba({core.color.solid.cherry.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.cherry.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.cherry.700},{core.opacity.300})",
+            "type": "color",
+            "description": "24% of base color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.cherry.700},{core.opacity.600})",
+            "type": "color",
+            "description": "48% of base color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.cherry.700},{core.opacity.700})",
+            "type": "color",
+            "description": "56% of base color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.cherry.700},{core.opacity.900})",
+            "type": "color",
+            "description": "72% of base color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.cherry.700},{core.opacity.1000})",
+            "type": "color",
+            "description": "80% of base color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.cherry.700},{core.opacity.1100})",
+            "type": "color",
+            "description": "88% of base color"
+          }
+        },
+        "slate": {
+          "100": {
+            "value": "rgba({core.color.solid.slate.700},{core.opacity.100})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "200": {
+            "value": "rgba({core.color.solid.slate.700},{core.opacity.200})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "300": {
+            "value": "rgba({core.color.solid.slate.700},{core.opacity.300})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "400": {
+            "value": "rgba({core.color.solid.slate.700},{core.opacity.400})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "500": {
+            "value": "rgba({core.color.solid.slate.700},{core.opacity.500})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "600": {
+            "value": "rgba({core.color.solid.slate.700},{core.opacity.600})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "700": {
+            "value": "rgba({core.color.solid.slate.700},{core.opacity.700})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          },
+          "800": {
+            "value": "rgba({core.color.solid.slate.700},{core.opacity.800})",
+            "type": "color",
+            "description": "Initially 8%. changed to 16%."
+          }
+        },
+        "overflow": {
+          "100": {
+            "value": "rgba( {core.color.solid.slate.50},{core.opacity.50})",
+            "type": "color"
+          },
+          "200": {
+            "value": "rgba( {core.color.solid.slate.75},{core.opacity.50})",
+            "type": "color"
+          },
+          "300": {
+            "value": "rgba( {core.color.solid.slate.1200} ,{core.opacity.50})",
+            "type": "color"
+          },
+          "400": {
+            "value": "rgba( {core.color.solid.slate.1300} ,{core.opacity.50})",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

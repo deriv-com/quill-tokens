@@ -1,0 +1,16 @@
+{
+  "tokenSetOrder": [
+    "core/border",
+    "core/color/solid",
+    "core/color/opacity",
+    "core/color/gradients",
+    "core/boxShadow",
+    "core/opacity",
+    "core/spacing",
+    "core/typography",
+    "semantic/viewPort/desktop",
+    "semantic/viewPort/mobile",
+    "semantic/color/light",
+    "semantic/color/dark"
+  ]
+}

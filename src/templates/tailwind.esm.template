@@ -1,0 +1,22 @@
+/** @type {import('tailwindcss').Config} */
+const QuillTailwindConfig = {
+  content: [],
+  mode: "jit",
+  dark: "<%= darkMode %>",
+  theme: {          
+    extend: {
+      spacing: <%= spacing %>,
+      colors: <%= colors %>,
+      borderRadius: <%= borderRadius %>,
+      borderWidth: <%= borderWidth %>,
+      boxShadow: <%= boxShadow %>,
+      opacity: <%= opacity %>,    
+      fontSize: <%= fontSize %>,    
+      fontWeight: <%= fontWeight %>,   
+      lineHeight: <%= lineHeight %>, 
+      fontFamily: <%= fontFamily %>,
+    },
+  },  
+}
+
+export default QuillTailwindConfig

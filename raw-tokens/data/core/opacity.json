@@ -1,0 +1,62 @@
+{
+  "core": {
+    "opacity": {
+      "50": {
+        "value": "0%",
+        "type": "opacity"
+      },
+      "100": {
+        "value": "8%",
+        "type": "opacity"
+      },
+      "200": {
+        "value": "16%",
+        "type": "opacity"
+      },
+      "300": {
+        "value": "24%",
+        "type": "opacity"
+      },
+      "400": {
+        "value": "32%",
+        "type": "opacity"
+      },
+      "500": {
+        "value": "40%",
+        "type": "opacity"
+      },
+      "600": {
+        "value": "48%",
+        "type": "opacity"
+      },
+      "700": {
+        "value": "56%",
+        "type": "opacity"
+      },
+      "800": {
+        "value": "64%",
+        "type": "opacity"
+      },
+      "900": {
+        "value": "72%",
+        "type": "opacity"
+      },
+      "1000": {
+        "value": "80%",
+        "type": "opacity"
+      },
+      "1100": {
+        "value": "88%",
+        "type": "opacity"
+      },
+      "1200": {
+        "value": "96%",
+        "type": "opacity"
+      },
+      "1300": {
+        "value": "100%",
+        "type": "opacity"
+      }
+    }
+  }
+}
