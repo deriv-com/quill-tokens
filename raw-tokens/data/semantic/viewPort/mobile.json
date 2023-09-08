@@ -1408,6 +1408,326 @@
         "type": "borderRadius"
       }
     },
+    "fontSize": {
+      "heading": {
+        "hero": {
+          "value": "{core.fontSize.800}",
+          "type": "fontSizes"
+        },
+        "h1": {
+          "value": "{core.fontSize.700}",
+          "type": "fontSizes"
+        },
+        "h2": {
+          "value": "{core.fontSize.500}",
+          "type": "fontSizes"
+        },
+        "h3": {
+          "value": "{core.fontSize.400}",
+          "type": "fontSizes"
+        },
+        "h4": {
+          "value": "{core.fontSize.300}",
+          "type": "fontSizes"
+        },
+        "h5": {
+          "value": "{core.fontSize.200}",
+          "type": "fontSizes"
+        },
+        "h6": {
+          "value": "{core.fontSize.100}",
+          "type": "fontSizes"
+        },
+        "h7": {
+          "value": "{core.fontSize.75}",
+          "type": "fontSizes"
+        }
+      },
+      "body": {
+        "xl": {
+          "value": "{core.fontSize.300}",
+          "type": "fontSizes"
+        },
+        "lg": {
+          "value": "{core.fontSize.200}",
+          "type": "fontSizes"
+        },
+        "md": {
+          "value": "{core.fontSize.100}",
+          "type": "fontSizes"
+        },
+        "sm": {
+          "value": "{core.fontSize.75}",
+          "type": "fontSizes"
+        }
+      },
+      "caption": {
+        "value": "{core.fontSize.50}",
+        "type": "fontSizes"
+      },
+      "code": {
+        "xl": {
+          "value": "{core.fontSize.300}",
+          "type": "fontSizes"
+        },
+        "lg": {
+          "value": "{core.fontSize.200}",
+          "type": "fontSizes"
+        },
+        "md": {
+          "value": "{core.fontSize.100}",
+          "type": "fontSizes"
+        },
+        "sm": {
+          "value": "{core.fontSize.75}",
+          "type": "fontSizes"
+        }
+      },
+      "icon": {
+        "labelPaired": {
+          "xl": {
+            "value": "{core.fontSize.300}",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "{core.fontSize.200}",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "{core.fontSize.100}",
+            "type": "fontSizes"
+          },
+          "sm": {
+            "value": "{core.fontSize.75}",
+            "type": "fontSizes"
+          },
+          "caption": {
+            "value": "{core.fontSize.50}",
+            "type": "fontSizes"
+          }
+        },
+        "standalone": {
+          "2xl": {
+            "value": "{core.fontSize.800}",
+            "type": "fontSizes"
+          },
+          "xl": {
+            "value": "{core.fontSize.600}",
+            "type": "fontSizes"
+          },
+          "lg": {
+            "value": "{core.fontSize.500}",
+            "type": "fontSizes"
+          },
+          "md": {
+            "value": "{core.fontSize.300}",
+            "type": "fontSizes"
+          },
+          "sm": {
+            "value": "{core.fontSize.100}",
+            "type": "fontSizes"
+          }
+        }
+      }
+    },
+    "paragraphSpacing": {
+      "heading": {
+        "hero": {
+          "value": "{core.paragraphSpacing.800}",
+          "type": "paragraphSpacing"
+        },
+        "h1": {
+          "value": "{core.paragraphSpacing.700}",
+          "type": "paragraphSpacing"
+        },
+        "h2": {
+          "value": "{core.paragraphSpacing.500}",
+          "type": "paragraphSpacing"
+        },
+        "h3": {
+          "value": "{core.paragraphSpacing.400}",
+          "type": "paragraphSpacing"
+        },
+        "h4": {
+          "value": "{core.paragraphSpacing.300}",
+          "type": "paragraphSpacing"
+        },
+        "h5": {
+          "value": "{core.paragraphSpacing.200}",
+          "type": "paragraphSpacing"
+        },
+        "h6": {
+          "value": "{core.paragraphSpacing.100}",
+          "type": "paragraphSpacing"
+        },
+        "h7": {
+          "value": "{core.paragraphSpacing.75}",
+          "type": "paragraphSpacing"
+        }
+      },
+      "body": {
+        "xl": {
+          "value": "{core.paragraphSpacing.300}",
+          "type": "paragraphSpacing"
+        },
+        "lg": {
+          "value": "{core.paragraphSpacing.200}",
+          "type": "paragraphSpacing"
+        },
+        "md": {
+          "value": "{core.paragraphSpacing.100}",
+          "type": "paragraphSpacing"
+        },
+        "sm": {
+          "value": "{core.paragraphSpacing.75}",
+          "type": "paragraphSpacing"
+        }
+      },
+      "caption": {
+        "value": "{core.paragraphSpacing.50}",
+        "type": "paragraphSpacing"
+      },
+      "code": {
+        "xl": {
+          "value": "{core.paragraphSpacing.300}",
+          "type": "paragraphSpacing"
+        },
+        "lg": {
+          "value": "{core.paragraphSpacing.200}",
+          "type": "paragraphSpacing"
+        },
+        "md": {
+          "value": "{core.paragraphSpacing.100}",
+          "type": "paragraphSpacing"
+        },
+        "sm": {
+          "value": "{core.paragraphSpacing.75}",
+          "type": "paragraphSpacing"
+        }
+      }
+    },
+    "lineHeight": {
+      "heading": {
+        "hero": {
+          "value": "{core.lineHeight.auto}",
+          "type": "lineHeights"
+        },
+        "h1": {
+          "value": "{core.lineHeight.auto}",
+          "type": "lineHeights"
+        },
+        "h2": {
+          "value": "{core.lineHeight.auto}",
+          "type": "lineHeights"
+        },
+        "h3": {
+          "value": "{core.lineHeight.auto}",
+          "type": "lineHeights"
+        },
+        "h4": {
+          "value": "{core.lineHeight.auto}",
+          "type": "lineHeights"
+        },
+        "h5": {
+          "value": "{core.lineHeight.auto}",
+          "type": "lineHeights"
+        },
+        "h6": {
+          "value": "{core.lineHeight.auto}",
+          "type": "lineHeights"
+        },
+        "h7": {
+          "value": "{core.lineHeight.auto}",
+          "type": "lineHeights"
+        }
+      },
+      "body": {
+        "xl": {
+          "value": "{core.lineHeight.500}",
+          "type": "lineHeights"
+        },
+        "lg": {
+          "value": "{core.lineHeight.400}",
+          "type": "lineHeights"
+        },
+        "md": {
+          "value": "{core.lineHeight.300}",
+          "type": "lineHeights"
+        },
+        "sm": {
+          "value": "{core.lineHeight.200}",
+          "type": "lineHeights"
+        }
+      },
+      "caption": {
+        "value": "{core.lineHeight.100}",
+        "type": "lineHeights"
+      },
+      "code": {
+        "xl": {
+          "value": "{core.lineHeight.500}",
+          "type": "lineHeights"
+        },
+        "lg": {
+          "value": "{core.lineHeight.400}",
+          "type": "lineHeights"
+        },
+        "md": {
+          "value": "{core.lineHeight.300}",
+          "type": "lineHeights"
+        },
+        "sm": {
+          "value": "{core.lineHeight.200}",
+          "type": "lineHeights"
+        }
+      },
+      "icon": {
+        "labelPaired": {
+          "xl": {
+            "value": "{core.lineHeight.500}",
+            "type": "lineHeights"
+          },
+          "lg": {
+            "value": "{core.lineHeight.400}",
+            "type": "lineHeights"
+          },
+          "md": {
+            "value": "{core.lineHeight.300}",
+            "type": "lineHeights"
+          },
+          "sm": {
+            "value": "{core.lineHeight.200}",
+            "type": "lineHeights"
+          },
+          "caption": {
+            "value": "{core.lineHeight.100}",
+            "type": "lineHeights"
+          }
+        },
+        "standalone": {
+          "2xl": {
+            "value": "{core.lineHeight.1000}",
+            "type": "lineHeights"
+          },
+          "xl": {
+            "value": "{core.lineHeight.900}",
+            "type": "lineHeights"
+          },
+          "lg": {
+            "value": "{core.lineHeight.800}",
+            "type": "lineHeights"
+          },
+          "md": {
+            "value": "{core.lineHeight.600}",
+            "type": "lineHeights"
+          },
+          "sm": {
+            "value": "{core.lineHeight.300}",
+            "type": "lineHeights"
+          }
+        }
+      }
+    },
     "borderWidth": {
       "none": {
         "value": "{core.borderWidth.50}",
