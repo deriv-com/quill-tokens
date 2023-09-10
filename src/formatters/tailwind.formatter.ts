@@ -110,8 +110,6 @@ const Cjsformatter: Formatter = ({ dictionary, options }) => {
 
   const colorTokens = formatObjectTokens(getTokens('color'));
 
-  const fontFamilyTokens = formatTokenByTokenPath(getTokens('fontFamilies'));
-
   const spacingTokens = formatTokenByTokenPath([...getTokens('spacing'), ...getTokens('paragraphSpacing')]);
 
   const borderRadiusTokens = formatTokenByTokenPath(getTokens('borderRadius'));
@@ -130,7 +128,6 @@ const Cjsformatter: Formatter = ({ dictionary, options }) => {
 
   const result = tailwindCjsTemplate({
     colors: colorTokens,
-    fontFamily: fontFamilyTokens,
     spacing: spacingTokens,
     borderRadius: borderRadiusTokens,
     borderWidth: borderWidthTokens,

@@ -4,6 +4,40 @@ const QuillTailwindConfig = {
   mode: "jit",
   dark: "<%= darkMode %>",
   theme: {
+    fontFamily: {
+      heading: [
+        "Ubuntu",
+        'ui-sans-serif',
+        'system-ui',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"',
+      ],
+      sans: [
+        "'IBM Plex Sans'",
+        'ui-sans-serif',
+        'system-ui',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"',
+      ],
+      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      mono: [
+        "'IBM Plex Mono'",
+        'ui-monospace',
+        'SFMono-Regular',
+        'Menlo',
+        'Monaco',
+        'Consolas',
+        '"Liberation Mono"',
+        '"Courier New"',
+        'monospace',
+      ],
+    },
     extend: {
       spacing: <%= spacing %>,
       colors: <%= colors %>,
@@ -14,7 +48,6 @@ const QuillTailwindConfig = {
       fontSize: <%= fontSize %>,    
       fontWeight: <%= fontWeight %>,   
       lineHeight: <%= lineHeight %>,  
-      fontFamily: <%= fontFamily %>,
     },
   },  
 }
