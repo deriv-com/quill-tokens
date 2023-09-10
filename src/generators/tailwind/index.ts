@@ -41,6 +41,7 @@ export const CoreSdConfig = StyleDictionary.extend({
           format: 'css/variables',
           options: {
             outputReferences: false,
+            showFileHeader: false,
           },
         },
       ],
@@ -62,6 +63,7 @@ export const SemanticLightSdConfig = StyleDictionary.extend({
           options: {
             selector: 'html',
             outputReferences: false,
+            showFileHeader: false,
           },
         },
       ],
@@ -83,6 +85,7 @@ export const SemanticDarkSdConfig = StyleDictionary.extend({
           options: {
             selector: 'html.dark',
             outputReferences: false,
+            showFileHeader: false,
           },
         },
       ],
@@ -104,6 +107,7 @@ export const SemanticMobileSdConfig = StyleDictionary.extend({
           options: {
             selector: ':root',
             outputReferences: false,
+            showFileHeader: false,
           },
         },
       ],
@@ -124,6 +128,7 @@ export const SemanticDesktopSdConfig = StyleDictionary.extend({
           filter: (token) => token.path.includes('semantic') && token.type !== 'typography',
           options: {
             outputReferences: false,
+            showFileHeader: false,
           },
         },
       ],
