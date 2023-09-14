@@ -43,37 +43,39 @@ export const tokenPathTransformer: Named<Transform> = {
     const attributes: {
       tokenPath?: Array<string>;
     } = {};
+
+    const defaultIgnoreList = ['core', 'semantic'];
     switch (tokenType) {
       case 'spacing':
       case 'paragraphSpacing':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['spacing']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['spacing', ...defaultIgnoreList]);
         break;
       case 'borderRadius':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['borderRadius']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['borderRadius', ...defaultIgnoreList]);
         break;
       case 'borderWidth':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['borderWidth']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['borderWidth', ...defaultIgnoreList]);
         break;
       case 'boxShadow':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['elevation', 'shadow']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['elevation', 'shadow', ...defaultIgnoreList]);
         break;
       case 'fontSizes':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['fontSize']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['fontSize', ...defaultIgnoreList]);
         break;
       case 'opacity':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['opacity']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['opacity', ...defaultIgnoreList]);
         break;
       case 'fontWeights':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['fontWeight']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['fontWeight', ...defaultIgnoreList]);
         break;
       case 'lineHeights':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['lineHeight']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['lineHeight', ...defaultIgnoreList]);
         break;
       case 'color':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['color']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['color', ...defaultIgnoreList]);
         break;
       case 'fontFamilies':
-        attributes['tokenPath'] = getCleanTokenPath(token, ['core', 'fontFamily']);
+        attributes['tokenPath'] = getCleanTokenPath(token, ['core', 'fontFamily', ...defaultIgnoreList]);
       default:
         break;
     }
