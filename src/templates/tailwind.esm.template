@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const QuillTailwindConfig = {
   content: [],
-  mode: "jit",
   dark: "<%= darkMode %>",
-  theme: {         
+  theme: {  
     fontFamily: {
       heading: [
         "Ubuntu",
@@ -37,17 +36,17 @@ const QuillTailwindConfig = {
         '"Courier New"',
         'monospace',
       ],
-    }, 
+    },        
+    lineHeight: <%= lineHeight %>, 
+    borderWidth: <%= borderWidth %>,
+    boxShadow: <%= boxShadow %>,
+    opacity: <%= opacity %>,    
+    fontSize: <%= fontSize %>,
+    colors: <%= colors %>,
+    spacing: <%= spacing %>,  
+    borderRadius: <%= borderRadius %>,
+    fontWeight: <%= fontWeight %>,   
     extend: {
-      spacing: <%= spacing %>,
-      colors: <%= colors %>,
-      borderRadius: <%= borderRadius %>,
-      borderWidth: <%= borderWidth %>,
-      boxShadow: <%= boxShadow %>,
-      opacity: <%= opacity %>,    
-      fontSize: <%= fontSize %>,    
-      fontWeight: <%= fontWeight %>,   
-      lineHeight: <%= lineHeight %>, 
     },
   },  
 }
