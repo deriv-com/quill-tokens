@@ -1,0 +1,3 @@
+export const allNames = <%= names %>
+
+export default allNames;

@@ -6,7 +6,7 @@ export const makeStylesAction: Named<Action> = {
   name: 'deriv/tw/make-style',
   do: (dictionary, config) => {
     const hasCore = config?.files?.[0]?.options?.useCoreVariables || false;
-    const files = ['_dark.css', '_mobile.css', '_desktop.css', '_light.css'];
+    const files = ['_mobile.css', '_sm.css', '_tablet.css', '_lg.css', '_laptop.css', '_desktop.css'];
     let result = hasCore ? `@import "./_core.css";\n` : '';
 
     files.forEach((fileItem) => {

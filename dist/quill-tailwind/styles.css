@@ -1,4 +1,6 @@
-@import "./_dark.css";
 @import "./_mobile.css";
+@import "./_sm.css";
+@import "./_tablet.css";
+@import "./_lg.css";
+@import "./_laptop.css";
 @import "./_desktop.css";
-@import "./_light.css";
