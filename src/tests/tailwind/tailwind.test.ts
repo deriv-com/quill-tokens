@@ -1,9 +1,13 @@
 import {
   CoreSdConfig,
   SemanticDarkSdConfig,
-  SemanticDesktopSdConfig,
   SemanticLightSdConfig,
   SemanticMobileSdConfig,
+  SemanticSmSdConfig,
+  SemanticMdSdConfig,
+  SemanticLgSdConfig,
+  SemanticXlSdConfig,
+  Semantic2xlSdConfig,
   TailWindCjsSdConfig,
   TailWindEsmSdConfig,
 } from '../../generators/tailwind';
@@ -28,8 +32,28 @@ describe('Tailwind Exports', () => {
     expect(sdExport).toMatchSnapshot();
   });
 
-  it('Should generate Desktop Semantic CSS variables properly', () => {
-    const sdExport = SemanticDesktopSdConfig.exportPlatform('semantic_desktop');
+  it('Should generate SM Semantic CSS variables properly', () => {
+    const sdExport = SemanticSmSdConfig.exportPlatform('semantic_sm');
+    expect(sdExport).toMatchSnapshot();
+  });
+
+  it('Should generate MD Semantic CSS variables properly', () => {
+    const sdExport = SemanticMdSdConfig.exportPlatform('semantic_md');
+    expect(sdExport).toMatchSnapshot();
+  });
+
+  it('Should generate LG Semantic CSS variables properly', () => {
+    const sdExport = SemanticLgSdConfig.exportPlatform('semantic_lg');
+    expect(sdExport).toMatchSnapshot();
+  });
+
+  it('Should generate XL Semantic CSS variables properly', () => {
+    const sdExport = SemanticXlSdConfig.exportPlatform('semantic_xl');
+    expect(sdExport).toMatchSnapshot();
+  });
+
+  it('Should generate 2XL Semantic CSS variables properly', () => {
+    const sdExport = Semantic2xlSdConfig.exportPlatform('semantic_2xl');
     expect(sdExport).toMatchSnapshot();
   });
 
