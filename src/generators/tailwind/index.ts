@@ -278,7 +278,7 @@ export const TokenNamesSdConfig = StyleDictionary.extend({
       buildPath: QUILL_TAILWIND_BUILD_PATH,
       files: [
         {
-          destination: 'token-names.js',
+          destination: 'token-names.ts',
           format: 'deriv/token-names',
           options: {
             useCoreVariables: false,

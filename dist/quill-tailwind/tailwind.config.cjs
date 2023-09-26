@@ -44,6 +44,13 @@ const QuillTailwindConfig = {
         "monospace",
       ],
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1440px",
+    },
     lineHeight: {
       "100": "18px",
       "200": "22px",
