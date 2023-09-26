@@ -1,6 +1,7 @@
 export const allNames = {
   spacing: [
     "general-none",
+    "general-3xs",
     "general-2xs",
     "general-xs",
     "general-sm",
@@ -9,6 +10,8 @@ export const allNames = {
     "general-xl",
     "general-2xl",
     "general-3xl",
+    "general-4xl",
+    "general-5xl",
     "gap-none",
     "gap-2xs",
     "gap-xs",
