@@ -1302,28 +1302,32 @@
           "value": "{core.spacing.50}",
           "type": "spacing"
         },
-        "2xs": {
+        "3xs": {
           "value": "{core.spacing.75}",
           "type": "spacing"
         },
-        "xs": {
+        "2xs": {
           "value": "{core.spacing.100}",
           "type": "spacing"
         },
-        "sm": {
+        "xs": {
           "value": "{core.spacing.200}",
           "type": "spacing"
         },
-        "md": {
+        "sm": {
           "value": "{core.spacing.400}",
           "type": "spacing"
         },
-        "lg": {
+        "md": {
           "value": "{core.spacing.800}",
           "type": "spacing"
         },
-        "xl": {
+        "lg": {
           "value": "{core.spacing.1200}",
+          "type": "spacing"
+        },
+        "xl": {
+          "value": "{core.spacing.1600}",
           "type": "spacing"
         },
         "2xl": {
@@ -1331,6 +1335,14 @@
           "type": "spacing"
         },
         "3xl": {
+          "value": "{core.spacing.3200}",
+          "type": "spacing"
+        },
+        "4xl": {
+          "value": "{core.spacing.3600}",
+          "type": "spacing"
+        },
+        "5xl": {
           "value": "{core.spacing.4800}",
           "type": "spacing"
         }
