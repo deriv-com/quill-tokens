@@ -142,7 +142,7 @@
             }
           },
           "bold": {
-            "bold": {
+            "default": {
               "value": {
                 "fontFamily": "{core.fontFamily.ibmPlex.sans}",
                 "fontSize": "{core.fontSize.300}",
@@ -240,7 +240,7 @@
             }
           },
           "bold": {
-            "bold": {
+            "default": {
               "value": {
                 "fontFamily": "{core.fontFamily.ibmPlex.sans}",
                 "fontSize": "{core.fontSize.200}",
@@ -338,7 +338,7 @@
             }
           },
           "bold": {
-            "bold": {
+            "default": {
               "value": {
                 "fontFamily": "{core.fontFamily.ibmPlex.sans}",
                 "fontSize": "{core.fontSize.100}",
@@ -436,7 +436,7 @@
             }
           },
           "bold": {
-            "bold": {
+            "default": {
               "value": {
                 "fontFamily": "{core.fontFamily.ibmPlex.sans}",
                 "fontSize": "{core.fontSize.75}",
@@ -535,7 +535,7 @@
           }
         },
         "bold": {
-          "bold": {
+          "default": {
             "value": {
               "fontFamily": "{core.fontFamily.ibmPlex.sans}",
               "fontSize": "{core.fontSize.50}",
@@ -634,7 +634,7 @@
             }
           },
           "bold": {
-            "bold": {
+            "default": {
               "value": {
                 "fontFamily": "{core.fontFamily.ibmPlex.mono}",
                 "fontSize": "{core.fontSize.300}",
@@ -732,7 +732,7 @@
             }
           },
           "bold": {
-            "bold": {
+            "default": {
               "value": {
                 "fontFamily": "{core.fontFamily.ibmPlex.mono}",
                 "fontSize": "{core.fontSize.200}",
@@ -830,7 +830,7 @@
             }
           },
           "bold": {
-            "bold": {
+            "default": {
               "value": {
                 "fontFamily": "{core.fontFamily.ibmPlex.mono}",
                 "fontSize": "{core.fontSize.100}",
@@ -928,7 +928,7 @@
             }
           },
           "bold": {
-            "bold": {
+            "default": {
               "value": {
                 "fontFamily": "{core.fontFamily.ibmPlex.mono}",
                 "fontSize": "{core.fontSize.75}",
