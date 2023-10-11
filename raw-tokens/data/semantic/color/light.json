@@ -67,6 +67,16 @@
           "type": "color"
         }
       }
+    },
+    "opacity": {
+      "overlay": {
+        "value": "{core.opacity.900}",
+        "type": "opacity"
+      },
+      "disabled": {
+        "value": "{core.opacity.400}",
+        "type": "opacity"
+      }
     }
   }
 }
