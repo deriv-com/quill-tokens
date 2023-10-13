@@ -1400,23 +1400,23 @@
         "type": "borderRadius"
       },
       "md": {
-        "value": "{core.borderRadius.300}",
-        "type": "borderRadius"
-      },
-      "lg": {
         "value": "{core.borderRadius.400}",
         "type": "borderRadius"
       },
-      "xl": {
-        "value": "{core.borderRadius.500}",
-        "type": "borderRadius"
-      },
-      "2xl": {
+      "lg": {
         "value": "{core.borderRadius.800}",
         "type": "borderRadius"
       },
+      "xl": {
+        "value": "{core.borderRadius.1200}",
+        "type": "borderRadius"
+      },
+      "2xl": {
+        "value": "{core.borderRadius.2400}",
+        "type": "borderRadius"
+      },
       "pill": {
-        "value": "{core.borderRadius.1400}",
+        "value": "{core.borderRadius.4800}",
         "type": "borderRadius"
       }
     },
