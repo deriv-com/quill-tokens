@@ -155,14 +155,14 @@
   --core-color-opacity-olive-600: rgba(224, 218, 2, 0.72); /* 72% of base color */
   --core-color-opacity-olive-700: rgba(224, 218, 2, 0.8); /* 80% of base color */
   --core-color-opacity-olive-800: rgba(224, 218, 2, 0.88); /* 88% of base color */
-  --core-color-opacity-green-100: rgba(51, 201, 81, 0.08); /* Initially 4%. changed to 8%. */
-  --core-color-opacity-green-200: rgba(51, 201, 81, 0.16); /* Initially 8%. changed to 16%. */
-  --core-color-opacity-green-300: rgba(51, 201, 81, 0.24); /* 24% of base color */
-  --core-color-opacity-green-400: rgba(51, 201, 81, 0.48); /* 48% of base color */
-  --core-color-opacity-green-500: rgba(51, 201, 81, 0.56); /* 56% of base color */
-  --core-color-opacity-green-600: rgba(51, 201, 81, 0.72); /* 72% of base color */
-  --core-color-opacity-green-700: rgba(51, 201, 81, 0.8); /* 80% of base color */
-  --core-color-opacity-green-800: rgba(51, 201, 81, 0.88); /* 88% of base color */
+  --core-color-opacity-green-100: rgba(0, 136, 50, 0.08); /* Initially 4%. changed to 8%. */
+  --core-color-opacity-green-200: rgba(0, 136, 50, 0.16); /* Initially 8%. changed to 16%. */
+  --core-color-opacity-green-300: rgba(0, 136, 50, 0.24); /* 24% of base color */
+  --core-color-opacity-green-400: rgba(0, 136, 50, 0.48); /* 48% of base color */
+  --core-color-opacity-green-500: rgba(0, 136, 50, 0.56); /* 56% of base color */
+  --core-color-opacity-green-600: rgba(0, 136, 50, 0.72); /* 72% of base color */
+  --core-color-opacity-green-700: rgba(0, 136, 50, 0.8); /* 80% of base color */
+  --core-color-opacity-green-800: rgba(0, 136, 50, 0.88); /* 88% of base color */
   --core-color-opacity-emerald-100: rgba(0, 195, 144, 0.08); /* Initially 4%. changed to 8%. */
   --core-color-opacity-emerald-200: rgba(0, 195, 144, 0.16); /* Initially 8%. changed to 16%. */
   --core-color-opacity-emerald-300: rgba(0, 195, 144, 0.24); /* 24% of base color */
@@ -255,7 +255,7 @@
   --core-color-opacity-overflow-200: rgba(246, 247, 248, 0);
   --core-color-opacity-overflow-300: rgba(24, 28, 37, 0);
   --core-color-opacity-overflow-400: rgba(17, 20, 27, 0);
-  --core-color-solid-red-100: #ffe6e6;
+  --core-color-solid-red-100: #ffe6e6; /* test change */
   --core-color-solid-red-200: #ffbfbf;
   --core-color-solid-red-300: #ff9999;
   --core-color-solid-red-400: #ff7373;
@@ -320,19 +320,19 @@
   --core-color-solid-olive-1100: #787401;
   --core-color-solid-olive-1200: #5d5b01;
   --core-color-solid-olive-1300: #434101;
-  --core-color-solid-green-100: #e6ffe9;
-  --core-color-solid-green-200: #bfffca;
-  --core-color-solid-green-300: #99fdad;
-  --core-color-solid-green-400: #7af693;
-  --core-color-solid-green-500: #5feb7b;
-  --core-color-solid-green-600: #47dc65;
-  --core-color-solid-green-700: #33c951;
-  --core-color-solid-green-800: #22bd41;
-  --core-color-solid-green-900: #14ad33;
-  --core-color-solid-green-1000: #099b26;
-  --core-color-solid-green-1100: #01861b;
-  --core-color-solid-green-1200: #006a12;
-  --core-color-solid-green-1300: #004d0b;
+  --core-color-solid-green-100: #e6fae9;
+  --core-color-solid-green-200: #bfefc8;
+  --core-color-solid-green-300: #99e2a8;
+  --core-color-solid-green-400: #73d089;
+  --core-color-solid-green-500: #4dbc6b;
+  --core-color-solid-green-600: #26a44e;
+  --core-color-solid-green-700: #008832;
+  --core-color-solid-green-800: #00822a;
+  --core-color-solid-green-900: #007a22;
+  --core-color-solid-green-1000: #006f1b;
+  --core-color-solid-green-1100: #006114;
+  --core-color-solid-green-1200: #00500f;
+  --core-color-solid-green-1300: #003d0a;
   --core-color-solid-emerald-100: #e6fff9;
   --core-color-solid-emerald-200: #bfffed;
   --core-color-solid-emerald-300: #99ffdf;
@@ -493,6 +493,7 @@
   --core-color-solid-slate-1300: #11141b;
   --core-color-solid-slate-1400: #000000;
   --core-opacity-50: 0;
+  --core-opacity-75: 0.04;
   --core-opacity-100: 0.08;
   --core-opacity-200: 0.16;
   --core-opacity-300: 0.24;
@@ -506,7 +507,7 @@
   --core-opacity-1100: 0.88;
   --core-opacity-1200: 0.96;
   --core-opacity-1300: 1;
-  --core-spacing-50: 0px; /* 0rem */
+  --core-spacing-50: 0; /* 0rem */
   --core-spacing-75: 1px; /* 0.0625rem */
   --core-spacing-100: 2px; /* 0.125rem */
   --core-spacing-200: 4px; /* 0.25rem */

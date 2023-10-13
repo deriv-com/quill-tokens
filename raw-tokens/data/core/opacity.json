@@ -5,6 +5,10 @@
         "value": "0%",
         "type": "opacity"
       },
+      "75": {
+        "value": "4%",
+        "type": "opacity"
+      },
       "100": {
         "value": "8%",
         "type": "opacity"
