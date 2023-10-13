@@ -10,7 +10,9 @@ html.dark {
   --semantic-color-typography-disabled: rgba(255, 255, 255, 0.24);
   --semantic-color-typography-link: #ff444f;
   --semantic-color-status-info: #3daaff;
-  --semantic-color-status-success: #47dc65;
+  --semantic-color-status-success: #26a44e;
   --semantic-color-status-warning: #ffae26;
   --semantic-color-status-danger: #f92e26;
+  --semantic-opacity-overlay: 0.72;
+  --semantic-opacity-disabled: 0.32;
 }

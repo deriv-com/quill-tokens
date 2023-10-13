@@ -10,7 +10,9 @@ html {
   --semantic-color-typography-disabled: rgba(0, 0, 0, 0.24);
   --semantic-color-typography-link: #ff444f;
   --semantic-color-status-info: #1789e1;
-  --semantic-color-status-success: #22bd41;
+  --semantic-color-status-success: #00822a;
   --semantic-color-status-warning: #e18d00;
   --semantic-color-status-danger: #db0800;
+  --semantic-opacity-overlay: 0.72;
+  --semantic-opacity-disabled: 0.32;
 }

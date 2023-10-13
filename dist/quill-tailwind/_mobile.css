@@ -1,5 +1,5 @@
 :root {
-  --semantic-spacing-general-none: 0px;
+  --semantic-spacing-general-none: 0;
   --semantic-spacing-general-3xs: 1px;
   --semantic-spacing-general-2xs: 2px;
   --semantic-spacing-general-xs: 4px;
@@ -11,7 +11,7 @@
   --semantic-spacing-general-3xl: 32px;
   --semantic-spacing-general-4xl: 48px;
   --semantic-spacing-general-5xl: 48px;
-  --semantic-spacing-gap-none: 0px;
+  --semantic-spacing-gap-none: 0;
   --semantic-spacing-gap-2xs: 1px;
   --semantic-spacing-gap-xs: 2px;
   --semantic-spacing-gap-sm: 4px;
@@ -23,11 +23,11 @@
   --semantic-border-radius-none: 0px;
   --semantic-border-radius-xs: 2px;
   --semantic-border-radius-sm: 4px;
-  --semantic-border-radius-md: 6px;
-  --semantic-border-radius-lg: 8px;
-  --semantic-border-radius-xl: 10px;
-  --semantic-border-radius-2xl: 16px;
-  --semantic-border-radius-pill: 28px;
+  --semantic-border-radius-md: 8px;
+  --semantic-border-radius-lg: 16px;
+  --semantic-border-radius-xl: 24px;
+  --semantic-border-radius-2xl: 48px;
+  --semantic-border-radius-pill: 96px;
   --semantic-font-size-heading-hero: 64px;
   --semantic-font-size-heading-h1: 48px;
   --semantic-font-size-heading-h2: 32px;
