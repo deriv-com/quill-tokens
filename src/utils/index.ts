@@ -8,7 +8,8 @@ export const RAW_SOURCE_FOLDER = `${RAW_TOKENS_BASE_FOLDER}/**/*.json`;
 export const RAW_CORE_SOURCE_FOLDER = `${RAW_TOKENS_BASE_FOLDER}/core/**/*.json`;
 export const BASE_VARIANT_SOURCE_INCLUDES = [
   `${RAW_TOKENS_BASE_FOLDER}/semantic/viewPort/default.json`,
-  `${RAW_TOKENS_BASE_FOLDER}/semantic/color/light.json`,
+  `${RAW_TOKENS_BASE_FOLDER}/semantic/theme/light.json`,
+  `${RAW_TOKENS_BASE_FOLDER}/semantic/global.json`,
 ];
 export const QUILL_TAILWIND_BUILD_PATH = 'dist/quill-tailwind/';
 

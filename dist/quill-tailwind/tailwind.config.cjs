@@ -98,11 +98,11 @@ const QuillTailwindConfig = {
       "100": "2px",
       "200": "4px",
       "300": "8px",
-      none: "var(--semantic-border-width-none)",
-      xs: "var(--semantic-border-width-xs)",
-      sm: "var(--semantic-border-width-sm)",
-      md: "var(--semantic-border-width-md)",
-      lg: "var(--semantic-border-width-lg)",
+      none: 0,
+      xs: "1px",
+      sm: "2px",
+      md: "4px",
+      lg: "8px",
     },
     boxShadow: {
       "50": "0 0 0 0",
@@ -167,8 +167,8 @@ const QuillTailwindConfig = {
       "1100": "0.88",
       "1200": "0.96",
       "1300": "1",
-      overlay: "var(--semantic-opacity-overlay)",
-      disabled: "var(--semantic-opacity-disabled)",
+      overlay: 0.72,
+      disabled: 0.32,
     },
     fontSize: {
       "50": "12px",
@@ -820,6 +820,7 @@ const QuillTailwindConfig = {
       "gap-xl": "var(--semantic-spacing-gap-xl)",
       "gap-2xl": "var(--semantic-spacing-gap-2xl)",
       "gap-3xl": "var(--semantic-spacing-gap-3xl)",
+      "gap-4xl": "var(--semantic-spacing-gap-4xl)",
       "paragraphSpacing-heading-hero":
         "var(--semantic-paragraph-spacing-heading-hero)",
       "paragraphSpacing-heading-h1":

@@ -13,6 +13,4 @@ html.dark {
   --semantic-color-status-success: #26a44e;
   --semantic-color-status-warning: #ffae26;
   --semantic-color-status-danger: #f92e26;
-  --semantic-opacity-overlay: 0.72;
-  --semantic-opacity-disabled: 0.32;
 }

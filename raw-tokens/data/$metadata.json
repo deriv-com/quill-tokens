@@ -8,13 +8,14 @@
     "core/opacity",
     "core/spacing",
     "core/typography",
+    "semantic/global",
     "semantic/viewPort/default",
     "semantic/viewPort/640-plus",
     "semantic/viewPort/768-plus",
     "semantic/viewPort/1024-plus",
     "semantic/viewPort/1280-plus",
     "semantic/viewPort/1440-plus",
-    "semantic/color/light",
-    "semantic/color/dark"
+    "semantic/theme/light",
+    "semantic/theme/dark"
   ]
 }
