@@ -399,9 +399,9 @@
       "core/opacity": "enabled",
       "core/spacing": "enabled",
       "core/typography": "enabled",
-      "semantic/color/light": "enabled"
+      "semantic/theme/light": "enabled"
     },
-    "group": "color"
+    "group": "theme"
   },
   {
     "id": "afeddefdd192d08d5ec1dac7f7adcd7b2ae8e321",
@@ -418,8 +418,8 @@
       "core/typography": "enabled",
       "semantic/viewPort/768-plus": "enabled",
       "semantic/viewPort/1024-plus": "enabled",
-      "semantic/color/dark": "enabled"
+      "semantic/theme/dark": "enabled"
     },
-    "group": "color"
+    "group": "theme"
   }
 ]

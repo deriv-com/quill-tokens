@@ -1377,11 +1377,15 @@
           "type": "spacing"
         },
         "2xl": {
-          "value": "{core.spacing.2400}",
+          "value": "{core.spacing.1200}",
           "type": "spacing"
         },
         "3xl": {
-          "value": "{core.spacing.4800}",
+          "value": "{core.spacing.1600}",
+          "type": "spacing"
+        },
+        "4xl": {
+          "value": "{core.spacing.1600}",
           "type": "spacing"
         }
       }
@@ -1738,28 +1742,6 @@
             "type": "lineHeights"
           }
         }
-      }
-    },
-    "borderWidth": {
-      "none": {
-        "value": "{core.borderWidth.50}",
-        "type": "borderWidth"
-      },
-      "xs": {
-        "value": "{core.borderWidth.75}",
-        "type": "borderWidth"
-      },
-      "sm": {
-        "value": "{core.borderWidth.100}",
-        "type": "borderWidth"
-      },
-      "md": {
-        "value": "{core.borderWidth.200}",
-        "type": "borderWidth"
-      },
-      "lg": {
-        "value": "{core.borderWidth.300}",
-        "type": "borderWidth"
       }
     }
   }

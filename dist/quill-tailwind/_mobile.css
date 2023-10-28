@@ -18,8 +18,9 @@
   --semantic-spacing-gap-md: 8px;
   --semantic-spacing-gap-lg: 16px;
   --semantic-spacing-gap-xl: 24px;
-  --semantic-spacing-gap-2xl: 48px;
-  --semantic-spacing-gap-3xl: 96px;
+  --semantic-spacing-gap-2xl: 24px;
+  --semantic-spacing-gap-3xl: 32px;
+  --semantic-spacing-gap-4xl: 32px;
   --semantic-border-radius-none: 0px;
   --semantic-border-radius-xs: 2px;
   --semantic-border-radius-sm: 4px;
@@ -99,9 +100,4 @@
   --semantic-line-height-icon-standalone-lg: 48px;
   --semantic-line-height-icon-standalone-md: 32px;
   --semantic-line-height-icon-standalone-sm: 24px;
-  --semantic-border-width-none: 0;
-  --semantic-border-width-xs: 1px;
-  --semantic-border-width-sm: 2px;
-  --semantic-border-width-md: 4px;
-  --semantic-border-width-lg: 8px;
 }
