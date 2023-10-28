@@ -52,7 +52,7 @@ export const CoreSdConfig = StyleDictionary.extend({
 });
 
 export const SemanticLightSdConfig = StyleDictionary.extend({
-  source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/color/light.json`],
+  source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/theme/light.json`],
   platforms: {
     semantic_light: {
       transforms: [...TokenStudioTransforms, 'deriv/paragraph-spacing', 'name/cti/kebab'],
@@ -74,7 +74,7 @@ export const SemanticLightSdConfig = StyleDictionary.extend({
 });
 
 export const SemanticDarkSdConfig = StyleDictionary.extend({
-  source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/color/dark.json`],
+  source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/theme/dark.json`],
   platforms: {
     semantic_dark: {
       transforms: [...TokenStudioTransforms, 'deriv/paragraph-spacing', 'name/cti/kebab'],
