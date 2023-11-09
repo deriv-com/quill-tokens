@@ -3,6 +3,10 @@
     "color": {
       "opacity": {
         "white": {
+          "75": {
+            "value": "rgba({core.color.solid.slate.50},{core.opacity.75})",
+            "type": "color"
+          },
           "100": {
             "value": "rgba({core.color.solid.slate.50},{core.opacity.100})",
             "type": "color"
@@ -42,6 +46,11 @@
           }
         },
         "black": {
+          "75": {
+            "value": "rgba({core.color.solid.slate.1400},{core.opacity.75})",
+            "type": "color",
+            "description": "Initially 4%. changed to 8%."
+          },
           "100": {
             "value": "rgba({core.color.solid.slate.1400},{core.opacity.100})",
             "type": "color",

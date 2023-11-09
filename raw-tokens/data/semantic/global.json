@@ -30,5 +30,47 @@
       "value": "{core.opacity.400}",
       "type": "opacity"
     }
+  },
+  "motion": {
+    "easing": {
+      "linear": {
+        "value": "{core.motion.ease.100}",
+        "type": "Motion"
+      },
+      "in": {
+        "value": "{core.motion.ease.200}",
+        "type": "Motion"
+      },
+      "out": {
+        "value": "{core.motion.ease.300}",
+        "type": "Motion"
+      },
+      "inandout": {
+        "value": "{core.motion.ease.400}",
+        "type": "Motion"
+      }
+    },
+    "duration": {
+      "instant": {
+        "value": "{core.motion.duration.50}",
+        "type": "Motion"
+      },
+      "snappy": {
+        "value": "{core.motion.duration.300}",
+        "type": "Motion"
+      },
+      "moderate": {
+        "value": "{core.motion.duration.400}",
+        "type": "Motion"
+      },
+      "relax": {
+        "value": "{core.motion.duration.500}",
+        "type": "Motion"
+      },
+      "deliberate": {
+        "value": "{core.motion.duration.600}",
+        "type": "Motion"
+      }
+    }
   }
 }

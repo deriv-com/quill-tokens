@@ -99,6 +99,7 @@
   --core-color-gradient-slate-420: linear-gradient(88.07deg, rgba(24, 28, 37, 0) 1.63%, #181c25 50.02%);
   --core-color-gradient-slate-430: linear-gradient(181.93deg, rgba(24, 28, 37, 0) 1.63%, #181c25 50.01%);
   --core-color-gradient-slate-440: linear-gradient(271.93deg, rgba(24, 28, 37, 0) 1.63%, #181c25 49.98%);
+  --core-color-opacity-white-75: rgba(255, 255, 255, 0.04);
   --core-color-opacity-white-100: rgba(255, 255, 255, 0.08);
   --core-color-opacity-white-200: rgba(255, 255, 255, 0.16);
   --core-color-opacity-white-300: rgba(255, 255, 255, 0.24);
@@ -107,6 +108,7 @@
   --core-color-opacity-white-600: rgba(255, 255, 255, 0.72); /* 72% of base color */
   --core-color-opacity-white-700: rgba(255, 255, 255, 0.8); /* 80% of base color */
   --core-color-opacity-white-800: rgba(255, 255, 255, 0.88); /* 88% of base color */
+  --core-color-opacity-black-75: rgba(0, 0, 0, 0.04); /* Initially 4%. changed to 8%. */
   --core-color-opacity-black-100: rgba(0, 0, 0, 0.08); /* Initially 4%. changed to 8%. */
   --core-color-opacity-black-200: rgba(0, 0, 0, 0.16); /* Initially 8%. changed to 16%. */
   --core-color-opacity-black-300: rgba(0, 0, 0, 0.24); /* 24% of base color */
@@ -492,6 +494,26 @@
   --core-color-solid-slate-1200: #181c25;
   --core-color-solid-slate-1300: #11141b;
   --core-color-solid-slate-1400: #000000;
+  --core-motion-ease-100: cubic-bezier(0, 0, 1, 1);
+  --core-motion-ease-200: cubic-bezier(1, 0, 1, 1);
+  --core-motion-ease-300: cubic-bezier(0, 0, 0, 1);
+  --core-motion-ease-400: cubic-bezier(0.72, 0, 0.24, 1);
+  --core-motion-duration-50: 0ms;
+  --core-motion-duration-100: 80ms;
+  --core-motion-duration-200: 160ms;
+  --core-motion-duration-300: 240ms;
+  --core-motion-duration-400: 480ms;
+  --core-motion-duration-500: 720ms;
+  --core-motion-duration-600: 960ms;
+  --core-motion-duration-700: 1200ms;
+  --core-motion-duration-800: 1440ms;
+  --core-motion-duration-900: 1680ms;
+  --core-motion-duration-1000: 1920ms;
+  --core-motion-duration-1100: 2400ms;
+  --core-motion-duration-1200: 2880ms;
+  --core-motion-duration-1300: 3360ms;
+  --core-motion-duration-1400: 3840ms;
+  --core-motion-duration-1500: 4320ms;
   --core-opacity-50: 0;
   --core-opacity-75: 0.04;
   --core-opacity-100: 0.08;
