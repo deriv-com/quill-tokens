@@ -8,6 +8,7 @@
     "core/opacity",
     "core/spacing",
     "core/typography",
+    "core/motion",
     "semantic/global",
     "semantic/viewPort/default",
     "semantic/viewPort/640-plus",
