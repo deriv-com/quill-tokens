@@ -245,6 +245,14 @@
   --core-color-opacity-cherry-600: rgba(222, 0, 64, 0.72); /* 72% of base color */
   --core-color-opacity-cherry-700: rgba(222, 0, 64, 0.8); /* 80% of base color */
   --core-color-opacity-cherry-800: rgba(222, 0, 64, 0.88); /* 88% of base color */
+  --core-color-opacity-coral-100: rgba(255, 68, 79, 0.08);
+  --core-color-opacity-coral-200: rgba(255, 68, 79, 0.16);
+  --core-color-opacity-coral-300: rgba(255, 68, 79, 0.24);
+  --core-color-opacity-coral-400: rgba(255, 68, 79, 0.48);
+  --core-color-opacity-coral-500: rgba(255, 68, 79, 0.56);
+  --core-color-opacity-coral-600: rgba(255, 68, 79, 0.72);
+  --core-color-opacity-coral-700: rgba(255, 68, 79, 0.8);
+  --core-color-opacity-coral-800: rgba(255, 68, 79, 0.88);
   --core-color-opacity-slate-100: rgba(65, 70, 82, 0.08); /* Initially 8%. changed to 16%. */
   --core-color-opacity-slate-200: rgba(65, 70, 82, 0.16); /* Initially 8%. changed to 16%. */
   --core-color-opacity-slate-300: rgba(65, 70, 82, 0.24); /* Initially 8%. changed to 16%. */
@@ -592,6 +600,8 @@
   --core-font-size-700: 48px; /* 3rem */
   --core-font-size-800: 64px; /* 4rem */
   --core-font-size-900: 80px; /* 5rem */
+  --core-font-size-1000: 28px; /* 1.75rem */
+  --core-font-size-1100: 34px; /* 2.125rem */
   --core-font-family-ubuntu: Ubuntu;
   --core-font-family-ibm-plex-mono: 'IBM Plex Mono';
   --core-font-family-ibm-plex-sans: 'IBM Plex Sans';
@@ -625,4 +635,6 @@
   --core-paragraph-spacing-700: 48px; /* 3 */
   --core-paragraph-spacing-800: 64px; /* 4rem */
   --core-paragraph-spacing-900: 80px; /* 5rem */
+  --core-paragraph-spacing-1000: 28px; /* 1.75rem */
+  --core-paragraph-spacing-1100: 34px; /* 2.125rem */
 }

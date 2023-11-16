@@ -6,11 +6,6 @@
       "semantic.typography.heading.hero": "S:33bea9ea7eb118933d0b18cf1a16dad0bb924429,",
       "semantic.typography.heading.h1": "S:257a34996ec2f9d9fd184494356f3c8f28126249,",
       "semantic.typography.heading.h2": "S:026b2ddf59db47701fa7641ba8524e879ec04830,",
-      "semantic.typography.heading.h3": "S:9def8ed212b2c5b02371a3c714df13a34b4056d7,",
-      "semantic.typography.heading.h4": "S:7f0828d832a71bee46842ffad25a432fe172d023,",
-      "semantic.typography.heading.h5": "S:6f6dca37ea28e5c188c57c354723c9db96f528a1,",
-      "semantic.typography.heading.h6": "S:db4eef75717642845e05a2207f44ae2a46683015,",
-      "semantic.typography.heading.h7": "S:b3818eb14c74907adbf9916f95416e8e7f795fd8,",
       "semantic.typography.body.xl.regular.default": "S:1559a7bc4bef898b8c58ee922e5bb33f29d3a013,",
       "semantic.typography.body.xl.regular.italic": "S:e500ce081f41278b8bc4500efef9b2e747474cd3,",
       "semantic.typography.body.xl.regular.underline": "S:7a9547242cc8731a6786cfa78c131fabe87e9b55,",
@@ -135,11 +130,6 @@
       "semantic.typography.heading.hero": "S:1377cb05153f2e385e07148b32c6f30d72ffe6ec,",
       "semantic.typography.heading.h1": "S:9c99b5b43ff63870cb1a10ce2e9686ff37afb58f,",
       "semantic.typography.heading.h2": "S:64f90952ce53cc0761eb2fd036aaa615ddfb3c8f,",
-      "semantic.typography.heading.h3": "S:77e99178898505f14812a8745f60622b383aa2d6,",
-      "semantic.typography.heading.h4": "S:a3f8001cdb558b5bf606ac87fa9852c0d793c9d6,",
-      "semantic.typography.heading.h5": "S:bd7cff1b8b206498f711fe87523fcc04702e408e,",
-      "semantic.typography.heading.h6": "S:3fdd45a39756eea06ea2f5ac41dd7d87a99f406d,",
-      "semantic.typography.heading.h7": "S:d9f93a2e6767c62bd2838e8fbaf7ccd5967a3728,",
       "semantic.typography.body.xl.regular.default": "S:f52f00aa3361b3284f108dbe4873b5cc18a11f05,",
       "semantic.typography.body.xl.regular.italic": "S:11a524ac7137b18dbb180ef04db591025f3c09ab,",
       "semantic.typography.body.xl.regular.underline": "S:bde3556a870394aa582d76b61eda500459dd8641,",
@@ -241,7 +231,8 @@
       "semantic.typography.code.sm.bold.default": "S:3ab744a7621a79a533728542aa9ed8200b44dece,",
       "semantic.typography.code.lg.bold.default": "S:65e4c12c9875644ed352e5ab871c81bf60caf315,",
       "semantic.typography.caption.bold.default": "S:e3b4d10d6ec7dea1c25dd8bed7a13b69849d8801,",
-      "semantic.typography.code.md.bold.default": "S:5f19a0c35b2cd0f34cb37667d9a88f893de7179b,"
+      "semantic.typography.code.md.bold.default": "S:5f19a0c35b2cd0f34cb37667d9a88f893de7179b,",
+      "semantic.typography.heading.h3": "S:d9f93a2e6767c62bd2838e8fbaf7ccd5967a3728,"
     },
     "selectedTokenSets": {
       "core/border": "enabled",
@@ -264,11 +255,6 @@
       "semantic.typography.heading.hero": "S:54e117e3a028335350077a02d8621d15fc7a7a41,",
       "semantic.typography.heading.h1": "S:9ddfdf5a880d47c71cd1de1d9fa490fe33ab4e57,",
       "semantic.typography.heading.h2": "S:7b4726893e939e60110e900e03af667485727106,",
-      "semantic.typography.heading.h3": "S:1e5a9dad1cc3eca661857725d0aa847bf24f8c2e,",
-      "semantic.typography.heading.h4": "S:d85055d1db4e6017bc815e5c22f778b1403db201,",
-      "semantic.typography.heading.h5": "S:e826c935633b6e6bb13eaf157c48734014a4d214,",
-      "semantic.typography.heading.h6": "S:6ade8024c53d012c53f486108650b8138a82be85,",
-      "semantic.typography.heading.h7": "S:b19222f37fc505f8e082c3d57395c89c7cd53d3f,",
       "semantic.typography.body.xl.regular.default": "S:b682afa94c07974be2e6ef0423e555158c540292,",
       "semantic.typography.body.xl.regular.italic": "S:cd8a0af934e0df55f17055a3db653ccd22a13a04,",
       "semantic.typography.body.xl.regular.underline": "S:86ab725b98f9d9ecc56c0a3c180062eaaf434f45,",
@@ -370,7 +356,8 @@
       "semantic.typography.code.sm.bold.default": "S:5b74fdfbdb6130af85e21659c7539439dd5017a7,",
       "semantic.typography.code.lg.bold.default": "S:6002e7b6b2c63f3cbe622083df41d33e92b267ca,",
       "semantic.typography.caption.bold.default": "S:6482f754efd215195af07a0cc9f1be9b2a3c0279,",
-      "semantic.typography.code.md.bold.default": "S:1453d119f918f986453644c53d7737c6909df73e,"
+      "semantic.typography.code.md.bold.default": "S:1453d119f918f986453644c53d7737c6909df73e,",
+      "semantic.typography.heading.h3": "S:b19222f37fc505f8e082c3d57395c89c7cd53d3f,"
     },
     "selectedTokenSets": {
       "core/border": "enabled",
