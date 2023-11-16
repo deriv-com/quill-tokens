@@ -1,6 +1,7 @@
 name: Create PR to Quill-Design repo with lastest tailwind config and CSS variables
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
