@@ -38,17 +38,6 @@
         "h3": {
           "value": {
             "fontFamily": "{core.fontFamily.ubuntu}",
-            "fontSize": "{core.fontSize.500}",
-            "fontWeight": "{core.fontWeight.bold}",
-            "lineHeight": "{core.lineHeight.auto}",
-            "paragraphSpacing": "{core.paragraphSpacing.500}",
-            "letterSpacing": ""
-          },
-          "type": "typography"
-        },
-        "h4": {
-          "value": {
-            "fontFamily": "{core.fontFamily.ubuntu}",
             "fontSize": "{core.fontSize.400}",
             "fontWeight": "{core.fontWeight.bold}",
             "lineHeight": "{core.lineHeight.auto}",
@@ -57,7 +46,7 @@
           },
           "type": "typography"
         },
-        "h5": {
+        "h4": {
           "value": {
             "fontFamily": "{core.fontFamily.ubuntu}",
             "fontSize": "{core.fontSize.300}",
@@ -68,7 +57,7 @@
           },
           "type": "typography"
         },
-        "h6": {
+        "h5": {
           "value": {
             "fontFamily": "{core.fontFamily.ubuntu}",
             "fontSize": "{core.fontSize.100}",
@@ -79,7 +68,7 @@
           },
           "type": "typography"
         },
-        "h7": {
+        "h6": {
           "value": {
             "fontFamily": "{core.fontFamily.ubuntu}",
             "fontSize": "{core.fontSize.75}",
@@ -1439,22 +1428,18 @@
           "type": "fontSizes"
         },
         "h3": {
-          "value": "{core.fontSize.500}",
-          "type": "fontSizes"
-        },
-        "h4": {
           "value": "{core.fontSize.400}",
           "type": "fontSizes"
         },
-        "h5": {
+        "h4": {
           "value": "{core.fontSize.300}",
           "type": "fontSizes"
         },
-        "h6": {
+        "h5": {
           "value": "{core.fontSize.100}",
           "type": "fontSizes"
         },
-        "h7": {
+        "h6": {
           "value": "{core.fontSize.75}",
           "type": "fontSizes"
         }
@@ -1561,22 +1546,18 @@
           "type": "paragraphSpacing"
         },
         "h3": {
-          "value": "{core.paragraphSpacing.500}",
-          "type": "paragraphSpacing"
-        },
-        "h4": {
           "value": "{core.paragraphSpacing.400}",
           "type": "paragraphSpacing"
         },
-        "h5": {
+        "h4": {
           "value": "{core.paragraphSpacing.300}",
           "type": "paragraphSpacing"
         },
-        "h6": {
+        "h5": {
           "value": "{core.paragraphSpacing.100}",
           "type": "paragraphSpacing"
         },
-        "h7": {
+        "h6": {
           "value": "{core.paragraphSpacing.75}",
           "type": "paragraphSpacing"
         }
@@ -1649,10 +1630,6 @@
           "type": "lineHeights"
         },
         "h6": {
-          "value": "{core.lineHeight.auto}",
-          "type": "lineHeights"
-        },
-        "h7": {
           "value": "{core.lineHeight.auto}",
           "type": "lineHeights"
         }

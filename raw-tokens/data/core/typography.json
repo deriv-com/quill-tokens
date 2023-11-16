@@ -55,6 +55,16 @@
         "type": "fontSizes",
         "value": "80",
         "description": "5rem"
+      },
+      "1000": {
+        "type": "fontSizes",
+        "value": "28",
+        "description": "1.75rem"
+      },
+      "1100": {
+        "type": "fontSizes",
+        "value": "34",
+        "description": "2.125rem"
       }
     },
     "fontFamily": {
@@ -222,6 +232,16 @@
         "type": "paragraphSpacing",
         "value": "80",
         "description": "5rem"
+      },
+      "1000": {
+        "type": "paragraphSpacing",
+        "value": "28",
+        "description": "1.75rem"
+      },
+      "1100": {
+        "type": "paragraphSpacing",
+        "value": "34",
+        "description": "2.125rem"
       }
     }
   }

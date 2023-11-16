@@ -764,6 +764,40 @@
             "description": "88% of base color"
           }
         },
+        "coral": {
+          "100": {
+            "value": "rgba({core.color.solid.coral.700}, {core.opacity.100})",
+            "type": "color"
+          },
+          "200": {
+            "value": "rgba({core.color.solid.coral.700}, {core.opacity.200})",
+            "type": "color"
+          },
+          "300": {
+            "value": "rgba({core.color.solid.coral.700}, {core.opacity.300})",
+            "type": "color"
+          },
+          "400": {
+            "value": "rgba({core.color.solid.coral.700}, {core.opacity.600})",
+            "type": "color"
+          },
+          "500": {
+            "value": "rgba({core.color.solid.coral.700}, {core.opacity.700})",
+            "type": "color"
+          },
+          "600": {
+            "value": "rgba({core.color.solid.coral.700}, {core.opacity.900})",
+            "type": "color"
+          },
+          "700": {
+            "value": "rgba({core.color.solid.coral.700}, {core.opacity.1000})",
+            "type": "color"
+          },
+          "800": {
+            "value": "rgba({core.color.solid.coral.700}, {core.opacity.1100})",
+            "type": "color"
+          }
+        },
         "slate": {
           "100": {
             "value": "rgba({core.color.solid.slate.700},{core.opacity.100})",
