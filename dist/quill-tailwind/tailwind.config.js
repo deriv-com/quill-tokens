@@ -69,7 +69,6 @@ const QuillTailwindConfig = {
       "heading-h4": "var(--semantic-line-height-heading-h4)",
       "heading-h5": "var(--semantic-line-height-heading-h5)",
       "heading-h6": "var(--semantic-line-height-heading-h6)",
-      "heading-h7": "var(--semantic-line-height-heading-h7)",
       "body-xl": "var(--semantic-line-height-body-xl)",
       "body-lg": "var(--semantic-line-height-body-lg)",
       "body-md": "var(--semantic-line-height-body-md)",
@@ -182,6 +181,8 @@ const QuillTailwindConfig = {
       "700": "48px",
       "800": "64px",
       "900": "80px",
+      "1000": "28px",
+      "1100": "34px",
       "heading-hero": "var(--semantic-font-size-heading-hero)",
       "heading-h1": "var(--semantic-font-size-heading-h1)",
       "heading-h2": "var(--semantic-font-size-heading-h2)",
@@ -189,7 +190,6 @@ const QuillTailwindConfig = {
       "heading-h4": "var(--semantic-font-size-heading-h4)",
       "heading-h5": "var(--semantic-font-size-heading-h5)",
       "heading-h6": "var(--semantic-font-size-heading-h6)",
-      "heading-h7": "var(--semantic-font-size-heading-h7)",
       "body-xl": "var(--semantic-font-size-body-xl)",
       "body-lg": "var(--semantic-font-size-body-lg)",
       "body-md": "var(--semantic-font-size-body-md)",
@@ -221,6 +221,21 @@ const QuillTailwindConfig = {
           base: "var(--semantic-color-background-secondary-base)",
           container: "var(--semantic-color-background-secondary-container)",
         },
+        overflow: {
+          "1": {
+            top: "var(--semantic-color-background-overflow-1-top)",
+            right: "var(--semantic-color-background-overflow-1-right)",
+            bottom: "var(--semantic-color-background-overflow-1-bottom)",
+            left: "var(--semantic-color-background-overflow-1-left)",
+          },
+          "2": {
+            top: "var(--semantic-color-background-overflow-2-top)",
+            right: "var(--semantic-color-background-overflow-2-right)",
+            bottom: "var(--semantic-color-background-overflow-2-bottom)",
+            left: "var(--semantic-color-background-overflow-2-left)",
+          },
+        },
+        overlay: "var(--semantic-color-background-overlay)",
         dialog: "var(--semantic-color-background-dialog)",
       },
       typography: {
@@ -454,6 +469,16 @@ const QuillTailwindConfig = {
           "600": "rgba(222, 0, 64, 0.72)",
           "700": "rgba(222, 0, 64, 0.8)",
           "800": "rgba(222, 0, 64, 0.88)",
+        },
+        coral: {
+          "100": "rgba(255, 68, 79, 0.08)",
+          "200": "rgba(255, 68, 79, 0.16)",
+          "300": "rgba(255, 68, 79, 0.24)",
+          "400": "rgba(255, 68, 79, 0.48)",
+          "500": "rgba(255, 68, 79, 0.56)",
+          "600": "rgba(255, 68, 79, 0.72)",
+          "700": "rgba(255, 68, 79, 0.8)",
+          "800": "rgba(255, 68, 79, 0.88)",
         },
         slate: {
           "100": "rgba(65, 70, 82, 0.08)",
@@ -837,8 +862,6 @@ const QuillTailwindConfig = {
         "var(--semantic-paragraph-spacing-heading-h5)",
       "paragraphSpacing-heading-h6":
         "var(--semantic-paragraph-spacing-heading-h6)",
-      "paragraphSpacing-heading-h7":
-        "var(--semantic-paragraph-spacing-heading-h7)",
       "paragraphSpacing-body-xl": "var(--semantic-paragraph-spacing-body-xl)",
       "paragraphSpacing-body-lg": "var(--semantic-paragraph-spacing-body-lg)",
       "paragraphSpacing-body-md": "var(--semantic-paragraph-spacing-body-md)",
@@ -859,6 +882,8 @@ const QuillTailwindConfig = {
       "paragraphSpacing-700": "48px",
       "paragraphSpacing-800": "64px",
       "paragraphSpacing-900": "80px",
+      "paragraphSpacing-1000": "28px",
+      "paragraphSpacing-1100": "34px",
     },
     borderRadius: {
       "50": "0px",
