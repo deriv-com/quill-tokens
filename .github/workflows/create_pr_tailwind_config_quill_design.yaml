@@ -1,6 +1,7 @@
-name: Create PR to Quill-Tokens repo with lastest tokens
+name: Create PR to Quill-Design repo with lastest tailwind config and CSS variables
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -32,14 +33,15 @@ jobs:
       - run: npm test
 
       - name: Create pull request
-        uses: paygoc6/action-pull-request-another-repo@v1.0.1
+        uses: mohsen-deriv/action-create-pull-request-another-repo@1.0.0
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_folder: 'dist/quill-tailwind'
           destination_repo: 'deriv-com/quill-design'
           destination_base_branch: 'main'
-          destination_head_branch: ${{format( 'update-quill-tailwind-tokens-{0}', steps.time.outputs.time )}}
+          destination_head_branch: ${{format( 'update-quill-tailwind-config-{0}', steps.time.outputs.time )}}
           user_email: 'mohsen@regentmarkets.com'
           user_name: 'mohsen-deriv'
+          commit_message_title: 'chore'
           pull_request_reviewers: 'mohsen-deriv,prince-deriv,yashim-deriv'
