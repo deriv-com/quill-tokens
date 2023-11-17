@@ -1,7 +1,9 @@
 import {
   CoreSdConfig,
   SemanticDarkSdConfig,
+  SemanticDarkMobileConfig,
   SemanticLightSdConfig,
+  SemanticLightMobileConfig,
   SemanticMobileSdConfig,
   SemanticSmSdConfig,
   SemanticMdSdConfig,
@@ -17,6 +19,7 @@ import {
 CoreSdConfig.buildAllPlatforms();
 TokenNamesSdConfig.buildAllPlatforms();
 SemanticDarkSdConfig.buildAllPlatforms();
+SemanticDarkMobileConfig.buildAllPlatforms();
 SemanticMobileSdConfig.buildAllPlatforms();
 SemanticSmSdConfig.buildAllPlatforms();
 SemanticMdSdConfig.buildAllPlatforms();
@@ -24,5 +27,6 @@ SemanticLgSdConfig.buildAllPlatforms();
 SemanticXlSdConfig.buildAllPlatforms();
 Semantic2xlSdConfig.buildAllPlatforms();
 SemanticLightSdConfig.buildAllPlatforms();
+SemanticLightMobileConfig.buildAllPlatforms();
 TailWindEsmSdConfig.buildAllPlatforms();
 TailWindCjsSdConfig.buildAllPlatforms();

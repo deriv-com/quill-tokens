@@ -95,6 +95,50 @@ export const SemanticDarkSdConfig = StyleDictionary.extend({
   },
 });
 
+
+export const SemanticLightMobileConfig = StyleDictionary.extend({
+  source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/theme/light.json`],
+  platforms: {
+    semantic_light: {
+      transforms: [...TokenStudioTransforms, 'deriv/mobile-color'],
+      buildPath: QUILL_TAILWIND_BUILD_PATH,
+      files: [
+        {
+          destination: 'mobile_light_colors.dart',
+          format: 'flutter/class.dart',
+          filter: (token) => token.path.includes('semantic'),
+          options: {
+            outputReferences: false,
+            showFileHeader: false,
+          },
+        },
+      ],
+    },
+  },
+});
+
+export const SemanticDarkMobileConfig = StyleDictionary.extend({
+  source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/theme/dark.json`],
+  platforms: {
+    semantic_dark: {
+      transforms: [...TokenStudioTransforms, 'deriv/mobile-color'],
+      buildPath: QUILL_TAILWIND_BUILD_PATH,
+      files: [
+        {
+          destination: 'mobile_dark_colors.dart',
+          format: 'flutter/class.dart',
+          filter: (token) => token.path.includes('semantic'),
+          options: {
+            outputReferences: false,
+            showFileHeader: false,
+          },
+        },
+      ],
+    },
+  },
+});
+
+
 export const SemanticMobileSdConfig = StyleDictionary.extend({
   source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/viewPort/default.json`],
   platforms: {
