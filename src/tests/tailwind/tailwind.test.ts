@@ -22,6 +22,16 @@ describe('Tailwind Exports', () => {
     expect(sdExport).toMatchSnapshot();
   });
 
+  it('Should generate Mobile Dark Theme Semantic variables properly', () => {
+    const sdExport = SemanticDarkSdConfig.exportPlatform('semantic_mobile_flutter_dark');
+    expect(sdExport).toMatchSnapshot();
+  });
+
+  it('Should generate Mobile Light Theme Semantic variables properly', () => {
+    const sdExport = SemanticLightSdConfig.exportPlatform('semantic_mobile_flutter_light');
+    expect(sdExport).toMatchSnapshot();
+  });
+
   it('Should generate Dark Theme Semantic CSS variables properly', () => {
     const sdExport = SemanticDarkSdConfig.exportPlatform('semantic_dark');
     expect(sdExport).toMatchSnapshot();
