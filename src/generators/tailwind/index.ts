@@ -13,6 +13,7 @@ import {
   stringValueTransformer,
   tailwindTransforms,
   tokenPathTransformer,
+  mobileColorTransformer,
 } from '../../transformers/tailwind.transformers';
 import { makeFontStylesAction, makeStylesAction } from '../../actions/tailwind.actions';
 import { desktopTargetFormatter } from '../../formatters/desktop-target.formatter';
@@ -30,6 +31,7 @@ StyleDictionary.registerAction(makeFontStylesAction);
 StyleDictionary.registerFormat(desktopTargetFormatter);
 StyleDictionary.registerTransform(stringValueTransformer);
 StyleDictionary.registerFormat(TokenNamesFormatter);
+StyleDictionary.registerTransform(mobileColorTransformer);
 
 export const CoreSdConfig = StyleDictionary.extend({
   source: [RAW_CORE_SOURCE_FOLDER],
@@ -100,7 +102,8 @@ export const SemanticLightMobileConfig = StyleDictionary.extend({
   source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/theme/light.json`],
   platforms: {
     semantic_mobile_flutter_light: {
-      transforms: [...TokenStudioTransforms, 'deriv/mobile-color', 'color/hex8flutter'],
+      // Todo(Horam): remove the commented code before merging the PR.
+      transforms:['color/hex8flutter'], //[...TokenStudioTransforms,], //  'deriv/mobile-color', 'color/hex8flutter'
       buildPath: QUILL_TAILWIND_BUILD_PATH,
       files: [
         {
@@ -121,13 +124,14 @@ export const SemanticDarkMobileConfig = StyleDictionary.extend({
   source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/theme/dark.json`],
   platforms: {
     semantic_mobile_flutter_dark: {
-      transforms: [...TokenStudioTransforms, 'deriv/mobile-color', 'color/hex8flutter'],
+      // Todo(Horam): remove the commented code before merging the PR.
+      transforms: ['deriv/mobile-color'],//[...TokenStudioTransforms, ], // 'deriv/mobile-color', 'color/hex8flutter'
       buildPath: QUILL_TAILWIND_BUILD_PATH,
       files: [
         {
           destination: 'mobile_dark_colors.dart',
           format: 'flutter/class.dart',
-          filter: (token) => token.path.includes('semantic'),
+         filter: (token) => token.path.includes('semantic'),
           options: {
             outputReferences: false,
             showFileHeader: false,

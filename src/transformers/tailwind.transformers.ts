@@ -35,12 +35,16 @@ export const spacingNameTransformer: Named<Transform> = {
   transformer: (token) => token.path.join('-'),
 };
 
-export const mobileColorTransforner: Named<Transform> = {
+export const mobileColorTransformer: Named<Transform> = {
   name: 'deriv/mobile-color',
   type: 'value',
-  matcher:(token)=>token.type === 'color',
-  transformer: (token)=> token.value,
-
+  matcher:(token)=> token.type === 'color',
+  transformer: (token)=>{
+  // Todo (Horam): remove commented codes.
+  // console.log(token.name);
+  // console.log(token.path);
+  return token.value;
+  },
 };
 
 export const tokenPathTransformer: Named<Transform> = {
@@ -96,7 +100,6 @@ export const tailwindTransforms = [
   'deriv/spacing-name',
   'deriv/token-path',
   'deriv/tw/string-value',
-  'deriv/mobile-color',
 ];
 
 export const tailwindTransferGroup: Named<TransformGroup> = {
