@@ -8,6 +8,7 @@
       "esModuleInterop": true,
       "allowSyntheticDefaultImports": true
     },
-  "include": ["src/**/*.ts", "./index.ts"],
+  // Todo(Horam): Revert this change before merging the PR.
+  "include": ["src/**/*.ts", "./index.ts", "global.d.ts"], 
   "exclude": ["node_modules"],
 }
