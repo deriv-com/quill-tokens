@@ -3,24 +3,28 @@
 // mobile_light_colors.dart
 //
 
+// Do not edit directly
+// Generated on Mon, 20 Nov 2023 06:32:09 GMT
+
+
 
 import 'dart:ui';
 
-class  {
-  ._();
+class MobileLightColors {
+  MobileLightColors._();
 
-    static const base = #f6f7f8;
-    static const base = #ffffff;
-    static const container = #ffffff;
-    static const container = #f6f7f8;
-    static const danger = #db0800;
-    static const default = rgba(#000000,72%);
-    static const dialog = #ffffff;
-    static const disabled = rgba(#000000,24%);
-    static const info = #1789e1;
-    static const link = #ff444f;
-    static const prominent = #000000;
-    static const subtle = rgba(#000000,48%);
-    static const success = #00822a;
-    static const warning = #e18d00;
+    static const semanticColorBackgroundDialog = #ffffff;
+    static const semanticColorBackgroundPrimaryBase = #f6f7f8;
+    static const semanticColorBackgroundPrimaryContainer = #ffffff;
+    static const semanticColorBackgroundSecondaryBase = #ffffff;
+    static const semanticColorBackgroundSecondaryContainer = #f6f7f8;
+    static const semanticColorStatusDanger = #db0800;
+    static const semanticColorStatusInfo = #1789e1;
+    static const semanticColorStatusSuccess = #00822a;
+    static const semanticColorStatusWarning = #e18d00;
+    static const semanticColorTypographyDefault = rgba(#000000,72%);
+    static const semanticColorTypographyDisabled = rgba(#000000,24%);
+    static const semanticColorTypographyLink = #ff444f;
+    static const semanticColorTypographyProminent = #000000;
+    static const semanticColorTypographySubtle = rgba(#000000,48%);
 }

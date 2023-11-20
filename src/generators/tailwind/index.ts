@@ -103,16 +103,17 @@ export const SemanticLightMobileConfig = StyleDictionary.extend({
   platforms: {
     semantic_mobile_flutter_light: {
       // Todo(Horam): remove the commented code before merging the PR.
-      transforms:['color/hex8flutter'], //[...TokenStudioTransforms,], //  'deriv/mobile-color', 'color/hex8flutter'
+      transforms:[ 'name/cti/camel','color/hex8flutter'], //[...TokenStudioTransforms,], //  'deriv/mobile-color', 'color/hex8flutter'
       buildPath: QUILL_TAILWIND_BUILD_PATH,
       files: [
         {
           destination: 'mobile_light_colors.dart',
           format: 'flutter/class.dart',
+          className: 'MobileLightColors',
           filter: (token) => token.path.includes('semantic'),
           options: {
             outputReferences: false,
-            showFileHeader: false,
+            showFileHeader: true,
           },
         },
       ],
@@ -125,16 +126,19 @@ export const SemanticDarkMobileConfig = StyleDictionary.extend({
   platforms: {
     semantic_mobile_flutter_dark: {
       // Todo(Horam): remove the commented code before merging the PR.
-      transforms: ['deriv/mobile-color'],//[...TokenStudioTransforms, ], // 'deriv/mobile-color', 'color/hex8flutter'
+      transforms: [ 'name/cti/camel','deriv/mobile-color'],//[...TokenStudioTransforms, ], // 'deriv/mobile-color', 'color/hex8flutter'
       buildPath: QUILL_TAILWIND_BUILD_PATH,
       files: [
         {
           destination: 'mobile_dark_colors.dart',
           format: 'flutter/class.dart',
+          className: 'MobileDarkColors',
+  
+          
          filter: (token) => token.path.includes('semantic'),
           options: {
             outputReferences: false,
-            showFileHeader: false,
+            showFileHeader: true,
           },
         },
       ],
