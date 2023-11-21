@@ -102,15 +102,15 @@ export const SemanticLightMobileConfig = StyleDictionary.extend({
   source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/theme/light.json`],
   platforms: {
     semantic_mobile_flutter_light: {
-      // Todo(Horam): remove the commented code before merging the PR.
-      transforms:[ 'name/cti/camel','color/hex8flutter'], //[...TokenStudioTransforms,], //  'deriv/mobile-color', 'color/hex8flutter'
+      // Todo(Horam): I kept the customized transform to show the possibility but it is not working as expected.
+      transforms:['deriv/mobile-color','name/cti/camel','color/hex8flutter'], 
       buildPath: QUILL_TAILWIND_BUILD_PATH,
       files: [
         {
           destination: 'mobile_light_colors.dart',
           format: 'flutter/class.dart',
           className: 'MobileLightColors',
-          filter: (token) => token.path.includes('semantic'),
+          filter: (token) => token.path.includes('semantic') && token.type === 'color',
           options: {
             outputReferences: false,
             showFileHeader: true,
@@ -125,17 +125,15 @@ export const SemanticDarkMobileConfig = StyleDictionary.extend({
   source: [RAW_CORE_SOURCE_FOLDER, `${RAW_TOKENS_BASE_FOLDER}/semantic/theme/dark.json`],
   platforms: {
     semantic_mobile_flutter_dark: {
-      // Todo(Horam): remove the commented code before merging the PR.
-      transforms: [ 'name/cti/camel','deriv/mobile-color'],//[...TokenStudioTransforms, ], // 'deriv/mobile-color', 'color/hex8flutter'
+      // Todo(Horam): I kept the customized transform to show the possibility but it is not working as expected.
+      transforms: [ 'name/cti/camel','deriv/mobile-color', 'color/hex8flutter'],
       buildPath: QUILL_TAILWIND_BUILD_PATH,
       files: [
         {
           destination: 'mobile_dark_colors.dart',
           format: 'flutter/class.dart',
           className: 'MobileDarkColors',
-  
-          
-         filter: (token) => token.path.includes('semantic'),
+         filter: (token) => token.path.includes('semantic') && token.type === 'color',
           options: {
             outputReferences: false,
             showFileHeader: true,
