@@ -72,5 +72,51 @@
         "type": "Motion"
       }
     }
+  },
+  "semantic": {
+    "elevation": {
+      "shadow": {
+        "dialog": {
+          "value": "{core.elevation.shadow.730}",
+          "type": "boxShadow"
+        },
+        "notification": {
+          "value": "{core.elevation.shadow.630}",
+          "type": "boxShadow"
+        },
+        "menu": {
+          "value": "{core.elevation.shadow.530}",
+          "type": "boxShadow"
+        },
+        "card": {
+          "default": {
+            "value": "{core.elevation.shadow.330}",
+            "type": "boxShadow"
+          },
+          "hover": {
+            "value": "{core.elevation.shadow.530}",
+            "type": "boxShadow"
+          }
+        },
+        "overflow": {
+          "top": {
+            "value": "{core.elevation.shadow.310}",
+            "type": "boxShadow"
+          },
+          "right": {
+            "value": "{core.elevation.shadow.320}",
+            "type": "boxShadow"
+          },
+          "bottom": {
+            "value": "{core.elevation.shadow.330}",
+            "type": "boxShadow"
+          },
+          "left": {
+            "value": "{core.elevation.shadow.340}",
+            "type": "boxShadow"
+          }
+        }
+      }
+    }
   }
 }
