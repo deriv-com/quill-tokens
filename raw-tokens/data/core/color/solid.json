@@ -5,8 +5,7 @@
         "red": {
           "100": {
             "value": "#ffe6e6",
-            "type": "color",
-            "description": "test change"
+            "type": "color"
           },
           "200": {
             "value": "#ffbfbf",
@@ -54,6 +53,10 @@
           },
           "1300": {
             "value": "#4d0000",
+            "type": "color"
+          },
+          "1400-remove": {
+            "value": "blue",
             "type": "color"
           }
         },
