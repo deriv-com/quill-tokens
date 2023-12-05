@@ -5,8 +5,7 @@
         "red": {
           "100": {
             "value": "#ffe6e6",
-            "type": "color",
-            "description": "test change"
+            "type": "color"
           },
           "200": {
             "value": "#ffbfbf",
