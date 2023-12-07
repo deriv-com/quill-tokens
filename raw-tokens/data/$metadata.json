@@ -9,6 +9,7 @@
     "core/spacing",
     "core/typography",
     "core/motion",
+    "core/sizing",
     "semantic/global",
     "semantic/viewPort/default",
     "semantic/viewPort/640-plus",
