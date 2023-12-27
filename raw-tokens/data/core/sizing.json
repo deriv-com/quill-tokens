@@ -1,0 +1,271 @@
+{
+  "core": {
+    "size": {
+      "50": {
+        "value": "0",
+        "type": "sizing",
+        "description": "0"
+      },
+      "100": {
+        "value": "2",
+        "type": "sizing",
+        "description": "0.125 rem"
+      },
+      "200": {
+        "value": "4",
+        "type": "sizing",
+        "description": "0.25 rem"
+      },
+      "300": {
+        "value": "6",
+        "type": "sizing",
+        "description": "0.375 rem"
+      },
+      "400": {
+        "value": "8",
+        "type": "sizing",
+        "description": "0.5 rem"
+      },
+      "500": {
+        "value": "10",
+        "type": "sizing",
+        "description": "0.625 rem"
+      },
+      "600": {
+        "value": "12",
+        "type": "sizing",
+        "description": "0.75 rem"
+      },
+      "700": {
+        "value": "14",
+        "type": "sizing",
+        "description": "0.875 rem"
+      },
+      "800": {
+        "value": "16",
+        "type": "sizing",
+        "description": "1 rem"
+      },
+      "900": {
+        "value": "18",
+        "type": "sizing",
+        "description": "1.125 rem"
+      },
+      "1000": {
+        "value": "20",
+        "type": "sizing",
+        "description": "1.25 rem"
+      },
+      "1100": {
+        "value": "22",
+        "type": "sizing",
+        "description": "1.375 rem"
+      },
+      "1200": {
+        "value": "24",
+        "type": "sizing",
+        "description": "1.5 rem"
+      },
+      "1300": {
+        "value": "26",
+        "type": "sizing",
+        "description": "1.625 rem"
+      },
+      "1400": {
+        "value": "28",
+        "type": "sizing",
+        "description": "1.75 rem"
+      },
+      "1500": {
+        "value": "30",
+        "type": "sizing",
+        "description": "1.875 rem"
+      },
+      "1600": {
+        "value": "32",
+        "type": "sizing",
+        "description": "2 rem"
+      },
+      "1700": {
+        "value": "34",
+        "type": "sizing",
+        "description": "2.125 rem"
+      },
+      "1800": {
+        "value": "36",
+        "type": "sizing",
+        "description": "2.25 rem"
+      },
+      "1900": {
+        "value": "38",
+        "type": "sizing",
+        "description": "2.375 rem"
+      },
+      "2000": {
+        "value": "40",
+        "type": "sizing",
+        "description": "2.5 rem"
+      },
+      "2100": {
+        "value": "42",
+        "type": "sizing",
+        "description": "2.625 rem"
+      },
+      "2200": {
+        "value": "44",
+        "type": "sizing",
+        "description": "2.75 rem"
+      },
+      "2300": {
+        "value": "46",
+        "type": "sizing",
+        "description": "2.875 rem"
+      },
+      "2400": {
+        "value": "48",
+        "type": "sizing",
+        "description": "3 rem"
+      },
+      "2500": {
+        "value": "50",
+        "type": "sizing",
+        "description": "3.125 rem"
+      },
+      "2600": {
+        "value": "52",
+        "type": "sizing",
+        "description": "3.25 rem"
+      },
+      "2700": {
+        "value": "54",
+        "type": "sizing",
+        "description": "3.375 rem"
+      },
+      "2800": {
+        "value": "56",
+        "type": "sizing",
+        "description": "3.5 rem"
+      },
+      "2900": {
+        "value": "58",
+        "type": "sizing",
+        "description": "3.625 rem"
+      },
+      "3000": {
+        "value": "60",
+        "type": "sizing",
+        "description": "3.75 rem"
+      },
+      "3100": {
+        "value": "62",
+        "type": "sizing",
+        "description": "3.875 rem"
+      },
+      "3200": {
+        "value": "64",
+        "type": "sizing",
+        "description": "4 rem"
+      },
+      "3300": {
+        "value": "66",
+        "type": "sizing",
+        "description": "4.125 rem"
+      },
+      "3400": {
+        "value": "68",
+        "type": "sizing",
+        "description": "4.25 rem"
+      },
+      "3500": {
+        "value": "70",
+        "type": "sizing",
+        "description": "4.375 rem"
+      },
+      "3600": {
+        "value": "72",
+        "type": "sizing",
+        "description": "4.5 rem"
+      },
+      "3700": {
+        "value": "74",
+        "type": "sizing",
+        "description": "4.625 rem"
+      },
+      "3800": {
+        "value": "76",
+        "type": "sizing",
+        "description": "4.75 rem"
+      },
+      "3900": {
+        "value": "78",
+        "type": "sizing",
+        "description": "4.875 rem"
+      },
+      "4000": {
+        "value": "80",
+        "type": "sizing",
+        "description": "5 rem"
+      },
+      "4100": {
+        "value": "82",
+        "type": "sizing",
+        "description": "5.125 rem"
+      },
+      "4200": {
+        "value": "84",
+        "type": "sizing",
+        "description": "5.25 rem"
+      },
+      "4300": {
+        "value": "86",
+        "type": "sizing",
+        "description": "5.375 rem"
+      },
+      "4400": {
+        "value": "88",
+        "type": "sizing",
+        "description": "5.5 rem"
+      },
+      "4500": {
+        "value": "90",
+        "type": "sizing",
+        "description": "5.625 rem"
+      },
+      "4600": {
+        "value": "92",
+        "type": "sizing",
+        "description": "5.75 rem"
+      },
+      "4700": {
+        "value": "94",
+        "type": "sizing",
+        "description": "5.875 rem"
+      },
+      "4800": {
+        "value": "96",
+        "type": "sizing",
+        "description": "6 rem"
+      },
+      "4900": {
+        "value": "98",
+        "type": "sizing",
+        "description": "6.125 rem"
+      },
+      "5000": {
+        "value": "100",
+        "type": "sizing",
+        "description": "6.25 rem"
+      },
+      "8100": {
+        "value": "600",
+        "type": "sizing",
+        "description": "37.5 rem"
+      },
+      "9100": {
+        "value": "1280",
+        "type": "sizing",
+        "description": "80 rem"
+      }
+    }
+  }
+}

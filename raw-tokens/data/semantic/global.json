@@ -21,6 +21,50 @@
       "type": "borderWidth"
     }
   },
+  "size": {
+    "generic": {
+      "2xs": {
+        "value": "{core.size.400}",
+        "type": "sizing"
+      },
+      "xs": {
+        "value": "{core.size.800}",
+        "type": "sizing"
+      },
+      "sm": {
+        "value": "{core.size.1200}",
+        "type": "sizing"
+      },
+      "md": {
+        "value": "{core.size.1600}",
+        "type": "sizing"
+      },
+      "lg": {
+        "value": "{core.size.2000}",
+        "type": "sizing"
+      },
+      "xl": {
+        "value": "{core.size.2400}",
+        "type": "sizing"
+      },
+      "2xl": {
+        "value": "{core.size.2800}",
+        "type": "sizing"
+      },
+      "3xl": {
+        "value": "{core.size.3200}",
+        "type": "sizing"
+      },
+      "4xl": {
+        "value": "{core.size.3600}",
+        "type": "sizing"
+      },
+      "5xl": {
+        "value": "{core.size.4000}",
+        "type": "sizing"
+      }
+    }
+  },
   "opacity": {
     "overlay": {
       "value": "{core.opacity.900}",
@@ -70,6 +114,52 @@
       "deliberate": {
         "value": "{core.motion.duration.600}",
         "type": "Motion"
+      }
+    }
+  },
+  "semantic": {
+    "elevation": {
+      "shadow": {
+        "dialog": {
+          "value": "{core.elevation.shadow.730}",
+          "type": "boxShadow"
+        },
+        "notification": {
+          "value": "{core.elevation.shadow.630}",
+          "type": "boxShadow"
+        },
+        "menu": {
+          "value": "{core.elevation.shadow.530}",
+          "type": "boxShadow"
+        },
+        "card": {
+          "default": {
+            "value": "{core.elevation.shadow.330}",
+            "type": "boxShadow"
+          },
+          "hover": {
+            "value": "{core.elevation.shadow.530}",
+            "type": "boxShadow"
+          }
+        },
+        "overflow": {
+          "top": {
+            "value": "{core.elevation.shadow.310}",
+            "type": "boxShadow"
+          },
+          "right": {
+            "value": "{core.elevation.shadow.320}",
+            "type": "boxShadow"
+          },
+          "bottom": {
+            "value": "{core.elevation.shadow.330}",
+            "type": "boxShadow"
+          },
+          "left": {
+            "value": "{core.elevation.shadow.340}",
+            "type": "boxShadow"
+          }
+        }
       }
     }
   }

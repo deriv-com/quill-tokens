@@ -496,6 +496,27 @@
           ],
           "type": "boxShadow"
         },
+        "640": {
+          "value": [
+            {
+              "x": "-24",
+              "y": "0",
+              "blur": "48",
+              "spread": "8",
+              "color": "rgba(0, 0, 0, 6%)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "-24",
+              "y": "0",
+              "blur": "48",
+              "spread": "8",
+              "color": "rgba(0, 0, 0, 3%)",
+              "type": "dropShadow"
+            }
+          ],
+          "type": "boxShadow"
+        },
         "710": {
           "value": [
             {
