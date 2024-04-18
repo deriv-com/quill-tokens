@@ -33,7 +33,7 @@ jobs:
       - run: npm test
 
       - name: Create pull request
-        uses: mohsen-deriv/action-create-pull-request-another-repo@1.0.0
+        uses: deriv-com/action-create-pull-request-another-repo@e06bfb57b2d1649909cee2092f4987fedd41e81d
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
