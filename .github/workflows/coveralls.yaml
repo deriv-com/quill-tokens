@@ -20,4 +20,4 @@ jobs:
           npm run build
           JEST_MAX_WORKERS=3 npm run test:ci
       - name: Coveralls
-        uses: coverallsapp/github-action@v2
+        uses: coverallsapp/github-action@3dfc5567390f6fa9267c0ee9c251e4c8c3f18949
