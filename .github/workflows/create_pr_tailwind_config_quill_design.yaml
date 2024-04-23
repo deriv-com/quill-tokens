@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Get Time
         id: time
-        uses: nanzm/get-time-action@master
+        uses: nanzm/get-time-action@887e4db9af58ebae64998b7105921b816af77977
         with:
           timeZone: UTC
           format: 'YYYY-MM-DD-HH-mm-ss'
