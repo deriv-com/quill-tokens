@@ -9,7 +9,7 @@ module.exports = {
         { name: "beta", prerelease: true },
         { name: "alpha", prerelease: true },
     ],
-    repositoryUrl: "git@github.com:deriv-com/quill-ui.git",
+    repositoryUrl: "git@github.com:deriv-com/quill-tokens.git",
     plugins: [
         [
             "@semantic-release/commit-analyzer",
