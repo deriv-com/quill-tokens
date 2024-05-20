@@ -52,5 +52,9 @@
     "@types/lodash": "^4.14.197",
     "lodash": "^4.17.21",
     "remove": "^0.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deriv-com/quill-tokens"
   }
 }
