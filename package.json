@@ -1,6 +1,7 @@
 {
   "name": "@deriv-com/quill-tokens",
   "version": "0.0.0",
+  "private": false,
   "description": "",
   "main": "index.js",
   "scripts": {
