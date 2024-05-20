@@ -4,6 +4,9 @@
   "private": false,
   "description": "",
   "main": "index.js",
+  "files": [
+    "dist"
+],
   "scripts": {
     "build": "npm run clean && npx ts-node index.ts",
     "clean": "rimraf sd-tokens dist",
