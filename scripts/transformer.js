@@ -302,7 +302,6 @@ class Transformer {
     // Generate theme rules
     this.generateThemeVariables();
 
-    // this.resolveTokenValues();
     this.resolveDynamicVariables();
 
     // Map token variables
