@@ -334,7 +334,7 @@ class Transformer {
       });
 
       // Map RGBA values
-      const rgbaPattern = /rgba\(\s*var\((--[\w-]+)\),\s*var\((--[\w-]+)\s*\)\s*\)/g;
+      const rgbaPattern = /rgba\(\s*var\(\s*(--[\w-]+)\s*\)\s*,\s*var\(\s*(--[\w-]+)\s*\)\s*\)/g;
 
       // Replace matches with custom strings
       const replacedString = transformedString.replace(rgbaPattern, (match, hex, opacity) => {
