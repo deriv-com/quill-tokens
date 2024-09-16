@@ -3367,24 +3367,24 @@
   --component-notification-title-typography-banner: var(--component-typography-body-sm-bold-default);
   --component-notification-title-typography-item-unread: var(--component-typography-body-sm-bold-default);
   --component-notification-title-typography-item-read: var(--component-typography-body-sm-regular-default);
-  --component-notification-title-color-banner: var(--component-textIcon-normal-prominent);
+  --component-notification-title-color-banner: var(--component-textIcon-inverse-prominent);
   --component-notification-title-color-item-unread: var(--component-textIcon-normal-prominent);
   --component-notification-title-color-item-read: var(--component-textIcon-normal-default);
   --component-notification-message-typography-banner: var(--component-typography-caption-regular-default);
   --component-notification-message-typography-item: var(--component-typography-body-sm-regular-default);
-  --component-notification-message-color-banner: var(--component-textIcon-normal-default);
+  --component-notification-message-color-banner: var(--component-textIcon-inverse-default);
   --component-notification-message-color-item-unread: var(--component-textIcon-normal-prominent);
   --component-notification-message-color-item-read: var(--component-textIcon-normal-default);
   --component-notification-timestamp-typography: var(--component-typography-caption-regular-default);
   --component-notification-timestamp-color: var(--component-textIcon-normal-subtle);
-  --component-notification-bg-banner: var(--semantic-color-slate-solid-surface-frame-low);
+  --component-notification-bg-banner: var(--semantic-color-slate-solid-surface-inverse-lowest);
   --component-notification-bg-item-default: var(--semantic-color-slate-solid-surface-frame-low);
   --component-notification-bg-item-hover: var(--semantic-color-monochrome-surface-normal-lowest);
   --component-notification-bg-item-active: var(--semantic-color-monochrome-surface-normal-low);
   --component-notification-bg-divider: var(--semantic-color-monochrome-surface-normal-low);
   --component-notification-border-radius: var(--core-borderRadius-800);
   --component-notification-border-width: var(--core-borderWidth-75);
-  --component-notification-border-color: var(--semantic-color-monochrome-border-normal-mid);
+  --component-notification-border-color: var(--semantic-color-monochrome-border-inverse-high);
   --component-notification-spacing-padding-sm: var(--core-spacing-800);
   --component-notification-spacing-padding-md: var(--core-spacing-1600);
   --component-notification-spacing-gap-xs: var(--core-spacing-200);
@@ -3516,661 +3516,1846 @@
   --component-navigationBar-sizing-body-heightBottom: 56px;
   --component-navigationBar-sizing-body-widthSideCollapse: 72px;
   --component-navigationBar-sizing-body-widthSideExpand: 224px;
-  --component-typography-heading-hero: var(--semantic-typography-heading-hero-fontFamily)
-    var(--semantic-typography-heading-hero-fontSize) var(--semantic-typography-heading-hero-fontWeight)
-    var(--semantic-typography-heading-hero-lineHeight) var(--semantic-typography-heading-hero-paragraphSpacing);
-  --component-typography-heading-h1: var(--semantic-typography-heading-h1-fontFamily)
-    var(--semantic-typography-heading-h1-fontSize) var(--semantic-typography-heading-h1-fontWeight)
-    var(--semantic-typography-heading-h1-lineHeight) var(--semantic-typography-heading-h1-paragraphSpacing);
-  --component-typography-heading-h2: var(--semantic-typography-heading-h2-fontFamily)
-    var(--semantic-typography-heading-h2-fontSize) var(--semantic-typography-heading-h2-fontWeight)
-    var(--semantic-typography-heading-h2-lineHeight) var(--semantic-typography-heading-h2-paragraphSpacing);
-  --component-typography-heading-h3: var(--semantic-typography-heading-h3-fontFamily)
-    var(--semantic-typography-heading-h3-fontSize) var(--semantic-typography-heading-h3-fontWeight)
-    var(--semantic-typography-heading-h3-lineHeight) var(--semantic-typography-heading-h3-paragraphSpacing);
-  --component-typography-heading-h4: var(--semantic-typography-heading-h4-fontFamily)
-    var(--semantic-typography-heading-h4-fontSize) var(--semantic-typography-heading-h4-fontWeight)
-    var(--semantic-typography-heading-h4-lineHeight) var(--semantic-typography-heading-h4-paragraphSpacing);
-  --component-typography-heading-h5: var(--semantic-typography-heading-h5-fontFamily)
-    var(--semantic-typography-heading-h5-fontSize) var(--semantic-typography-heading-h5-fontWeight)
-    var(--semantic-typography-heading-h5-lineHeight) var(--semantic-typography-heading-h5-paragraphSpacing);
-  --component-typography-heading-h6: var(--semantic-typography-heading-h6-fontFamily)
-    var(--semantic-typography-heading-h6-fontSize) var(--semantic-typography-heading-h6-fontWeight)
-    var(--semantic-typography-heading-h6-lineHeight) var(--semantic-typography-heading-h6-paragraphSpacing);
-  --component-typography-body-xl-regular-default: var(--semantic-typography-body-xl-regular-default-fontFamily)
-    var(--semantic-typography-body-xl-regular-default-fontSize)
-    var(--semantic-typography-body-xl-regular-default-fontWeight)
-    var(--semantic-typography-body-xl-regular-default-lineHeight)
-    var(--semantic-typography-body-xl-regular-default-paragraphSpacing)
-    var(--semantic-typography-body-xl-regular-default-textDecoration);
-  --component-typography-body-xl-regular-italic: var(--semantic-typography-body-xl-regular-italic-fontFamily)
-    var(--semantic-typography-body-xl-regular-italic-fontSize)
-    var(--semantic-typography-body-xl-regular-italic-fontWeight)
-    var(--semantic-typography-body-xl-regular-italic-lineHeight)
-    var(--semantic-typography-body-xl-regular-italic-paragraphSpacing)
-    var(--semantic-typography-body-xl-regular-italic-textDecoration);
-  --component-typography-body-xl-regular-underline: var(--semantic-typography-body-xl-regular-underline-fontFamily)
-    var(--semantic-typography-body-xl-regular-underline-fontSize)
-    var(--semantic-typography-body-xl-regular-underline-fontWeight)
-    var(--semantic-typography-body-xl-regular-underline-lineHeight)
-    var(--semantic-typography-body-xl-regular-underline-paragraphSpacing)
-    var(--semantic-typography-body-xl-regular-underline-textDecoration);
-  --component-typography-body-xl-regular-italicUnderline: var(
-      --semantic-typography-body-xl-regular-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-body-xl-regular-italicUnderline-fontSize)
-    var(--semantic-typography-body-xl-regular-italicUnderline-fontWeight)
-    var(--semantic-typography-body-xl-regular-italicUnderline-lineHeight)
-    var(--semantic-typography-body-xl-regular-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-body-xl-regular-italicUnderline-textDecoration);
-  --component-typography-body-xl-bold-default: var(--semantic-typography-body-xl-bold-default-fontFamily)
-    var(--semantic-typography-body-xl-bold-default-fontSize) var(--semantic-typography-body-xl-bold-default-fontWeight)
-    var(--semantic-typography-body-xl-bold-default-lineHeight)
-    var(--semantic-typography-body-xl-bold-default-paragraphSpacing)
-    var(--semantic-typography-body-xl-bold-default-textDecoration);
-  --component-typography-body-xl-bold-italic: var(--semantic-typography-body-xl-bold-italic-fontFamily)
-    var(--semantic-typography-body-xl-bold-italic-fontSize) var(--semantic-typography-body-xl-bold-italic-fontWeight)
-    var(--semantic-typography-body-xl-bold-italic-lineHeight)
-    var(--semantic-typography-body-xl-bold-italic-paragraphSpacing)
-    var(--semantic-typography-body-xl-bold-italic-textDecoration);
-  --component-typography-body-xl-bold-underline: var(--semantic-typography-body-xl-bold-underline-fontFamily)
-    var(--semantic-typography-body-xl-bold-underline-fontSize)
-    var(--semantic-typography-body-xl-bold-underline-fontWeight)
-    var(--semantic-typography-body-xl-bold-underline-lineHeight)
-    var(--semantic-typography-body-xl-bold-underline-paragraphSpacing)
-    var(--semantic-typography-body-xl-bold-underline-textDecoration);
-  --component-typography-body-xl-bold-italicUnderline: var(
-      --semantic-typography-body-xl-bold-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-body-xl-bold-italicUnderline-fontSize)
-    var(--semantic-typography-body-xl-bold-italicUnderline-fontWeight)
-    var(--semantic-typography-body-xl-bold-italicUnderline-lineHeight)
-    var(--semantic-typography-body-xl-bold-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-body-xl-bold-italicUnderline-textDecoration);
-  --component-typography-body-lg-regular-default: var(--semantic-typography-body-lg-regular-default-fontFamily)
-    var(--semantic-typography-body-lg-regular-default-fontSize)
-    var(--semantic-typography-body-lg-regular-default-fontWeight)
-    var(--semantic-typography-body-lg-regular-default-lineHeight)
-    var(--semantic-typography-body-lg-regular-default-paragraphSpacing)
-    var(--semantic-typography-body-lg-regular-default-textDecoration);
-  --component-typography-body-lg-regular-italic: var(--semantic-typography-body-lg-regular-italic-fontFamily)
-    var(--semantic-typography-body-lg-regular-italic-fontSize)
-    var(--semantic-typography-body-lg-regular-italic-fontWeight)
-    var(--semantic-typography-body-lg-regular-italic-lineHeight)
-    var(--semantic-typography-body-lg-regular-italic-paragraphSpacing)
-    var(--semantic-typography-body-lg-regular-italic-textDecoration);
-  --component-typography-body-lg-regular-underline: var(--semantic-typography-body-lg-regular-underline-fontFamily)
-    var(--semantic-typography-body-lg-regular-underline-fontSize)
-    var(--semantic-typography-body-lg-regular-underline-fontWeight)
-    var(--semantic-typography-body-lg-regular-underline-lineHeight)
-    var(--semantic-typography-body-lg-regular-underline-paragraphSpacing)
-    var(--semantic-typography-body-lg-regular-underline-textDecoration);
-  --component-typography-body-lg-regular-italicUnderline: var(
-      --semantic-typography-body-lg-regular-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-body-lg-regular-italicUnderline-fontSize)
-    var(--semantic-typography-body-lg-regular-italicUnderline-fontWeight)
-    var(--semantic-typography-body-lg-regular-italicUnderline-lineHeight)
-    var(--semantic-typography-body-lg-regular-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-body-lg-regular-italicUnderline-textDecoration);
-  --component-typography-body-lg-bold-default: var(--semantic-typography-body-lg-bold-default-fontFamily)
-    var(--semantic-typography-body-lg-bold-default-fontSize) var(--semantic-typography-body-lg-bold-default-fontWeight)
-    var(--semantic-typography-body-lg-bold-default-lineHeight)
-    var(--semantic-typography-body-lg-bold-default-paragraphSpacing)
-    var(--semantic-typography-body-lg-bold-default-textDecoration);
-  --component-typography-body-lg-bold-italic: var(--semantic-typography-body-lg-bold-italic-fontFamily)
-    var(--semantic-typography-body-lg-bold-italic-fontSize) var(--semantic-typography-body-lg-bold-italic-fontWeight)
-    var(--semantic-typography-body-lg-bold-italic-lineHeight)
-    var(--semantic-typography-body-lg-bold-italic-paragraphSpacing)
-    var(--semantic-typography-body-lg-bold-italic-textDecoration);
-  --component-typography-body-lg-bold-underline: var(--semantic-typography-body-lg-bold-underline-fontFamily)
-    var(--semantic-typography-body-lg-bold-underline-fontSize)
-    var(--semantic-typography-body-lg-bold-underline-fontWeight)
-    var(--semantic-typography-body-lg-bold-underline-lineHeight)
-    var(--semantic-typography-body-lg-bold-underline-paragraphSpacing)
-    var(--semantic-typography-body-lg-bold-underline-textDecoration);
-  --component-typography-body-lg-bold-italicUnderline: var(
-      --semantic-typography-body-lg-bold-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-body-lg-bold-italicUnderline-fontSize)
-    var(--semantic-typography-body-lg-bold-italicUnderline-fontWeight)
-    var(--semantic-typography-body-lg-bold-italicUnderline-lineHeight)
-    var(--semantic-typography-body-lg-bold-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-body-lg-bold-italicUnderline-textDecoration);
-  --component-typography-body-md-regular-default: var(--semantic-typography-body-md-regular-default-fontFamily)
-    var(--semantic-typography-body-md-regular-default-fontSize)
-    var(--semantic-typography-body-md-regular-default-fontWeight)
-    var(--semantic-typography-body-md-regular-default-lineHeight)
-    var(--semantic-typography-body-md-regular-default-paragraphSpacing)
-    var(--semantic-typography-body-md-regular-default-textDecoration);
-  --component-typography-body-md-regular-italic: var(--semantic-typography-body-md-regular-italic-fontFamily)
-    var(--semantic-typography-body-md-regular-italic-fontSize)
-    var(--semantic-typography-body-md-regular-italic-fontWeight)
-    var(--semantic-typography-body-md-regular-italic-lineHeight)
-    var(--semantic-typography-body-md-regular-italic-paragraphSpacing)
-    var(--semantic-typography-body-md-regular-italic-textDecoration);
-  --component-typography-body-md-regular-underline: var(--semantic-typography-body-md-regular-underline-fontFamily)
-    var(--semantic-typography-body-md-regular-underline-fontSize)
-    var(--semantic-typography-body-md-regular-underline-fontWeight)
-    var(--semantic-typography-body-md-regular-underline-lineHeight)
-    var(--semantic-typography-body-md-regular-underline-paragraphSpacing)
-    var(--semantic-typography-body-md-regular-underline-textDecoration);
-  --component-typography-body-md-regular-italicUnderline: var(
-      --semantic-typography-body-md-regular-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-body-md-regular-italicUnderline-fontSize)
-    var(--semantic-typography-body-md-regular-italicUnderline-fontWeight)
-    var(--semantic-typography-body-md-regular-italicUnderline-lineHeight)
-    var(--semantic-typography-body-md-regular-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-body-md-regular-italicUnderline-textDecoration);
-  --component-typography-body-md-bold-default: var(--semantic-typography-body-md-bold-default-fontFamily)
-    var(--semantic-typography-body-md-bold-default-fontSize) var(--semantic-typography-body-md-bold-default-fontWeight)
-    var(--semantic-typography-body-md-bold-default-lineHeight)
-    var(--semantic-typography-body-md-bold-default-paragraphSpacing)
-    var(--semantic-typography-body-md-bold-default-textDecoration);
-  --component-typography-body-md-bold-italic: var(--semantic-typography-body-md-bold-italic-fontFamily)
-    var(--semantic-typography-body-md-bold-italic-fontSize) var(--semantic-typography-body-md-bold-italic-fontWeight)
-    var(--semantic-typography-body-md-bold-italic-lineHeight)
-    var(--semantic-typography-body-md-bold-italic-paragraphSpacing)
-    var(--semantic-typography-body-md-bold-italic-textDecoration);
-  --component-typography-body-md-bold-underline: var(--semantic-typography-body-md-bold-underline-fontFamily)
-    var(--semantic-typography-body-md-bold-underline-fontSize)
-    var(--semantic-typography-body-md-bold-underline-fontWeight)
-    var(--semantic-typography-body-md-bold-underline-lineHeight)
-    var(--semantic-typography-body-md-bold-underline-paragraphSpacing)
-    var(--semantic-typography-body-md-bold-underline-textDecoration);
-  --component-typography-body-md-bold-italicUnderline: var(
-      --semantic-typography-body-md-bold-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-body-md-bold-italicUnderline-fontSize)
-    var(--semantic-typography-body-md-bold-italicUnderline-fontWeight)
-    var(--semantic-typography-body-md-bold-italicUnderline-lineHeight)
-    var(--semantic-typography-body-md-bold-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-body-md-bold-italicUnderline-textDecoration);
-  --component-typography-body-sm-regular-default: var(--semantic-typography-body-sm-regular-default-fontFamily)
-    var(--semantic-typography-body-sm-regular-default-fontSize)
-    var(--semantic-typography-body-sm-regular-default-fontWeight)
-    var(--semantic-typography-body-sm-regular-default-lineHeight)
-    var(--semantic-typography-body-sm-regular-default-paragraphSpacing)
-    var(--semantic-typography-body-sm-regular-default-textDecoration);
-  --component-typography-body-sm-regular-italic: var(--semantic-typography-body-sm-regular-italic-fontFamily)
-    var(--semantic-typography-body-sm-regular-italic-fontSize)
-    var(--semantic-typography-body-sm-regular-italic-fontWeight)
-    var(--semantic-typography-body-sm-regular-italic-lineHeight)
-    var(--semantic-typography-body-sm-regular-italic-paragraphSpacing)
-    var(--semantic-typography-body-sm-regular-italic-textDecoration);
-  --component-typography-body-sm-regular-underline: var(--semantic-typography-body-sm-regular-underline-fontFamily)
-    var(--semantic-typography-body-sm-regular-underline-fontSize)
-    var(--semantic-typography-body-sm-regular-underline-fontWeight)
-    var(--semantic-typography-body-sm-regular-underline-lineHeight)
-    var(--semantic-typography-body-sm-regular-underline-paragraphSpacing)
-    var(--semantic-typography-body-sm-regular-underline-textDecoration);
-  --component-typography-body-sm-regular-italicUnderline: var(
-      --semantic-typography-body-sm-regular-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-body-sm-regular-italicUnderline-fontSize)
-    var(--semantic-typography-body-sm-regular-italicUnderline-fontWeight)
-    var(--semantic-typography-body-sm-regular-italicUnderline-lineHeight)
-    var(--semantic-typography-body-sm-regular-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-body-sm-regular-italicUnderline-textDecoration);
-  --component-typography-body-sm-bold-default: var(--semantic-typography-body-sm-bold-default-fontFamily)
-    var(--semantic-typography-body-sm-bold-default-fontSize) var(--semantic-typography-body-sm-bold-default-fontWeight)
-    var(--semantic-typography-body-sm-bold-default-lineHeight)
-    var(--semantic-typography-body-sm-bold-default-paragraphSpacing)
-    var(--semantic-typography-body-sm-bold-default-textDecoration);
-  --component-typography-body-sm-bold-italic: var(--semantic-typography-body-sm-bold-italic-fontFamily)
-    var(--semantic-typography-body-sm-bold-italic-fontSize) var(--semantic-typography-body-sm-bold-italic-fontWeight)
-    var(--semantic-typography-body-sm-bold-italic-lineHeight)
-    var(--semantic-typography-body-sm-bold-italic-paragraphSpacing)
-    var(--semantic-typography-body-sm-bold-italic-textDecoration);
-  --component-typography-body-sm-bold-underline: var(--semantic-typography-body-sm-bold-underline-fontFamily)
-    var(--semantic-typography-body-sm-bold-underline-fontSize)
-    var(--semantic-typography-body-sm-bold-underline-fontWeight)
-    var(--semantic-typography-body-sm-bold-underline-lineHeight)
-    var(--semantic-typography-body-sm-bold-underline-paragraphSpacing)
-    var(--semantic-typography-body-sm-bold-underline-textDecoration);
-  --component-typography-body-sm-bold-italicUnderline: var(
-      --semantic-typography-body-sm-bold-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-body-sm-bold-italicUnderline-fontSize)
-    var(--semantic-typography-body-sm-bold-italicUnderline-fontWeight)
-    var(--semantic-typography-body-sm-bold-italicUnderline-lineHeight)
-    var(--semantic-typography-body-sm-bold-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-body-sm-bold-italicUnderline-textDecoration);
-  --component-typography-caption-regular-default: var(--semantic-typography-caption-regular-default-fontFamily)
-    var(--semantic-typography-caption-regular-default-fontSize)
-    var(--semantic-typography-caption-regular-default-fontWeight)
-    var(--semantic-typography-caption-regular-default-lineHeight)
-    var(--semantic-typography-caption-regular-default-paragraphSpacing)
-    var(--semantic-typography-caption-regular-default-textDecoration);
-  --component-typography-caption-regular-italic: var(--semantic-typography-caption-regular-italic-fontFamily)
-    var(--semantic-typography-caption-regular-italic-fontSize)
-    var(--semantic-typography-caption-regular-italic-fontWeight)
-    var(--semantic-typography-caption-regular-italic-lineHeight)
-    var(--semantic-typography-caption-regular-italic-paragraphSpacing)
-    var(--semantic-typography-caption-regular-italic-textDecoration);
-  --component-typography-caption-regular-underline: var(--semantic-typography-caption-regular-underline-fontFamily)
-    var(--semantic-typography-caption-regular-underline-fontSize)
-    var(--semantic-typography-caption-regular-underline-fontWeight)
-    var(--semantic-typography-caption-regular-underline-lineHeight)
-    var(--semantic-typography-caption-regular-underline-paragraphSpacing)
-    var(--semantic-typography-caption-regular-underline-textDecoration);
-  --component-typography-caption-regular-italicUnderline: var(
-      --semantic-typography-caption-regular-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-caption-regular-italicUnderline-fontSize)
-    var(--semantic-typography-caption-regular-italicUnderline-fontWeight)
-    var(--semantic-typography-caption-regular-italicUnderline-lineHeight)
-    var(--semantic-typography-caption-regular-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-caption-regular-italicUnderline-textDecoration);
-  --component-typography-caption-bold-default: var(--semantic-typography-caption-bold-default-fontFamily)
-    var(--semantic-typography-caption-bold-default-fontSize) var(--semantic-typography-caption-bold-default-fontWeight)
-    var(--semantic-typography-caption-bold-default-lineHeight)
-    var(--semantic-typography-caption-bold-default-paragraphSpacing)
-    var(--semantic-typography-caption-bold-default-textDecoration);
-  --component-typography-caption-bold-italic: var(--semantic-typography-caption-bold-italic-fontFamily)
-    var(--semantic-typography-caption-bold-italic-fontSize) var(--semantic-typography-caption-bold-italic-fontWeight)
-    var(--semantic-typography-caption-bold-italic-lineHeight)
-    var(--semantic-typography-caption-bold-italic-paragraphSpacing)
-    var(--semantic-typography-caption-bold-italic-textDecoration);
-  --component-typography-caption-bold-underline: var(--semantic-typography-caption-bold-underline-fontFamily)
-    var(--semantic-typography-caption-bold-underline-fontSize)
-    var(--semantic-typography-caption-bold-underline-fontWeight)
-    var(--semantic-typography-caption-bold-underline-lineHeight)
-    var(--semantic-typography-caption-bold-underline-paragraphSpacing)
-    var(--semantic-typography-caption-bold-underline-textDecoration);
-  --component-typography-caption-bold-italicUnderline: var(
-      --semantic-typography-caption-bold-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-caption-bold-italicUnderline-fontSize)
-    var(--semantic-typography-caption-bold-italicUnderline-fontWeight)
-    var(--semantic-typography-caption-bold-italicUnderline-lineHeight)
-    var(--semantic-typography-caption-bold-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-caption-bold-italicUnderline-textDecoration);
-  --component-typography-code-xl-regular-default: var(--semantic-typography-code-xl-regular-default-fontFamily)
-    var(--semantic-typography-code-xl-regular-default-fontSize)
-    var(--semantic-typography-code-xl-regular-default-fontWeight)
-    var(--semantic-typography-code-xl-regular-default-lineHeight)
-    var(--semantic-typography-code-xl-regular-default-paragraphSpacing)
-    var(--semantic-typography-code-xl-regular-default-textDecoration);
-  --component-typography-code-xl-regular-italic: var(--semantic-typography-code-xl-regular-italic-fontFamily)
-    var(--semantic-typography-code-xl-regular-italic-fontSize)
-    var(--semantic-typography-code-xl-regular-italic-fontWeight)
-    var(--semantic-typography-code-xl-regular-italic-lineHeight)
-    var(--semantic-typography-code-xl-regular-italic-paragraphSpacing)
-    var(--semantic-typography-code-xl-regular-italic-textDecoration);
-  --component-typography-code-xl-regular-underline: var(--semantic-typography-code-xl-regular-underline-fontFamily)
-    var(--semantic-typography-code-xl-regular-underline-fontSize)
-    var(--semantic-typography-code-xl-regular-underline-fontWeight)
-    var(--semantic-typography-code-xl-regular-underline-lineHeight)
-    var(--semantic-typography-code-xl-regular-underline-paragraphSpacing)
-    var(--semantic-typography-code-xl-regular-underline-textDecoration);
-  --component-typography-code-xl-regular-italicUnderline: var(
-      --semantic-typography-code-xl-regular-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-code-xl-regular-italicUnderline-fontSize)
-    var(--semantic-typography-code-xl-regular-italicUnderline-fontWeight)
-    var(--semantic-typography-code-xl-regular-italicUnderline-lineHeight)
-    var(--semantic-typography-code-xl-regular-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-code-xl-regular-italicUnderline-textDecoration);
-  --component-typography-code-xl-bold-default: var(--semantic-typography-code-xl-bold-default-fontFamily)
-    var(--semantic-typography-code-xl-bold-default-fontSize) var(--semantic-typography-code-xl-bold-default-fontWeight)
-    var(--semantic-typography-code-xl-bold-default-lineHeight)
-    var(--semantic-typography-code-xl-bold-default-paragraphSpacing)
-    var(--semantic-typography-code-xl-bold-default-textDecoration);
-  --component-typography-code-xl-bold-italic: var(--semantic-typography-code-xl-bold-italic-fontFamily)
-    var(--semantic-typography-code-xl-bold-italic-fontSize) var(--semantic-typography-code-xl-bold-italic-fontWeight)
-    var(--semantic-typography-code-xl-bold-italic-lineHeight)
-    var(--semantic-typography-code-xl-bold-italic-paragraphSpacing)
-    var(--semantic-typography-code-xl-bold-italic-textDecoration);
-  --component-typography-code-xl-bold-underline: var(--semantic-typography-code-xl-bold-underline-fontFamily)
-    var(--semantic-typography-code-xl-bold-underline-fontSize)
-    var(--semantic-typography-code-xl-bold-underline-fontWeight)
-    var(--semantic-typography-code-xl-bold-underline-lineHeight)
-    var(--semantic-typography-code-xl-bold-underline-paragraphSpacing)
-    var(--semantic-typography-code-xl-bold-underline-textDecoration);
-  --component-typography-code-xl-bold-italicUnderline: var(
-      --semantic-typography-code-xl-bold-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-code-xl-bold-italicUnderline-fontSize)
-    var(--semantic-typography-code-xl-bold-italicUnderline-fontWeight)
-    var(--semantic-typography-code-xl-bold-italicUnderline-lineHeight)
-    var(--semantic-typography-code-xl-bold-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-code-xl-bold-italicUnderline-textDecoration);
-  --component-typography-code-lg-regular-default: var(--semantic-typography-code-lg-regular-default-fontFamily)
-    var(--semantic-typography-code-lg-regular-default-fontSize)
-    var(--semantic-typography-code-lg-regular-default-fontWeight)
-    var(--semantic-typography-code-lg-regular-default-lineHeight)
-    var(--semantic-typography-code-lg-regular-default-paragraphSpacing)
-    var(--semantic-typography-code-lg-regular-default-textDecoration);
-  --component-typography-code-lg-regular-italic: var(--semantic-typography-code-lg-regular-italic-fontFamily)
-    var(--semantic-typography-code-lg-regular-italic-fontSize)
-    var(--semantic-typography-code-lg-regular-italic-fontWeight)
-    var(--semantic-typography-code-lg-regular-italic-lineHeight)
-    var(--semantic-typography-code-lg-regular-italic-paragraphSpacing)
-    var(--semantic-typography-code-lg-regular-italic-textDecoration);
-  --component-typography-code-lg-regular-underline: var(--semantic-typography-code-lg-regular-underline-fontFamily)
-    var(--semantic-typography-code-lg-regular-underline-fontSize)
-    var(--semantic-typography-code-lg-regular-underline-fontWeight)
-    var(--semantic-typography-code-lg-regular-underline-lineHeight)
-    var(--semantic-typography-code-lg-regular-underline-paragraphSpacing)
-    var(--semantic-typography-code-lg-regular-underline-textDecoration);
-  --component-typography-code-lg-regular-italicUnderline: var(
-      --semantic-typography-code-lg-regular-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-code-lg-regular-italicUnderline-fontSize)
-    var(--semantic-typography-code-lg-regular-italicUnderline-fontWeight)
-    var(--semantic-typography-code-lg-regular-italicUnderline-lineHeight)
-    var(--semantic-typography-code-lg-regular-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-code-lg-regular-italicUnderline-textDecoration);
-  --component-typography-code-lg-bold-default: var(--semantic-typography-code-lg-bold-default-fontFamily)
-    var(--semantic-typography-code-lg-bold-default-fontSize) var(--semantic-typography-code-lg-bold-default-fontWeight)
-    var(--semantic-typography-code-lg-bold-default-lineHeight)
-    var(--semantic-typography-code-lg-bold-default-paragraphSpacing)
-    var(--semantic-typography-code-lg-bold-default-textDecoration);
-  --component-typography-code-lg-bold-italic: var(--semantic-typography-code-lg-bold-italic-fontFamily)
-    var(--semantic-typography-code-lg-bold-italic-fontSize) var(--semantic-typography-code-lg-bold-italic-fontWeight)
-    var(--semantic-typography-code-lg-bold-italic-lineHeight)
-    var(--semantic-typography-code-lg-bold-italic-paragraphSpacing)
-    var(--semantic-typography-code-lg-bold-italic-textDecoration);
-  --component-typography-code-lg-bold-underline: var(--semantic-typography-code-lg-bold-underline-fontFamily)
-    var(--semantic-typography-code-lg-bold-underline-fontSize)
-    var(--semantic-typography-code-lg-bold-underline-fontWeight)
-    var(--semantic-typography-code-lg-bold-underline-lineHeight)
-    var(--semantic-typography-code-lg-bold-underline-paragraphSpacing)
-    var(--semantic-typography-code-lg-bold-underline-textDecoration);
-  --component-typography-code-lg-bold-italicUnderline: var(
-      --semantic-typography-code-lg-bold-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-code-lg-bold-italicUnderline-fontSize)
-    var(--semantic-typography-code-lg-bold-italicUnderline-fontWeight)
-    var(--semantic-typography-code-lg-bold-italicUnderline-lineHeight)
-    var(--semantic-typography-code-lg-bold-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-code-lg-bold-italicUnderline-textDecoration);
-  --component-typography-code-md-regular-default: var(--semantic-typography-code-md-regular-default-fontFamily)
-    var(--semantic-typography-code-md-regular-default-fontSize)
-    var(--semantic-typography-code-md-regular-default-fontWeight)
-    var(--semantic-typography-code-md-regular-default-lineHeight)
-    var(--semantic-typography-code-md-regular-default-paragraphSpacing)
-    var(--semantic-typography-code-md-regular-default-textDecoration);
-  --component-typography-code-md-regular-italic: var(--semantic-typography-code-md-regular-italic-fontFamily)
-    var(--semantic-typography-code-md-regular-italic-fontSize)
-    var(--semantic-typography-code-md-regular-italic-fontWeight)
-    var(--semantic-typography-code-md-regular-italic-lineHeight)
-    var(--semantic-typography-code-md-regular-italic-paragraphSpacing)
-    var(--semantic-typography-code-md-regular-italic-textDecoration);
-  --component-typography-code-md-regular-underline: var(--semantic-typography-code-md-regular-underline-fontFamily)
-    var(--semantic-typography-code-md-regular-underline-fontSize)
-    var(--semantic-typography-code-md-regular-underline-fontWeight)
-    var(--semantic-typography-code-md-regular-underline-lineHeight)
-    var(--semantic-typography-code-md-regular-underline-paragraphSpacing)
-    var(--semantic-typography-code-md-regular-underline-textDecoration);
-  --component-typography-code-md-regular-italicUnderline: var(
-      --semantic-typography-code-md-regular-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-code-md-regular-italicUnderline-fontSize)
-    var(--semantic-typography-code-md-regular-italicUnderline-fontWeight)
-    var(--semantic-typography-code-md-regular-italicUnderline-lineHeight)
-    var(--semantic-typography-code-md-regular-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-code-md-regular-italicUnderline-textDecoration);
-  --component-typography-code-md-bold-default: var(--semantic-typography-code-md-bold-default-fontFamily)
-    var(--semantic-typography-code-md-bold-default-fontSize) var(--semantic-typography-code-md-bold-default-fontWeight)
-    var(--semantic-typography-code-md-bold-default-lineHeight)
-    var(--semantic-typography-code-md-bold-default-paragraphSpacing)
-    var(--semantic-typography-code-md-bold-default-textDecoration);
-  --component-typography-code-md-bold-italic: var(--semantic-typography-code-md-bold-italic-fontFamily)
-    var(--semantic-typography-code-md-bold-italic-fontSize) var(--semantic-typography-code-md-bold-italic-fontWeight)
-    var(--semantic-typography-code-md-bold-italic-lineHeight)
-    var(--semantic-typography-code-md-bold-italic-paragraphSpacing)
-    var(--semantic-typography-code-md-bold-italic-textDecoration);
-  --component-typography-code-md-bold-underline: var(--semantic-typography-code-md-bold-underline-fontFamily)
-    var(--semantic-typography-code-md-bold-underline-fontSize)
-    var(--semantic-typography-code-md-bold-underline-fontWeight)
-    var(--semantic-typography-code-md-bold-underline-lineHeight)
-    var(--semantic-typography-code-md-bold-underline-paragraphSpacing)
-    var(--semantic-typography-code-md-bold-underline-textDecoration);
-  --component-typography-code-md-bold-italicUnderline: var(
-      --semantic-typography-code-md-bold-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-code-md-bold-italicUnderline-fontSize)
-    var(--semantic-typography-code-md-bold-italicUnderline-fontWeight)
-    var(--semantic-typography-code-md-bold-italicUnderline-lineHeight)
-    var(--semantic-typography-code-md-bold-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-code-md-bold-italicUnderline-textDecoration);
-  --component-typography-code-sm-regular-default: var(--semantic-typography-code-sm-regular-default-fontFamily)
-    var(--semantic-typography-code-sm-regular-default-fontSize)
-    var(--semantic-typography-code-sm-regular-default-fontWeight)
-    var(--semantic-typography-code-sm-regular-default-lineHeight)
-    var(--semantic-typography-code-sm-regular-default-paragraphSpacing)
-    var(--semantic-typography-code-sm-regular-default-textDecoration);
-  --component-typography-code-sm-regular-italic: var(--semantic-typography-code-sm-regular-italic-fontFamily)
-    var(--semantic-typography-code-sm-regular-italic-fontSize)
-    var(--semantic-typography-code-sm-regular-italic-fontWeight)
-    var(--semantic-typography-code-sm-regular-italic-lineHeight)
-    var(--semantic-typography-code-sm-regular-italic-paragraphSpacing)
-    var(--semantic-typography-code-sm-regular-italic-textDecoration);
-  --component-typography-code-sm-regular-underline: var(--semantic-typography-code-sm-regular-underline-fontFamily)
-    var(--semantic-typography-code-sm-regular-underline-fontSize)
-    var(--semantic-typography-code-sm-regular-underline-fontWeight)
-    var(--semantic-typography-code-sm-regular-underline-lineHeight)
-    var(--semantic-typography-code-sm-regular-underline-paragraphSpacing)
-    var(--semantic-typography-code-sm-regular-underline-textDecoration);
-  --component-typography-code-sm-regular-italicUnderline: var(
-      --semantic-typography-code-sm-regular-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-code-sm-regular-italicUnderline-fontSize)
-    var(--semantic-typography-code-sm-regular-italicUnderline-fontWeight)
-    var(--semantic-typography-code-sm-regular-italicUnderline-lineHeight)
-    var(--semantic-typography-code-sm-regular-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-code-sm-regular-italicUnderline-textDecoration);
-  --component-typography-code-sm-bold-default: var(--semantic-typography-code-sm-bold-default-fontFamily)
-    var(--semantic-typography-code-sm-bold-default-fontSize) var(--semantic-typography-code-sm-bold-default-fontWeight)
-    var(--semantic-typography-code-sm-bold-default-lineHeight)
-    var(--semantic-typography-code-sm-bold-default-paragraphSpacing)
-    var(--semantic-typography-code-sm-bold-default-textDecoration);
-  --component-typography-code-sm-bold-italic: var(--semantic-typography-code-sm-bold-italic-fontFamily)
-    var(--semantic-typography-code-sm-bold-italic-fontSize) var(--semantic-typography-code-sm-bold-italic-fontWeight)
-    var(--semantic-typography-code-sm-bold-italic-lineHeight)
-    var(--semantic-typography-code-sm-bold-italic-paragraphSpacing)
-    var(--semantic-typography-code-sm-bold-italic-textDecoration);
-  --component-typography-code-sm-bold-underline: var(--semantic-typography-code-sm-bold-underline-fontFamily)
-    var(--semantic-typography-code-sm-bold-underline-fontSize)
-    var(--semantic-typography-code-sm-bold-underline-fontWeight)
-    var(--semantic-typography-code-sm-bold-underline-lineHeight)
-    var(--semantic-typography-code-sm-bold-underline-paragraphSpacing)
-    var(--semantic-typography-code-sm-bold-underline-textDecoration);
-  --component-typography-code-sm-bold-italicUnderline: var(
-      --semantic-typography-code-sm-bold-italicUnderline-fontFamily
-    )
-    var(--semantic-typography-code-sm-bold-italicUnderline-fontSize)
-    var(--semantic-typography-code-sm-bold-italicUnderline-fontWeight)
-    var(--semantic-typography-code-sm-bold-italicUnderline-lineHeight)
-    var(--semantic-typography-code-sm-bold-italicUnderline-paragraphSpacing)
-    var(--semantic-typography-code-sm-bold-italicUnderline-textDecoration);
-  --component-typography-icon-labelPaired-regular-xl: var(--semantic-typography-icon-labelPaired-regular-xl-fontFamily)
-    var(--semantic-typography-icon-labelPaired-regular-xl-fontSize)
-    var(--semantic-typography-icon-labelPaired-regular-xl-fontWeight)
-    var(--semantic-typography-icon-labelPaired-regular-xl-lineHeight);
-  --component-typography-icon-labelPaired-regular-lg: var(--semantic-typography-icon-labelPaired-regular-lg-fontFamily)
-    var(--semantic-typography-icon-labelPaired-regular-lg-fontSize)
-    var(--semantic-typography-icon-labelPaired-regular-lg-fontWeight)
-    var(--semantic-typography-icon-labelPaired-regular-lg-lineHeight);
-  --component-typography-icon-labelPaired-regular-md: var(--semantic-typography-icon-labelPaired-regular-md-fontFamily)
-    var(--semantic-typography-icon-labelPaired-regular-md-fontSize)
-    var(--semantic-typography-icon-labelPaired-regular-md-fontWeight)
-    var(--semantic-typography-icon-labelPaired-regular-md-lineHeight);
-  --component-typography-icon-labelPaired-regular-sm: var(--semantic-typography-icon-labelPaired-regular-sm-fontFamily)
-    var(--semantic-typography-icon-labelPaired-regular-sm-fontSize)
-    var(--semantic-typography-icon-labelPaired-regular-sm-fontWeight)
-    var(--semantic-typography-icon-labelPaired-regular-sm-lineHeight);
-  --component-typography-icon-labelPaired-regular-caption: var(
-      --semantic-typography-icon-labelPaired-regular-caption-fontFamily
-    )
-    var(--semantic-typography-icon-labelPaired-regular-caption-fontSize)
-    var(--semantic-typography-icon-labelPaired-regular-caption-fontWeight)
-    var(--semantic-typography-icon-labelPaired-regular-caption-lineHeight);
-  --component-typography-icon-labelPaired-bold-xl: var(--semantic-typography-icon-labelPaired-bold-xl-fontFamily)
-    var(--semantic-typography-icon-labelPaired-bold-xl-fontSize)
-    var(--semantic-typography-icon-labelPaired-bold-xl-fontWeight)
-    var(--semantic-typography-icon-labelPaired-bold-xl-lineHeight);
-  --component-typography-icon-labelPaired-bold-lg: var(--semantic-typography-icon-labelPaired-bold-lg-fontFamily)
-    var(--semantic-typography-icon-labelPaired-bold-lg-fontSize)
-    var(--semantic-typography-icon-labelPaired-bold-lg-fontWeight)
-    var(--semantic-typography-icon-labelPaired-bold-lg-lineHeight);
-  --component-typography-icon-labelPaired-bold-md: var(--semantic-typography-icon-labelPaired-bold-md-fontFamily)
-    var(--semantic-typography-icon-labelPaired-bold-md-fontSize)
-    var(--semantic-typography-icon-labelPaired-bold-md-fontWeight)
-    var(--semantic-typography-icon-labelPaired-bold-md-lineHeight);
-  --component-typography-icon-labelPaired-bold-sm: var(--semantic-typography-icon-labelPaired-bold-sm-fontFamily)
-    var(--semantic-typography-icon-labelPaired-bold-sm-fontSize)
-    var(--semantic-typography-icon-labelPaired-bold-sm-fontWeight)
-    var(--semantic-typography-icon-labelPaired-bold-sm-lineHeight);
-  --component-typography-icon-labelPaired-bold-caption: var(
-      --semantic-typography-icon-labelPaired-bold-caption-fontFamily
-    )
-    var(--semantic-typography-icon-labelPaired-bold-caption-fontSize)
-    var(--semantic-typography-icon-labelPaired-bold-caption-fontWeight)
-    var(--semantic-typography-icon-labelPaired-bold-caption-lineHeight);
-  --component-typography-icon-labelPaired-fill-xl: var(--semantic-typography-icon-labelPaired-fill-xl-fontFamily)
-    var(--semantic-typography-icon-labelPaired-fill-xl-fontSize)
-    var(--semantic-typography-icon-labelPaired-fill-xl-fontWeight)
-    var(--semantic-typography-icon-labelPaired-fill-xl-lineHeight);
-  --component-typography-icon-labelPaired-fill-lg: var(--semantic-typography-icon-labelPaired-fill-lg-fontFamily)
-    var(--semantic-typography-icon-labelPaired-fill-lg-fontSize)
-    var(--semantic-typography-icon-labelPaired-fill-lg-fontWeight)
-    var(--semantic-typography-icon-labelPaired-fill-lg-lineHeight);
-  --component-typography-icon-labelPaired-fill-md: var(--semantic-typography-icon-labelPaired-fill-md-fontFamily)
-    var(--semantic-typography-icon-labelPaired-fill-md-fontSize)
-    var(--semantic-typography-icon-labelPaired-fill-md-fontWeight)
-    var(--semantic-typography-icon-labelPaired-fill-md-lineHeight);
-  --component-typography-icon-labelPaired-fill-sm: var(--semantic-typography-icon-labelPaired-fill-sm-fontFamily)
-    var(--semantic-typography-icon-labelPaired-fill-sm-fontSize)
-    var(--semantic-typography-icon-labelPaired-fill-sm-fontWeight)
-    var(--semantic-typography-icon-labelPaired-fill-sm-lineHeight);
-  --component-typography-icon-labelPaired-fill-caption: var(
-      --semantic-typography-icon-labelPaired-fill-caption-fontFamily
-    )
-    var(--semantic-typography-icon-labelPaired-fill-caption-fontSize)
-    var(--semantic-typography-icon-labelPaired-fill-caption-fontWeight)
-    var(--semantic-typography-icon-labelPaired-fill-caption-lineHeight);
-  --component-typography-icon-labelPaired-brand-xl: var(--semantic-typography-icon-labelPaired-brand-xl-fontFamily)
-    var(--semantic-typography-icon-labelPaired-brand-xl-fontSize)
-    var(--semantic-typography-icon-labelPaired-brand-xl-fontWeight)
-    var(--semantic-typography-icon-labelPaired-brand-xl-lineHeight);
-  --component-typography-icon-labelPaired-brand-lg: var(--semantic-typography-icon-labelPaired-brand-lg-fontFamily)
-    var(--semantic-typography-icon-labelPaired-brand-lg-fontSize)
-    var(--semantic-typography-icon-labelPaired-brand-lg-fontWeight)
-    var(--semantic-typography-icon-labelPaired-brand-lg-lineHeight);
-  --component-typography-icon-labelPaired-brand-md: var(--semantic-typography-icon-labelPaired-brand-md-fontFamily)
-    var(--semantic-typography-icon-labelPaired-brand-md-fontSize)
-    var(--semantic-typography-icon-labelPaired-brand-md-fontWeight)
-    var(--semantic-typography-icon-labelPaired-brand-md-lineHeight);
-  --component-typography-icon-labelPaired-brand-sm: var(--semantic-typography-icon-labelPaired-brand-sm-fontFamily)
-    var(--semantic-typography-icon-labelPaired-brand-sm-fontSize)
-    var(--semantic-typography-icon-labelPaired-brand-sm-fontWeight)
-    var(--semantic-typography-icon-labelPaired-brand-sm-lineHeight);
-  --component-typography-icon-labelPaired-brand-caption: var(
-      --semantic-typography-icon-labelPaired-brand-caption-fontFamily
-    )
-    var(--semantic-typography-icon-labelPaired-brand-caption-fontSize)
-    var(--semantic-typography-icon-labelPaired-brand-caption-fontWeight)
-    var(--semantic-typography-icon-labelPaired-brand-caption-lineHeight);
-  --component-typography-icon-standalone-regular-2xl: var(--semantic-typography-icon-standalone-regular-2xl-fontFamily)
-    var(--semantic-typography-icon-standalone-regular-2xl-fontSize)
-    var(--semantic-typography-icon-standalone-regular-2xl-fontWeight)
-    var(--semantic-typography-icon-standalone-regular-2xl-lineHeight);
-  --component-typography-icon-standalone-regular-xl: var(--semantic-typography-icon-standalone-regular-xl-fontFamily)
-    var(--semantic-typography-icon-standalone-regular-xl-fontSize)
-    var(--semantic-typography-icon-standalone-regular-xl-fontWeight)
-    var(--semantic-typography-icon-standalone-regular-xl-lineHeight);
-  --component-typography-icon-standalone-regular-lg: var(--semantic-typography-icon-standalone-regular-lg-fontFamily)
-    var(--semantic-typography-icon-standalone-regular-lg-fontSize)
-    var(--semantic-typography-icon-standalone-regular-lg-fontWeight)
-    var(--semantic-typography-icon-standalone-regular-lg-lineHeight);
-  --component-typography-icon-standalone-regular-md: var(--semantic-typography-icon-standalone-regular-md-fontFamily)
-    var(--semantic-typography-icon-standalone-regular-md-fontSize)
-    var(--semantic-typography-icon-standalone-regular-md-fontWeight)
-    var(--semantic-typography-icon-standalone-regular-md-lineHeight);
-  --component-typography-icon-standalone-regular-sm: var(--semantic-typography-icon-standalone-regular-sm-fontFamily)
-    var(--semantic-typography-icon-standalone-regular-sm-fontSize)
-    var(--semantic-typography-icon-standalone-regular-sm-fontWeight)
-    var(--semantic-typography-icon-standalone-regular-sm-lineHeight);
-  --component-typography-icon-standalone-regular-xs: var(--semantic-typography-icon-standalone-regular-xs-fontFamily)
-    var(--semantic-typography-icon-standalone-regular-xs-fontSize)
-    var(--semantic-typography-icon-standalone-regular-xs-fontWeight)
-    var(--semantic-typography-icon-standalone-regular-xs-lineHeight);
-  --component-typography-icon-standalone-bold-2xl: var(--semantic-typography-icon-standalone-bold-2xl-fontFamily)
-    var(--semantic-typography-icon-standalone-bold-2xl-fontSize)
-    var(--semantic-typography-icon-standalone-bold-2xl-fontWeight)
-    var(--semantic-typography-icon-standalone-bold-2xl-lineHeight);
-  --component-typography-icon-standalone-bold-xl: var(--semantic-typography-icon-standalone-bold-xl-fontFamily)
-    var(--semantic-typography-icon-standalone-bold-xl-fontSize)
-    var(--semantic-typography-icon-standalone-bold-xl-fontWeight)
-    var(--semantic-typography-icon-standalone-bold-xl-lineHeight);
-  --component-typography-icon-standalone-bold-lg: var(--semantic-typography-icon-standalone-bold-lg-fontFamily)
-    var(--semantic-typography-icon-standalone-bold-lg-fontSize)
-    var(--semantic-typography-icon-standalone-bold-lg-fontWeight)
-    var(--semantic-typography-icon-standalone-bold-lg-lineHeight);
-  --component-typography-icon-standalone-bold-md: var(--semantic-typography-icon-standalone-bold-md-fontFamily)
-    var(--semantic-typography-icon-standalone-bold-md-fontSize)
-    var(--semantic-typography-icon-standalone-bold-md-fontWeight)
-    var(--semantic-typography-icon-standalone-bold-md-lineHeight);
-  --component-typography-icon-standalone-bold-sm: var(--semantic-typography-icon-standalone-bold-sm-fontFamily)
-    var(--semantic-typography-icon-standalone-bold-sm-fontSize)
-    var(--semantic-typography-icon-standalone-bold-sm-fontWeight)
-    var(--semantic-typography-icon-standalone-bold-sm-lineHeight);
-  --component-typography-icon-standalone-bold-xs: var(--semantic-typography-icon-standalone-bold-xs-fontFamily)
-    var(--semantic-typography-icon-standalone-bold-xs-fontSize)
-    var(--semantic-typography-icon-standalone-bold-xs-fontWeight)
-    var(--semantic-typography-icon-standalone-bold-xs-lineHeight);
-  --component-typography-icon-standalone-fill-2xl: var(--semantic-typography-icon-standalone-fill-2xl-fontFamily)
-    var(--semantic-typography-icon-standalone-fill-2xl-fontSize)
-    var(--semantic-typography-icon-standalone-fill-2xl-fontWeight)
-    var(--semantic-typography-icon-standalone-fill-2xl-lineHeight);
-  --component-typography-icon-standalone-fill-xl: var(--semantic-typography-icon-standalone-fill-xl-fontFamily)
-    var(--semantic-typography-icon-standalone-fill-xl-fontSize)
-    var(--semantic-typography-icon-standalone-fill-xl-fontWeight)
-    var(--semantic-typography-icon-standalone-fill-xl-lineHeight);
-  --component-typography-icon-standalone-fill-lg: var(--semantic-typography-icon-standalone-fill-lg-fontFamily)
-    var(--semantic-typography-icon-standalone-fill-lg-fontSize)
-    var(--semantic-typography-icon-standalone-fill-lg-fontWeight)
-    var(--semantic-typography-icon-standalone-fill-lg-lineHeight);
-  --component-typography-icon-standalone-fill-md: var(--semantic-typography-icon-standalone-fill-md-fontFamily)
-    var(--semantic-typography-icon-standalone-fill-md-fontSize)
-    var(--semantic-typography-icon-standalone-fill-md-fontWeight)
-    var(--semantic-typography-icon-standalone-fill-md-lineHeight);
-  --component-typography-icon-standalone-fill-sm: var(--semantic-typography-icon-standalone-fill-sm-fontFamily)
-    var(--semantic-typography-icon-standalone-fill-sm-fontSize)
-    var(--semantic-typography-icon-standalone-fill-sm-fontWeight)
-    var(--semantic-typography-icon-standalone-fill-sm-lineHeight);
-  --component-typography-icon-standalone-fill-xs: var(--semantic-typography-icon-standalone-fill-xs-fontFamily)
-    var(--semantic-typography-icon-standalone-fill-xs-fontSize)
-    var(--semantic-typography-icon-standalone-fill-xs-fontWeight)
-    var(--semantic-typography-icon-standalone-fill-xs-lineHeight);
-  --component-typography-icon-standalone-brand-2xl: var(--semantic-typography-icon-standalone-brand-2xl-fontFamily)
-    var(--semantic-typography-icon-standalone-brand-2xl-fontSize)
-    var(--semantic-typography-icon-standalone-brand-2xl-fontWeight)
-    var(--semantic-typography-icon-standalone-brand-2xl-lineHeight);
-  --component-typography-icon-standalone-brand-xl: var(--semantic-typography-icon-standalone-brand-xl-fontFamily)
-    var(--semantic-typography-icon-standalone-brand-xl-fontSize)
-    var(--semantic-typography-icon-standalone-brand-xl-fontWeight)
-    var(--semantic-typography-icon-standalone-brand-xl-lineHeight);
-  --component-typography-icon-standalone-brand-lg: var(--semantic-typography-icon-standalone-brand-lg-fontFamily)
-    var(--semantic-typography-icon-standalone-brand-lg-fontSize)
-    var(--semantic-typography-icon-standalone-brand-lg-fontWeight)
-    var(--semantic-typography-icon-standalone-brand-lg-lineHeight);
-  --component-typography-icon-standalone-brand-md: var(--semantic-typography-icon-standalone-brand-md-fontFamily)
-    var(--semantic-typography-icon-standalone-brand-md-fontSize)
-    var(--semantic-typography-icon-standalone-brand-md-fontWeight)
-    var(--semantic-typography-icon-standalone-brand-md-lineHeight);
-  --component-typography-icon-standalone-brand-sm: var(--semantic-typography-icon-standalone-brand-sm-fontFamily)
-    var(--semantic-typography-icon-standalone-brand-sm-fontSize)
-    var(--semantic-typography-icon-standalone-brand-sm-fontWeight)
-    var(--semantic-typography-icon-standalone-brand-sm-lineHeight);
-  --component-typography-icon-standalone-brand-xs: var(--semantic-typography-icon-standalone-brand-xs-fontFamily)
-    var(--semantic-typography-icon-standalone-brand-xs-fontSize)
-    var(--semantic-typography-icon-standalone-brand-xs-fontWeight)
-    var(--semantic-typography-icon-standalone-brand-xs-lineHeight);
+  --component-typography-heading-hero-fontFamily: var(--semantic-typography-heading-hero-fontFamily);
+  --component-typography-heading-hero-fontSize: var(--semantic-typography-heading-hero-fontSize);
+  --component-typography-heading-hero-fontWeight: var(--semantic-typography-heading-hero-fontWeight);
+  --component-typography-heading-hero-lineHeight: var(--semantic-typography-heading-hero-lineHeight);
+  --component-typography-heading-hero-paragraphSpacing: var(--semantic-typography-heading-hero-paragraphSpacing);
+  --component-typography-heading-hero-letterSpacing: normal;
+  --component-typography-heading-h1-fontFamily: var(--semantic-typography-heading-h1-fontFamily);
+  --component-typography-heading-h1-fontSize: var(--semantic-typography-heading-h1-fontSize);
+  --component-typography-heading-h1-fontWeight: var(--semantic-typography-heading-h1-fontWeight);
+  --component-typography-heading-h1-lineHeight: var(--semantic-typography-heading-h1-lineHeight);
+  --component-typography-heading-h1-paragraphSpacing: var(--semantic-typography-heading-h1-paragraphSpacing);
+  --component-typography-heading-h1-letterSpacing: normal;
+  --component-typography-heading-h2-fontFamily: var(--semantic-typography-heading-h2-fontFamily);
+  --component-typography-heading-h2-fontSize: var(--semantic-typography-heading-h2-fontSize);
+  --component-typography-heading-h2-fontWeight: var(--semantic-typography-heading-h2-fontWeight);
+  --component-typography-heading-h2-lineHeight: var(--semantic-typography-heading-h2-lineHeight);
+  --component-typography-heading-h2-paragraphSpacing: var(--semantic-typography-heading-h2-paragraphSpacing);
+  --component-typography-heading-h2-letterSpacing: normal;
+  --component-typography-heading-h3-fontFamily: var(--semantic-typography-heading-h3-fontFamily);
+  --component-typography-heading-h3-fontSize: var(--semantic-typography-heading-h3-fontSize);
+  --component-typography-heading-h3-fontWeight: var(--semantic-typography-heading-h3-fontWeight);
+  --component-typography-heading-h3-lineHeight: var(--semantic-typography-heading-h3-lineHeight);
+  --component-typography-heading-h3-paragraphSpacing: var(--semantic-typography-heading-h3-paragraphSpacing);
+  --component-typography-heading-h3-letterSpacing: normal;
+  --component-typography-heading-h4-fontFamily: var(--semantic-typography-heading-h4-fontFamily);
+  --component-typography-heading-h4-fontSize: var(--semantic-typography-heading-h4-fontSize);
+  --component-typography-heading-h4-fontWeight: var(--semantic-typography-heading-h4-fontWeight);
+  --component-typography-heading-h4-lineHeight: var(--semantic-typography-heading-h4-lineHeight);
+  --component-typography-heading-h4-paragraphSpacing: var(--semantic-typography-heading-h4-paragraphSpacing);
+  --component-typography-heading-h4-letterSpacing: normal;
+  --component-typography-heading-h5-fontFamily: var(--semantic-typography-heading-h5-fontFamily);
+  --component-typography-heading-h5-fontSize: var(--semantic-typography-heading-h5-fontSize);
+  --component-typography-heading-h5-fontWeight: var(--semantic-typography-heading-h5-fontWeight);
+  --component-typography-heading-h5-lineHeight: var(--semantic-typography-heading-h5-lineHeight);
+  --component-typography-heading-h5-paragraphSpacing: var(--semantic-typography-heading-h5-paragraphSpacing);
+  --component-typography-heading-h5-letterSpacing: normal;
+  --component-typography-heading-h6-fontFamily: var(--semantic-typography-heading-h6-fontFamily);
+  --component-typography-heading-h6-fontSize: var(--semantic-typography-heading-h6-fontSize);
+  --component-typography-heading-h6-fontWeight: var(--semantic-typography-heading-h6-fontWeight);
+  --component-typography-heading-h6-lineHeight: var(--semantic-typography-heading-h6-lineHeight);
+  --component-typography-heading-h6-paragraphSpacing: var(--semantic-typography-heading-h6-paragraphSpacing);
+  --component-typography-heading-h6-letterSpacing: normal;
+  --component-typography-body-xl-regular-default-fontFamily: var(
+    --semantic-typography-body-xl-regular-default-fontFamily
+  );
+  --component-typography-body-xl-regular-default-fontSize: var(--semantic-typography-body-xl-regular-default-fontSize);
+  --component-typography-body-xl-regular-default-fontWeight: var(
+    --semantic-typography-body-xl-regular-default-fontWeight
+  );
+  --component-typography-body-xl-regular-default-lineHeight: var(
+    --semantic-typography-body-xl-regular-default-lineHeight
+  );
+  --component-typography-body-xl-regular-default-paragraphSpacing: var(
+    --semantic-typography-body-xl-regular-default-paragraphSpacing
+  );
+  --component-typography-body-xl-regular-default-letterSpacing: normal;
+  --component-typography-body-xl-regular-default-textDecoration: var(
+    --semantic-typography-body-xl-regular-default-textDecoration
+  );
+  --component-typography-body-xl-regular-italic-fontFamily: var(
+    --semantic-typography-body-xl-regular-italic-fontFamily
+  );
+  --component-typography-body-xl-regular-italic-fontSize: var(--semantic-typography-body-xl-regular-italic-fontSize);
+  --component-typography-body-xl-regular-italic-fontWeight: var(
+    --semantic-typography-body-xl-regular-italic-fontWeight
+  );
+  --component-typography-body-xl-regular-italic-lineHeight: var(
+    --semantic-typography-body-xl-regular-italic-lineHeight
+  );
+  --component-typography-body-xl-regular-italic-paragraphSpacing: var(
+    --semantic-typography-body-xl-regular-italic-paragraphSpacing
+  );
+  --component-typography-body-xl-regular-italic-letterSpacing: normal;
+  --component-typography-body-xl-regular-italic-textDecoration: var(
+    --semantic-typography-body-xl-regular-italic-textDecoration
+  );
+  --component-typography-body-xl-regular-underline-fontFamily: var(
+    --semantic-typography-body-xl-regular-underline-fontFamily
+  );
+  --component-typography-body-xl-regular-underline-fontSize: var(
+    --semantic-typography-body-xl-regular-underline-fontSize
+  );
+  --component-typography-body-xl-regular-underline-fontWeight: var(
+    --semantic-typography-body-xl-regular-underline-fontWeight
+  );
+  --component-typography-body-xl-regular-underline-lineHeight: var(
+    --semantic-typography-body-xl-regular-underline-lineHeight
+  );
+  --component-typography-body-xl-regular-underline-paragraphSpacing: var(
+    --semantic-typography-body-xl-regular-underline-paragraphSpacing
+  );
+  --component-typography-body-xl-regular-underline-letterSpacing: normal;
+  --component-typography-body-xl-regular-underline-textDecoration: var(
+    --semantic-typography-body-xl-regular-underline-textDecoration
+  );
+  --component-typography-body-xl-regular-italicUnderline-fontFamily: var(
+    --semantic-typography-body-xl-regular-italicUnderline-fontFamily
+  );
+  --component-typography-body-xl-regular-italicUnderline-fontSize: var(
+    --semantic-typography-body-xl-regular-italicUnderline-fontSize
+  );
+  --component-typography-body-xl-regular-italicUnderline-fontWeight: var(
+    --semantic-typography-body-xl-regular-italicUnderline-fontWeight
+  );
+  --component-typography-body-xl-regular-italicUnderline-lineHeight: var(
+    --semantic-typography-body-xl-regular-italicUnderline-lineHeight
+  );
+  --component-typography-body-xl-regular-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-body-xl-regular-italicUnderline-paragraphSpacing
+  );
+  --component-typography-body-xl-regular-italicUnderline-letterSpacing: normal;
+  --component-typography-body-xl-regular-italicUnderline-textDecoration: var(
+    --semantic-typography-body-xl-regular-italicUnderline-textDecoration
+  );
+  --component-typography-body-xl-bold-default-fontFamily: var(--semantic-typography-body-xl-bold-default-fontFamily);
+  --component-typography-body-xl-bold-default-fontSize: var(--semantic-typography-body-xl-bold-default-fontSize);
+  --component-typography-body-xl-bold-default-fontWeight: var(--semantic-typography-body-xl-bold-default-fontWeight);
+  --component-typography-body-xl-bold-default-lineHeight: var(--semantic-typography-body-xl-bold-default-lineHeight);
+  --component-typography-body-xl-bold-default-paragraphSpacing: var(
+    --semantic-typography-body-xl-bold-default-paragraphSpacing
+  );
+  --component-typography-body-xl-bold-default-letterSpacing: normal;
+  --component-typography-body-xl-bold-default-textDecoration: var(
+    --semantic-typography-body-xl-bold-default-textDecoration
+  );
+  --component-typography-body-xl-bold-italic-fontFamily: var(--semantic-typography-body-xl-bold-italic-fontFamily);
+  --component-typography-body-xl-bold-italic-fontSize: var(--semantic-typography-body-xl-bold-italic-fontSize);
+  --component-typography-body-xl-bold-italic-fontWeight: var(--semantic-typography-body-xl-bold-italic-fontWeight);
+  --component-typography-body-xl-bold-italic-lineHeight: var(--semantic-typography-body-xl-bold-italic-lineHeight);
+  --component-typography-body-xl-bold-italic-paragraphSpacing: var(
+    --semantic-typography-body-xl-bold-italic-paragraphSpacing
+  );
+  --component-typography-body-xl-bold-italic-letterSpacing: normal;
+  --component-typography-body-xl-bold-italic-textDecoration: var(
+    --semantic-typography-body-xl-bold-italic-textDecoration
+  );
+  --component-typography-body-xl-bold-underline-fontFamily: var(
+    --semantic-typography-body-xl-bold-underline-fontFamily
+  );
+  --component-typography-body-xl-bold-underline-fontSize: var(--semantic-typography-body-xl-bold-underline-fontSize);
+  --component-typography-body-xl-bold-underline-fontWeight: var(
+    --semantic-typography-body-xl-bold-underline-fontWeight
+  );
+  --component-typography-body-xl-bold-underline-lineHeight: var(
+    --semantic-typography-body-xl-bold-underline-lineHeight
+  );
+  --component-typography-body-xl-bold-underline-paragraphSpacing: var(
+    --semantic-typography-body-xl-bold-underline-paragraphSpacing
+  );
+  --component-typography-body-xl-bold-underline-letterSpacing: normal;
+  --component-typography-body-xl-bold-underline-textDecoration: var(
+    --semantic-typography-body-xl-bold-underline-textDecoration
+  );
+  --component-typography-body-xl-bold-italicUnderline-fontFamily: var(
+    --semantic-typography-body-xl-bold-italicUnderline-fontFamily
+  );
+  --component-typography-body-xl-bold-italicUnderline-fontSize: var(
+    --semantic-typography-body-xl-bold-italicUnderline-fontSize
+  );
+  --component-typography-body-xl-bold-italicUnderline-fontWeight: var(
+    --semantic-typography-body-xl-bold-italicUnderline-fontWeight
+  );
+  --component-typography-body-xl-bold-italicUnderline-lineHeight: var(
+    --semantic-typography-body-xl-bold-italicUnderline-lineHeight
+  );
+  --component-typography-body-xl-bold-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-body-xl-bold-italicUnderline-paragraphSpacing
+  );
+  --component-typography-body-xl-bold-italicUnderline-letterSpacing: normal;
+  --component-typography-body-xl-bold-italicUnderline-textDecoration: var(
+    --semantic-typography-body-xl-bold-italicUnderline-textDecoration
+  );
+  --component-typography-body-lg-regular-default-fontFamily: var(
+    --semantic-typography-body-lg-regular-default-fontFamily
+  );
+  --component-typography-body-lg-regular-default-fontSize: var(--semantic-typography-body-lg-regular-default-fontSize);
+  --component-typography-body-lg-regular-default-fontWeight: var(
+    --semantic-typography-body-lg-regular-default-fontWeight
+  );
+  --component-typography-body-lg-regular-default-lineHeight: var(
+    --semantic-typography-body-lg-regular-default-lineHeight
+  );
+  --component-typography-body-lg-regular-default-paragraphSpacing: var(
+    --semantic-typography-body-lg-regular-default-paragraphSpacing
+  );
+  --component-typography-body-lg-regular-default-letterSpacing: normal;
+  --component-typography-body-lg-regular-default-textDecoration: var(
+    --semantic-typography-body-lg-regular-default-textDecoration
+  );
+  --component-typography-body-lg-regular-italic-fontFamily: var(
+    --semantic-typography-body-lg-regular-italic-fontFamily
+  );
+  --component-typography-body-lg-regular-italic-fontSize: var(--semantic-typography-body-lg-regular-italic-fontSize);
+  --component-typography-body-lg-regular-italic-fontWeight: var(
+    --semantic-typography-body-lg-regular-italic-fontWeight
+  );
+  --component-typography-body-lg-regular-italic-lineHeight: var(
+    --semantic-typography-body-lg-regular-italic-lineHeight
+  );
+  --component-typography-body-lg-regular-italic-paragraphSpacing: var(
+    --semantic-typography-body-lg-regular-italic-paragraphSpacing
+  );
+  --component-typography-body-lg-regular-italic-letterSpacing: normal;
+  --component-typography-body-lg-regular-italic-textDecoration: var(
+    --semantic-typography-body-lg-regular-italic-textDecoration
+  );
+  --component-typography-body-lg-regular-underline-fontFamily: var(
+    --semantic-typography-body-lg-regular-underline-fontFamily
+  );
+  --component-typography-body-lg-regular-underline-fontSize: var(
+    --semantic-typography-body-lg-regular-underline-fontSize
+  );
+  --component-typography-body-lg-regular-underline-fontWeight: var(
+    --semantic-typography-body-lg-regular-underline-fontWeight
+  );
+  --component-typography-body-lg-regular-underline-lineHeight: var(
+    --semantic-typography-body-lg-regular-underline-lineHeight
+  );
+  --component-typography-body-lg-regular-underline-paragraphSpacing: var(
+    --semantic-typography-body-lg-regular-underline-paragraphSpacing
+  );
+  --component-typography-body-lg-regular-underline-letterSpacing: normal;
+  --component-typography-body-lg-regular-underline-textDecoration: var(
+    --semantic-typography-body-lg-regular-underline-textDecoration
+  );
+  --component-typography-body-lg-regular-italicUnderline-fontFamily: var(
+    --semantic-typography-body-lg-regular-italicUnderline-fontFamily
+  );
+  --component-typography-body-lg-regular-italicUnderline-fontSize: var(
+    --semantic-typography-body-lg-regular-italicUnderline-fontSize
+  );
+  --component-typography-body-lg-regular-italicUnderline-fontWeight: var(
+    --semantic-typography-body-lg-regular-italicUnderline-fontWeight
+  );
+  --component-typography-body-lg-regular-italicUnderline-lineHeight: var(
+    --semantic-typography-body-lg-regular-italicUnderline-lineHeight
+  );
+  --component-typography-body-lg-regular-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-body-lg-regular-italicUnderline-paragraphSpacing
+  );
+  --component-typography-body-lg-regular-italicUnderline-letterSpacing: normal;
+  --component-typography-body-lg-regular-italicUnderline-textDecoration: var(
+    --semantic-typography-body-lg-regular-italicUnderline-textDecoration
+  );
+  --component-typography-body-lg-bold-default-fontFamily: var(--semantic-typography-body-lg-bold-default-fontFamily);
+  --component-typography-body-lg-bold-default-fontSize: var(--semantic-typography-body-lg-bold-default-fontSize);
+  --component-typography-body-lg-bold-default-fontWeight: var(--semantic-typography-body-lg-bold-default-fontWeight);
+  --component-typography-body-lg-bold-default-lineHeight: var(--semantic-typography-body-lg-bold-default-lineHeight);
+  --component-typography-body-lg-bold-default-paragraphSpacing: var(
+    --semantic-typography-body-lg-bold-default-paragraphSpacing
+  );
+  --component-typography-body-lg-bold-default-letterSpacing: normal;
+  --component-typography-body-lg-bold-default-textDecoration: var(
+    --semantic-typography-body-lg-bold-default-textDecoration
+  );
+  --component-typography-body-lg-bold-italic-fontFamily: var(--semantic-typography-body-lg-bold-italic-fontFamily);
+  --component-typography-body-lg-bold-italic-fontSize: var(--semantic-typography-body-lg-bold-italic-fontSize);
+  --component-typography-body-lg-bold-italic-fontWeight: var(--semantic-typography-body-lg-bold-italic-fontWeight);
+  --component-typography-body-lg-bold-italic-lineHeight: var(--semantic-typography-body-lg-bold-italic-lineHeight);
+  --component-typography-body-lg-bold-italic-paragraphSpacing: var(
+    --semantic-typography-body-lg-bold-italic-paragraphSpacing
+  );
+  --component-typography-body-lg-bold-italic-letterSpacing: normal;
+  --component-typography-body-lg-bold-italic-textDecoration: var(
+    --semantic-typography-body-lg-bold-italic-textDecoration
+  );
+  --component-typography-body-lg-bold-underline-fontFamily: var(
+    --semantic-typography-body-lg-bold-underline-fontFamily
+  );
+  --component-typography-body-lg-bold-underline-fontSize: var(--semantic-typography-body-lg-bold-underline-fontSize);
+  --component-typography-body-lg-bold-underline-fontWeight: var(
+    --semantic-typography-body-lg-bold-underline-fontWeight
+  );
+  --component-typography-body-lg-bold-underline-lineHeight: var(
+    --semantic-typography-body-lg-bold-underline-lineHeight
+  );
+  --component-typography-body-lg-bold-underline-paragraphSpacing: var(
+    --semantic-typography-body-lg-bold-underline-paragraphSpacing
+  );
+  --component-typography-body-lg-bold-underline-letterSpacing: normal;
+  --component-typography-body-lg-bold-underline-textDecoration: var(
+    --semantic-typography-body-lg-bold-underline-textDecoration
+  );
+  --component-typography-body-lg-bold-italicUnderline-fontFamily: var(
+    --semantic-typography-body-lg-bold-italicUnderline-fontFamily
+  );
+  --component-typography-body-lg-bold-italicUnderline-fontSize: var(
+    --semantic-typography-body-lg-bold-italicUnderline-fontSize
+  );
+  --component-typography-body-lg-bold-italicUnderline-fontWeight: var(
+    --semantic-typography-body-lg-bold-italicUnderline-fontWeight
+  );
+  --component-typography-body-lg-bold-italicUnderline-lineHeight: var(
+    --semantic-typography-body-lg-bold-italicUnderline-lineHeight
+  );
+  --component-typography-body-lg-bold-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-body-lg-bold-italicUnderline-paragraphSpacing
+  );
+  --component-typography-body-lg-bold-italicUnderline-letterSpacing: normal;
+  --component-typography-body-lg-bold-italicUnderline-textDecoration: var(
+    --semantic-typography-body-lg-bold-italicUnderline-textDecoration
+  );
+  --component-typography-body-md-regular-default-fontFamily: var(
+    --semantic-typography-body-md-regular-default-fontFamily
+  );
+  --component-typography-body-md-regular-default-fontSize: var(--semantic-typography-body-md-regular-default-fontSize);
+  --component-typography-body-md-regular-default-fontWeight: var(
+    --semantic-typography-body-md-regular-default-fontWeight
+  );
+  --component-typography-body-md-regular-default-lineHeight: var(
+    --semantic-typography-body-md-regular-default-lineHeight
+  );
+  --component-typography-body-md-regular-default-paragraphSpacing: var(
+    --semantic-typography-body-md-regular-default-paragraphSpacing
+  );
+  --component-typography-body-md-regular-default-letterSpacing: normal;
+  --component-typography-body-md-regular-default-textDecoration: var(
+    --semantic-typography-body-md-regular-default-textDecoration
+  );
+  --component-typography-body-md-regular-italic-fontFamily: var(
+    --semantic-typography-body-md-regular-italic-fontFamily
+  );
+  --component-typography-body-md-regular-italic-fontSize: var(--semantic-typography-body-md-regular-italic-fontSize);
+  --component-typography-body-md-regular-italic-fontWeight: var(
+    --semantic-typography-body-md-regular-italic-fontWeight
+  );
+  --component-typography-body-md-regular-italic-lineHeight: var(
+    --semantic-typography-body-md-regular-italic-lineHeight
+  );
+  --component-typography-body-md-regular-italic-paragraphSpacing: var(
+    --semantic-typography-body-md-regular-italic-paragraphSpacing
+  );
+  --component-typography-body-md-regular-italic-letterSpacing: normal;
+  --component-typography-body-md-regular-italic-textDecoration: var(
+    --semantic-typography-body-md-regular-italic-textDecoration
+  );
+  --component-typography-body-md-regular-underline-fontFamily: var(
+    --semantic-typography-body-md-regular-underline-fontFamily
+  );
+  --component-typography-body-md-regular-underline-fontSize: var(
+    --semantic-typography-body-md-regular-underline-fontSize
+  );
+  --component-typography-body-md-regular-underline-fontWeight: var(
+    --semantic-typography-body-md-regular-underline-fontWeight
+  );
+  --component-typography-body-md-regular-underline-lineHeight: var(
+    --semantic-typography-body-md-regular-underline-lineHeight
+  );
+  --component-typography-body-md-regular-underline-paragraphSpacing: var(
+    --semantic-typography-body-md-regular-underline-paragraphSpacing
+  );
+  --component-typography-body-md-regular-underline-letterSpacing: normal;
+  --component-typography-body-md-regular-underline-textDecoration: var(
+    --semantic-typography-body-md-regular-underline-textDecoration
+  );
+  --component-typography-body-md-regular-italicUnderline-fontFamily: var(
+    --semantic-typography-body-md-regular-italicUnderline-fontFamily
+  );
+  --component-typography-body-md-regular-italicUnderline-fontSize: var(
+    --semantic-typography-body-md-regular-italicUnderline-fontSize
+  );
+  --component-typography-body-md-regular-italicUnderline-fontWeight: var(
+    --semantic-typography-body-md-regular-italicUnderline-fontWeight
+  );
+  --component-typography-body-md-regular-italicUnderline-lineHeight: var(
+    --semantic-typography-body-md-regular-italicUnderline-lineHeight
+  );
+  --component-typography-body-md-regular-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-body-md-regular-italicUnderline-paragraphSpacing
+  );
+  --component-typography-body-md-regular-italicUnderline-letterSpacing: normal;
+  --component-typography-body-md-regular-italicUnderline-textDecoration: var(
+    --semantic-typography-body-md-regular-italicUnderline-textDecoration
+  );
+  --component-typography-body-md-bold-default-fontFamily: var(--semantic-typography-body-md-bold-default-fontFamily);
+  --component-typography-body-md-bold-default-fontSize: var(--semantic-typography-body-md-bold-default-fontSize);
+  --component-typography-body-md-bold-default-fontWeight: var(--semantic-typography-body-md-bold-default-fontWeight);
+  --component-typography-body-md-bold-default-lineHeight: var(--semantic-typography-body-md-bold-default-lineHeight);
+  --component-typography-body-md-bold-default-paragraphSpacing: var(
+    --semantic-typography-body-md-bold-default-paragraphSpacing
+  );
+  --component-typography-body-md-bold-default-letterSpacing: normal;
+  --component-typography-body-md-bold-default-textDecoration: var(
+    --semantic-typography-body-md-bold-default-textDecoration
+  );
+  --component-typography-body-md-bold-italic-fontFamily: var(--semantic-typography-body-md-bold-italic-fontFamily);
+  --component-typography-body-md-bold-italic-fontSize: var(--semantic-typography-body-md-bold-italic-fontSize);
+  --component-typography-body-md-bold-italic-fontWeight: var(--semantic-typography-body-md-bold-italic-fontWeight);
+  --component-typography-body-md-bold-italic-lineHeight: var(--semantic-typography-body-md-bold-italic-lineHeight);
+  --component-typography-body-md-bold-italic-paragraphSpacing: var(
+    --semantic-typography-body-md-bold-italic-paragraphSpacing
+  );
+  --component-typography-body-md-bold-italic-letterSpacing: normal;
+  --component-typography-body-md-bold-italic-textDecoration: var(
+    --semantic-typography-body-md-bold-italic-textDecoration
+  );
+  --component-typography-body-md-bold-underline-fontFamily: var(
+    --semantic-typography-body-md-bold-underline-fontFamily
+  );
+  --component-typography-body-md-bold-underline-fontSize: var(--semantic-typography-body-md-bold-underline-fontSize);
+  --component-typography-body-md-bold-underline-fontWeight: var(
+    --semantic-typography-body-md-bold-underline-fontWeight
+  );
+  --component-typography-body-md-bold-underline-lineHeight: var(
+    --semantic-typography-body-md-bold-underline-lineHeight
+  );
+  --component-typography-body-md-bold-underline-paragraphSpacing: var(
+    --semantic-typography-body-md-bold-underline-paragraphSpacing
+  );
+  --component-typography-body-md-bold-underline-letterSpacing: normal;
+  --component-typography-body-md-bold-underline-textDecoration: var(
+    --semantic-typography-body-md-bold-underline-textDecoration
+  );
+  --component-typography-body-md-bold-italicUnderline-fontFamily: var(
+    --semantic-typography-body-md-bold-italicUnderline-fontFamily
+  );
+  --component-typography-body-md-bold-italicUnderline-fontSize: var(
+    --semantic-typography-body-md-bold-italicUnderline-fontSize
+  );
+  --component-typography-body-md-bold-italicUnderline-fontWeight: var(
+    --semantic-typography-body-md-bold-italicUnderline-fontWeight
+  );
+  --component-typography-body-md-bold-italicUnderline-lineHeight: var(
+    --semantic-typography-body-md-bold-italicUnderline-lineHeight
+  );
+  --component-typography-body-md-bold-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-body-md-bold-italicUnderline-paragraphSpacing
+  );
+  --component-typography-body-md-bold-italicUnderline-letterSpacing: normal;
+  --component-typography-body-md-bold-italicUnderline-textDecoration: var(
+    --semantic-typography-body-md-bold-italicUnderline-textDecoration
+  );
+  --component-typography-body-sm-regular-default-fontFamily: var(
+    --semantic-typography-body-sm-regular-default-fontFamily
+  );
+  --component-typography-body-sm-regular-default-fontSize: var(--semantic-typography-body-sm-regular-default-fontSize);
+  --component-typography-body-sm-regular-default-fontWeight: var(
+    --semantic-typography-body-sm-regular-default-fontWeight
+  );
+  --component-typography-body-sm-regular-default-lineHeight: var(
+    --semantic-typography-body-sm-regular-default-lineHeight
+  );
+  --component-typography-body-sm-regular-default-paragraphSpacing: var(
+    --semantic-typography-body-sm-regular-default-paragraphSpacing
+  );
+  --component-typography-body-sm-regular-default-letterSpacing: normal;
+  --component-typography-body-sm-regular-default-textDecoration: var(
+    --semantic-typography-body-sm-regular-default-textDecoration
+  );
+  --component-typography-body-sm-regular-italic-fontFamily: var(
+    --semantic-typography-body-sm-regular-italic-fontFamily
+  );
+  --component-typography-body-sm-regular-italic-fontSize: var(--semantic-typography-body-sm-regular-italic-fontSize);
+  --component-typography-body-sm-regular-italic-fontWeight: var(
+    --semantic-typography-body-sm-regular-italic-fontWeight
+  );
+  --component-typography-body-sm-regular-italic-lineHeight: var(
+    --semantic-typography-body-sm-regular-italic-lineHeight
+  );
+  --component-typography-body-sm-regular-italic-paragraphSpacing: var(
+    --semantic-typography-body-sm-regular-italic-paragraphSpacing
+  );
+  --component-typography-body-sm-regular-italic-letterSpacing: normal;
+  --component-typography-body-sm-regular-italic-textDecoration: var(
+    --semantic-typography-body-sm-regular-italic-textDecoration
+  );
+  --component-typography-body-sm-regular-underline-fontFamily: var(
+    --semantic-typography-body-sm-regular-underline-fontFamily
+  );
+  --component-typography-body-sm-regular-underline-fontSize: var(
+    --semantic-typography-body-sm-regular-underline-fontSize
+  );
+  --component-typography-body-sm-regular-underline-fontWeight: var(
+    --semantic-typography-body-sm-regular-underline-fontWeight
+  );
+  --component-typography-body-sm-regular-underline-lineHeight: var(
+    --semantic-typography-body-sm-regular-underline-lineHeight
+  );
+  --component-typography-body-sm-regular-underline-paragraphSpacing: var(
+    --semantic-typography-body-sm-regular-underline-paragraphSpacing
+  );
+  --component-typography-body-sm-regular-underline-letterSpacing: normal;
+  --component-typography-body-sm-regular-underline-textDecoration: var(
+    --semantic-typography-body-sm-regular-underline-textDecoration
+  );
+  --component-typography-body-sm-regular-italicUnderline-fontFamily: var(
+    --semantic-typography-body-sm-regular-italicUnderline-fontFamily
+  );
+  --component-typography-body-sm-regular-italicUnderline-fontSize: var(
+    --semantic-typography-body-sm-regular-italicUnderline-fontSize
+  );
+  --component-typography-body-sm-regular-italicUnderline-fontWeight: var(
+    --semantic-typography-body-sm-regular-italicUnderline-fontWeight
+  );
+  --component-typography-body-sm-regular-italicUnderline-lineHeight: var(
+    --semantic-typography-body-sm-regular-italicUnderline-lineHeight
+  );
+  --component-typography-body-sm-regular-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-body-sm-regular-italicUnderline-paragraphSpacing
+  );
+  --component-typography-body-sm-regular-italicUnderline-letterSpacing: normal;
+  --component-typography-body-sm-regular-italicUnderline-textDecoration: var(
+    --semantic-typography-body-sm-regular-italicUnderline-textDecoration
+  );
+  --component-typography-body-sm-bold-default-fontFamily: var(--semantic-typography-body-sm-bold-default-fontFamily);
+  --component-typography-body-sm-bold-default-fontSize: var(--semantic-typography-body-sm-bold-default-fontSize);
+  --component-typography-body-sm-bold-default-fontWeight: var(--semantic-typography-body-sm-bold-default-fontWeight);
+  --component-typography-body-sm-bold-default-lineHeight: var(--semantic-typography-body-sm-bold-default-lineHeight);
+  --component-typography-body-sm-bold-default-paragraphSpacing: var(
+    --semantic-typography-body-sm-bold-default-paragraphSpacing
+  );
+  --component-typography-body-sm-bold-default-letterSpacing: normal;
+  --component-typography-body-sm-bold-default-textDecoration: var(
+    --semantic-typography-body-sm-bold-default-textDecoration
+  );
+  --component-typography-body-sm-bold-italic-fontFamily: var(--semantic-typography-body-sm-bold-italic-fontFamily);
+  --component-typography-body-sm-bold-italic-fontSize: var(--semantic-typography-body-sm-bold-italic-fontSize);
+  --component-typography-body-sm-bold-italic-fontWeight: var(--semantic-typography-body-sm-bold-italic-fontWeight);
+  --component-typography-body-sm-bold-italic-lineHeight: var(--semantic-typography-body-sm-bold-italic-lineHeight);
+  --component-typography-body-sm-bold-italic-paragraphSpacing: var(
+    --semantic-typography-body-sm-bold-italic-paragraphSpacing
+  );
+  --component-typography-body-sm-bold-italic-letterSpacing: normal;
+  --component-typography-body-sm-bold-italic-textDecoration: var(
+    --semantic-typography-body-sm-bold-italic-textDecoration
+  );
+  --component-typography-body-sm-bold-underline-fontFamily: var(
+    --semantic-typography-body-sm-bold-underline-fontFamily
+  );
+  --component-typography-body-sm-bold-underline-fontSize: var(--semantic-typography-body-sm-bold-underline-fontSize);
+  --component-typography-body-sm-bold-underline-fontWeight: var(
+    --semantic-typography-body-sm-bold-underline-fontWeight
+  );
+  --component-typography-body-sm-bold-underline-lineHeight: var(
+    --semantic-typography-body-sm-bold-underline-lineHeight
+  );
+  --component-typography-body-sm-bold-underline-paragraphSpacing: var(
+    --semantic-typography-body-sm-bold-underline-paragraphSpacing
+  );
+  --component-typography-body-sm-bold-underline-letterSpacing: normal;
+  --component-typography-body-sm-bold-underline-textDecoration: var(
+    --semantic-typography-body-sm-bold-underline-textDecoration
+  );
+  --component-typography-body-sm-bold-italicUnderline-fontFamily: var(
+    --semantic-typography-body-sm-bold-italicUnderline-fontFamily
+  );
+  --component-typography-body-sm-bold-italicUnderline-fontSize: var(
+    --semantic-typography-body-sm-bold-italicUnderline-fontSize
+  );
+  --component-typography-body-sm-bold-italicUnderline-fontWeight: var(
+    --semantic-typography-body-sm-bold-italicUnderline-fontWeight
+  );
+  --component-typography-body-sm-bold-italicUnderline-lineHeight: var(
+    --semantic-typography-body-sm-bold-italicUnderline-lineHeight
+  );
+  --component-typography-body-sm-bold-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-body-sm-bold-italicUnderline-paragraphSpacing
+  );
+  --component-typography-body-sm-bold-italicUnderline-letterSpacing: normal;
+  --component-typography-body-sm-bold-italicUnderline-textDecoration: var(
+    --semantic-typography-body-sm-bold-italicUnderline-textDecoration
+  );
+  --component-typography-caption-regular-default-fontFamily: var(
+    --semantic-typography-caption-regular-default-fontFamily
+  );
+  --component-typography-caption-regular-default-fontSize: var(--semantic-typography-caption-regular-default-fontSize);
+  --component-typography-caption-regular-default-fontWeight: var(
+    --semantic-typography-caption-regular-default-fontWeight
+  );
+  --component-typography-caption-regular-default-lineHeight: var(
+    --semantic-typography-caption-regular-default-lineHeight
+  );
+  --component-typography-caption-regular-default-paragraphSpacing: var(
+    --semantic-typography-caption-regular-default-paragraphSpacing
+  );
+  --component-typography-caption-regular-default-letterSpacing: normal;
+  --component-typography-caption-regular-default-textDecoration: var(
+    --semantic-typography-caption-regular-default-textDecoration
+  );
+  --component-typography-caption-regular-italic-fontFamily: var(
+    --semantic-typography-caption-regular-italic-fontFamily
+  );
+  --component-typography-caption-regular-italic-fontSize: var(--semantic-typography-caption-regular-italic-fontSize);
+  --component-typography-caption-regular-italic-fontWeight: var(
+    --semantic-typography-caption-regular-italic-fontWeight
+  );
+  --component-typography-caption-regular-italic-lineHeight: var(
+    --semantic-typography-caption-regular-italic-lineHeight
+  );
+  --component-typography-caption-regular-italic-paragraphSpacing: var(
+    --semantic-typography-caption-regular-italic-paragraphSpacing
+  );
+  --component-typography-caption-regular-italic-letterSpacing: normal;
+  --component-typography-caption-regular-italic-textDecoration: var(
+    --semantic-typography-caption-regular-italic-textDecoration
+  );
+  --component-typography-caption-regular-underline-fontFamily: var(
+    --semantic-typography-caption-regular-underline-fontFamily
+  );
+  --component-typography-caption-regular-underline-fontSize: var(
+    --semantic-typography-caption-regular-underline-fontSize
+  );
+  --component-typography-caption-regular-underline-fontWeight: var(
+    --semantic-typography-caption-regular-underline-fontWeight
+  );
+  --component-typography-caption-regular-underline-lineHeight: var(
+    --semantic-typography-caption-regular-underline-lineHeight
+  );
+  --component-typography-caption-regular-underline-paragraphSpacing: var(
+    --semantic-typography-caption-regular-underline-paragraphSpacing
+  );
+  --component-typography-caption-regular-underline-letterSpacing: normal;
+  --component-typography-caption-regular-underline-textDecoration: var(
+    --semantic-typography-caption-regular-underline-textDecoration
+  );
+  --component-typography-caption-regular-italicUnderline-fontFamily: var(
+    --semantic-typography-caption-regular-italicUnderline-fontFamily
+  );
+  --component-typography-caption-regular-italicUnderline-fontSize: var(
+    --semantic-typography-caption-regular-italicUnderline-fontSize
+  );
+  --component-typography-caption-regular-italicUnderline-fontWeight: var(
+    --semantic-typography-caption-regular-italicUnderline-fontWeight
+  );
+  --component-typography-caption-regular-italicUnderline-lineHeight: var(
+    --semantic-typography-caption-regular-italicUnderline-lineHeight
+  );
+  --component-typography-caption-regular-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-caption-regular-italicUnderline-paragraphSpacing
+  );
+  --component-typography-caption-regular-italicUnderline-letterSpacing: normal;
+  --component-typography-caption-regular-italicUnderline-textDecoration: var(
+    --semantic-typography-caption-regular-italicUnderline-textDecoration
+  );
+  --component-typography-caption-bold-default-fontFamily: var(--semantic-typography-caption-bold-default-fontFamily);
+  --component-typography-caption-bold-default-fontSize: var(--semantic-typography-caption-bold-default-fontSize);
+  --component-typography-caption-bold-default-fontWeight: var(--semantic-typography-caption-bold-default-fontWeight);
+  --component-typography-caption-bold-default-lineHeight: var(--semantic-typography-caption-bold-default-lineHeight);
+  --component-typography-caption-bold-default-paragraphSpacing: var(
+    --semantic-typography-caption-bold-default-paragraphSpacing
+  );
+  --component-typography-caption-bold-default-letterSpacing: normal;
+  --component-typography-caption-bold-default-textDecoration: var(
+    --semantic-typography-caption-bold-default-textDecoration
+  );
+  --component-typography-caption-bold-italic-fontFamily: var(--semantic-typography-caption-bold-italic-fontFamily);
+  --component-typography-caption-bold-italic-fontSize: var(--semantic-typography-caption-bold-italic-fontSize);
+  --component-typography-caption-bold-italic-fontWeight: var(--semantic-typography-caption-bold-italic-fontWeight);
+  --component-typography-caption-bold-italic-lineHeight: var(--semantic-typography-caption-bold-italic-lineHeight);
+  --component-typography-caption-bold-italic-paragraphSpacing: var(
+    --semantic-typography-caption-bold-italic-paragraphSpacing
+  );
+  --component-typography-caption-bold-italic-letterSpacing: normal;
+  --component-typography-caption-bold-italic-textDecoration: var(
+    --semantic-typography-caption-bold-italic-textDecoration
+  );
+  --component-typography-caption-bold-underline-fontFamily: var(
+    --semantic-typography-caption-bold-underline-fontFamily
+  );
+  --component-typography-caption-bold-underline-fontSize: var(--semantic-typography-caption-bold-underline-fontSize);
+  --component-typography-caption-bold-underline-fontWeight: var(
+    --semantic-typography-caption-bold-underline-fontWeight
+  );
+  --component-typography-caption-bold-underline-lineHeight: var(
+    --semantic-typography-caption-bold-underline-lineHeight
+  );
+  --component-typography-caption-bold-underline-paragraphSpacing: var(
+    --semantic-typography-caption-bold-underline-paragraphSpacing
+  );
+  --component-typography-caption-bold-underline-letterSpacing: normal;
+  --component-typography-caption-bold-underline-textDecoration: var(
+    --semantic-typography-caption-bold-underline-textDecoration
+  );
+  --component-typography-caption-bold-italicUnderline-fontFamily: var(
+    --semantic-typography-caption-bold-italicUnderline-fontFamily
+  );
+  --component-typography-caption-bold-italicUnderline-fontSize: var(
+    --semantic-typography-caption-bold-italicUnderline-fontSize
+  );
+  --component-typography-caption-bold-italicUnderline-fontWeight: var(
+    --semantic-typography-caption-bold-italicUnderline-fontWeight
+  );
+  --component-typography-caption-bold-italicUnderline-lineHeight: var(
+    --semantic-typography-caption-bold-italicUnderline-lineHeight
+  );
+  --component-typography-caption-bold-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-caption-bold-italicUnderline-paragraphSpacing
+  );
+  --component-typography-caption-bold-italicUnderline-letterSpacing: normal;
+  --component-typography-caption-bold-italicUnderline-textDecoration: var(
+    --semantic-typography-caption-bold-italicUnderline-textDecoration
+  );
+  --component-typography-code-xl-regular-default-fontFamily: var(
+    --semantic-typography-code-xl-regular-default-fontFamily
+  );
+  --component-typography-code-xl-regular-default-fontSize: var(--semantic-typography-code-xl-regular-default-fontSize);
+  --component-typography-code-xl-regular-default-fontWeight: var(
+    --semantic-typography-code-xl-regular-default-fontWeight
+  );
+  --component-typography-code-xl-regular-default-lineHeight: var(
+    --semantic-typography-code-xl-regular-default-lineHeight
+  );
+  --component-typography-code-xl-regular-default-paragraphSpacing: var(
+    --semantic-typography-code-xl-regular-default-paragraphSpacing
+  );
+  --component-typography-code-xl-regular-default-letterSpacing: normal;
+  --component-typography-code-xl-regular-default-textDecoration: var(
+    --semantic-typography-code-xl-regular-default-textDecoration
+  );
+  --component-typography-code-xl-regular-italic-fontFamily: var(
+    --semantic-typography-code-xl-regular-italic-fontFamily
+  );
+  --component-typography-code-xl-regular-italic-fontSize: var(--semantic-typography-code-xl-regular-italic-fontSize);
+  --component-typography-code-xl-regular-italic-fontWeight: var(
+    --semantic-typography-code-xl-regular-italic-fontWeight
+  );
+  --component-typography-code-xl-regular-italic-lineHeight: var(
+    --semantic-typography-code-xl-regular-italic-lineHeight
+  );
+  --component-typography-code-xl-regular-italic-paragraphSpacing: var(
+    --semantic-typography-code-xl-regular-italic-paragraphSpacing
+  );
+  --component-typography-code-xl-regular-italic-letterSpacing: normal;
+  --component-typography-code-xl-regular-italic-textDecoration: var(
+    --semantic-typography-code-xl-regular-italic-textDecoration
+  );
+  --component-typography-code-xl-regular-underline-fontFamily: var(
+    --semantic-typography-code-xl-regular-underline-fontFamily
+  );
+  --component-typography-code-xl-regular-underline-fontSize: var(
+    --semantic-typography-code-xl-regular-underline-fontSize
+  );
+  --component-typography-code-xl-regular-underline-fontWeight: var(
+    --semantic-typography-code-xl-regular-underline-fontWeight
+  );
+  --component-typography-code-xl-regular-underline-lineHeight: var(
+    --semantic-typography-code-xl-regular-underline-lineHeight
+  );
+  --component-typography-code-xl-regular-underline-paragraphSpacing: var(
+    --semantic-typography-code-xl-regular-underline-paragraphSpacing
+  );
+  --component-typography-code-xl-regular-underline-letterSpacing: normal;
+  --component-typography-code-xl-regular-underline-textDecoration: var(
+    --semantic-typography-code-xl-regular-underline-textDecoration
+  );
+  --component-typography-code-xl-regular-italicUnderline-fontFamily: var(
+    --semantic-typography-code-xl-regular-italicUnderline-fontFamily
+  );
+  --component-typography-code-xl-regular-italicUnderline-fontSize: var(
+    --semantic-typography-code-xl-regular-italicUnderline-fontSize
+  );
+  --component-typography-code-xl-regular-italicUnderline-fontWeight: var(
+    --semantic-typography-code-xl-regular-italicUnderline-fontWeight
+  );
+  --component-typography-code-xl-regular-italicUnderline-lineHeight: var(
+    --semantic-typography-code-xl-regular-italicUnderline-lineHeight
+  );
+  --component-typography-code-xl-regular-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-code-xl-regular-italicUnderline-paragraphSpacing
+  );
+  --component-typography-code-xl-regular-italicUnderline-letterSpacing: normal;
+  --component-typography-code-xl-regular-italicUnderline-textDecoration: var(
+    --semantic-typography-code-xl-regular-italicUnderline-textDecoration
+  );
+  --component-typography-code-xl-bold-default-fontFamily: var(--semantic-typography-code-xl-bold-default-fontFamily);
+  --component-typography-code-xl-bold-default-fontSize: var(--semantic-typography-code-xl-bold-default-fontSize);
+  --component-typography-code-xl-bold-default-fontWeight: var(--semantic-typography-code-xl-bold-default-fontWeight);
+  --component-typography-code-xl-bold-default-lineHeight: var(--semantic-typography-code-xl-bold-default-lineHeight);
+  --component-typography-code-xl-bold-default-paragraphSpacing: var(
+    --semantic-typography-code-xl-bold-default-paragraphSpacing
+  );
+  --component-typography-code-xl-bold-default-letterSpacing: normal;
+  --component-typography-code-xl-bold-default-textDecoration: var(
+    --semantic-typography-code-xl-bold-default-textDecoration
+  );
+  --component-typography-code-xl-bold-italic-fontFamily: var(--semantic-typography-code-xl-bold-italic-fontFamily);
+  --component-typography-code-xl-bold-italic-fontSize: var(--semantic-typography-code-xl-bold-italic-fontSize);
+  --component-typography-code-xl-bold-italic-fontWeight: var(--semantic-typography-code-xl-bold-italic-fontWeight);
+  --component-typography-code-xl-bold-italic-lineHeight: var(--semantic-typography-code-xl-bold-italic-lineHeight);
+  --component-typography-code-xl-bold-italic-paragraphSpacing: var(
+    --semantic-typography-code-xl-bold-italic-paragraphSpacing
+  );
+  --component-typography-code-xl-bold-italic-letterSpacing: normal;
+  --component-typography-code-xl-bold-italic-textDecoration: var(
+    --semantic-typography-code-xl-bold-italic-textDecoration
+  );
+  --component-typography-code-xl-bold-underline-fontFamily: var(
+    --semantic-typography-code-xl-bold-underline-fontFamily
+  );
+  --component-typography-code-xl-bold-underline-fontSize: var(--semantic-typography-code-xl-bold-underline-fontSize);
+  --component-typography-code-xl-bold-underline-fontWeight: var(
+    --semantic-typography-code-xl-bold-underline-fontWeight
+  );
+  --component-typography-code-xl-bold-underline-lineHeight: var(
+    --semantic-typography-code-xl-bold-underline-lineHeight
+  );
+  --component-typography-code-xl-bold-underline-paragraphSpacing: var(
+    --semantic-typography-code-xl-bold-underline-paragraphSpacing
+  );
+  --component-typography-code-xl-bold-underline-letterSpacing: normal;
+  --component-typography-code-xl-bold-underline-textDecoration: var(
+    --semantic-typography-code-xl-bold-underline-textDecoration
+  );
+  --component-typography-code-xl-bold-italicUnderline-fontFamily: var(
+    --semantic-typography-code-xl-bold-italicUnderline-fontFamily
+  );
+  --component-typography-code-xl-bold-italicUnderline-fontSize: var(
+    --semantic-typography-code-xl-bold-italicUnderline-fontSize
+  );
+  --component-typography-code-xl-bold-italicUnderline-fontWeight: var(
+    --semantic-typography-code-xl-bold-italicUnderline-fontWeight
+  );
+  --component-typography-code-xl-bold-italicUnderline-lineHeight: var(
+    --semantic-typography-code-xl-bold-italicUnderline-lineHeight
+  );
+  --component-typography-code-xl-bold-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-code-xl-bold-italicUnderline-paragraphSpacing
+  );
+  --component-typography-code-xl-bold-italicUnderline-letterSpacing: normal;
+  --component-typography-code-xl-bold-italicUnderline-textDecoration: var(
+    --semantic-typography-code-xl-bold-italicUnderline-textDecoration
+  );
+  --component-typography-code-lg-regular-default-fontFamily: var(
+    --semantic-typography-code-lg-regular-default-fontFamily
+  );
+  --component-typography-code-lg-regular-default-fontSize: var(--semantic-typography-code-lg-regular-default-fontSize);
+  --component-typography-code-lg-regular-default-fontWeight: var(
+    --semantic-typography-code-lg-regular-default-fontWeight
+  );
+  --component-typography-code-lg-regular-default-lineHeight: var(
+    --semantic-typography-code-lg-regular-default-lineHeight
+  );
+  --component-typography-code-lg-regular-default-paragraphSpacing: var(
+    --semantic-typography-code-lg-regular-default-paragraphSpacing
+  );
+  --component-typography-code-lg-regular-default-letterSpacing: normal;
+  --component-typography-code-lg-regular-default-textDecoration: var(
+    --semantic-typography-code-lg-regular-default-textDecoration
+  );
+  --component-typography-code-lg-regular-italic-fontFamily: var(
+    --semantic-typography-code-lg-regular-italic-fontFamily
+  );
+  --component-typography-code-lg-regular-italic-fontSize: var(--semantic-typography-code-lg-regular-italic-fontSize);
+  --component-typography-code-lg-regular-italic-fontWeight: var(
+    --semantic-typography-code-lg-regular-italic-fontWeight
+  );
+  --component-typography-code-lg-regular-italic-lineHeight: var(
+    --semantic-typography-code-lg-regular-italic-lineHeight
+  );
+  --component-typography-code-lg-regular-italic-paragraphSpacing: var(
+    --semantic-typography-code-lg-regular-italic-paragraphSpacing
+  );
+  --component-typography-code-lg-regular-italic-letterSpacing: normal;
+  --component-typography-code-lg-regular-italic-textDecoration: var(
+    --semantic-typography-code-lg-regular-italic-textDecoration
+  );
+  --component-typography-code-lg-regular-underline-fontFamily: var(
+    --semantic-typography-code-lg-regular-underline-fontFamily
+  );
+  --component-typography-code-lg-regular-underline-fontSize: var(
+    --semantic-typography-code-lg-regular-underline-fontSize
+  );
+  --component-typography-code-lg-regular-underline-fontWeight: var(
+    --semantic-typography-code-lg-regular-underline-fontWeight
+  );
+  --component-typography-code-lg-regular-underline-lineHeight: var(
+    --semantic-typography-code-lg-regular-underline-lineHeight
+  );
+  --component-typography-code-lg-regular-underline-paragraphSpacing: var(
+    --semantic-typography-code-lg-regular-underline-paragraphSpacing
+  );
+  --component-typography-code-lg-regular-underline-letterSpacing: normal;
+  --component-typography-code-lg-regular-underline-textDecoration: var(
+    --semantic-typography-code-lg-regular-underline-textDecoration
+  );
+  --component-typography-code-lg-regular-italicUnderline-fontFamily: var(
+    --semantic-typography-code-lg-regular-italicUnderline-fontFamily
+  );
+  --component-typography-code-lg-regular-italicUnderline-fontSize: var(
+    --semantic-typography-code-lg-regular-italicUnderline-fontSize
+  );
+  --component-typography-code-lg-regular-italicUnderline-fontWeight: var(
+    --semantic-typography-code-lg-regular-italicUnderline-fontWeight
+  );
+  --component-typography-code-lg-regular-italicUnderline-lineHeight: var(
+    --semantic-typography-code-lg-regular-italicUnderline-lineHeight
+  );
+  --component-typography-code-lg-regular-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-code-lg-regular-italicUnderline-paragraphSpacing
+  );
+  --component-typography-code-lg-regular-italicUnderline-letterSpacing: normal;
+  --component-typography-code-lg-regular-italicUnderline-textDecoration: var(
+    --semantic-typography-code-lg-regular-italicUnderline-textDecoration
+  );
+  --component-typography-code-lg-bold-default-fontFamily: var(--semantic-typography-code-lg-bold-default-fontFamily);
+  --component-typography-code-lg-bold-default-fontSize: var(--semantic-typography-code-lg-bold-default-fontSize);
+  --component-typography-code-lg-bold-default-fontWeight: var(--semantic-typography-code-lg-bold-default-fontWeight);
+  --component-typography-code-lg-bold-default-lineHeight: var(--semantic-typography-code-lg-bold-default-lineHeight);
+  --component-typography-code-lg-bold-default-paragraphSpacing: var(
+    --semantic-typography-code-lg-bold-default-paragraphSpacing
+  );
+  --component-typography-code-lg-bold-default-letterSpacing: normal;
+  --component-typography-code-lg-bold-default-textDecoration: var(
+    --semantic-typography-code-lg-bold-default-textDecoration
+  );
+  --component-typography-code-lg-bold-italic-fontFamily: var(--semantic-typography-code-lg-bold-italic-fontFamily);
+  --component-typography-code-lg-bold-italic-fontSize: var(--semantic-typography-code-lg-bold-italic-fontSize);
+  --component-typography-code-lg-bold-italic-fontWeight: var(--semantic-typography-code-lg-bold-italic-fontWeight);
+  --component-typography-code-lg-bold-italic-lineHeight: var(--semantic-typography-code-lg-bold-italic-lineHeight);
+  --component-typography-code-lg-bold-italic-paragraphSpacing: var(
+    --semantic-typography-code-lg-bold-italic-paragraphSpacing
+  );
+  --component-typography-code-lg-bold-italic-letterSpacing: normal;
+  --component-typography-code-lg-bold-italic-textDecoration: var(
+    --semantic-typography-code-lg-bold-italic-textDecoration
+  );
+  --component-typography-code-lg-bold-underline-fontFamily: var(
+    --semantic-typography-code-lg-bold-underline-fontFamily
+  );
+  --component-typography-code-lg-bold-underline-fontSize: var(--semantic-typography-code-lg-bold-underline-fontSize);
+  --component-typography-code-lg-bold-underline-fontWeight: var(
+    --semantic-typography-code-lg-bold-underline-fontWeight
+  );
+  --component-typography-code-lg-bold-underline-lineHeight: var(
+    --semantic-typography-code-lg-bold-underline-lineHeight
+  );
+  --component-typography-code-lg-bold-underline-paragraphSpacing: var(
+    --semantic-typography-code-lg-bold-underline-paragraphSpacing
+  );
+  --component-typography-code-lg-bold-underline-letterSpacing: normal;
+  --component-typography-code-lg-bold-underline-textDecoration: var(
+    --semantic-typography-code-lg-bold-underline-textDecoration
+  );
+  --component-typography-code-lg-bold-italicUnderline-fontFamily: var(
+    --semantic-typography-code-lg-bold-italicUnderline-fontFamily
+  );
+  --component-typography-code-lg-bold-italicUnderline-fontSize: var(
+    --semantic-typography-code-lg-bold-italicUnderline-fontSize
+  );
+  --component-typography-code-lg-bold-italicUnderline-fontWeight: var(
+    --semantic-typography-code-lg-bold-italicUnderline-fontWeight
+  );
+  --component-typography-code-lg-bold-italicUnderline-lineHeight: var(
+    --semantic-typography-code-lg-bold-italicUnderline-lineHeight
+  );
+  --component-typography-code-lg-bold-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-code-lg-bold-italicUnderline-paragraphSpacing
+  );
+  --component-typography-code-lg-bold-italicUnderline-letterSpacing: normal;
+  --component-typography-code-lg-bold-italicUnderline-textDecoration: var(
+    --semantic-typography-code-lg-bold-italicUnderline-textDecoration
+  );
+  --component-typography-code-md-regular-default-fontFamily: var(
+    --semantic-typography-code-md-regular-default-fontFamily
+  );
+  --component-typography-code-md-regular-default-fontSize: var(--semantic-typography-code-md-regular-default-fontSize);
+  --component-typography-code-md-regular-default-fontWeight: var(
+    --semantic-typography-code-md-regular-default-fontWeight
+  );
+  --component-typography-code-md-regular-default-lineHeight: var(
+    --semantic-typography-code-md-regular-default-lineHeight
+  );
+  --component-typography-code-md-regular-default-paragraphSpacing: var(
+    --semantic-typography-code-md-regular-default-paragraphSpacing
+  );
+  --component-typography-code-md-regular-default-letterSpacing: normal;
+  --component-typography-code-md-regular-default-textDecoration: var(
+    --semantic-typography-code-md-regular-default-textDecoration
+  );
+  --component-typography-code-md-regular-italic-fontFamily: var(
+    --semantic-typography-code-md-regular-italic-fontFamily
+  );
+  --component-typography-code-md-regular-italic-fontSize: var(--semantic-typography-code-md-regular-italic-fontSize);
+  --component-typography-code-md-regular-italic-fontWeight: var(
+    --semantic-typography-code-md-regular-italic-fontWeight
+  );
+  --component-typography-code-md-regular-italic-lineHeight: var(
+    --semantic-typography-code-md-regular-italic-lineHeight
+  );
+  --component-typography-code-md-regular-italic-paragraphSpacing: var(
+    --semantic-typography-code-md-regular-italic-paragraphSpacing
+  );
+  --component-typography-code-md-regular-italic-letterSpacing: normal;
+  --component-typography-code-md-regular-italic-textDecoration: var(
+    --semantic-typography-code-md-regular-italic-textDecoration
+  );
+  --component-typography-code-md-regular-underline-fontFamily: var(
+    --semantic-typography-code-md-regular-underline-fontFamily
+  );
+  --component-typography-code-md-regular-underline-fontSize: var(
+    --semantic-typography-code-md-regular-underline-fontSize
+  );
+  --component-typography-code-md-regular-underline-fontWeight: var(
+    --semantic-typography-code-md-regular-underline-fontWeight
+  );
+  --component-typography-code-md-regular-underline-lineHeight: var(
+    --semantic-typography-code-md-regular-underline-lineHeight
+  );
+  --component-typography-code-md-regular-underline-paragraphSpacing: var(
+    --semantic-typography-code-md-regular-underline-paragraphSpacing
+  );
+  --component-typography-code-md-regular-underline-letterSpacing: normal;
+  --component-typography-code-md-regular-underline-textDecoration: var(
+    --semantic-typography-code-md-regular-underline-textDecoration
+  );
+  --component-typography-code-md-regular-italicUnderline-fontFamily: var(
+    --semantic-typography-code-md-regular-italicUnderline-fontFamily
+  );
+  --component-typography-code-md-regular-italicUnderline-fontSize: var(
+    --semantic-typography-code-md-regular-italicUnderline-fontSize
+  );
+  --component-typography-code-md-regular-italicUnderline-fontWeight: var(
+    --semantic-typography-code-md-regular-italicUnderline-fontWeight
+  );
+  --component-typography-code-md-regular-italicUnderline-lineHeight: var(
+    --semantic-typography-code-md-regular-italicUnderline-lineHeight
+  );
+  --component-typography-code-md-regular-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-code-md-regular-italicUnderline-paragraphSpacing
+  );
+  --component-typography-code-md-regular-italicUnderline-letterSpacing: normal;
+  --component-typography-code-md-regular-italicUnderline-textDecoration: var(
+    --semantic-typography-code-md-regular-italicUnderline-textDecoration
+  );
+  --component-typography-code-md-bold-default-fontFamily: var(--semantic-typography-code-md-bold-default-fontFamily);
+  --component-typography-code-md-bold-default-fontSize: var(--semantic-typography-code-md-bold-default-fontSize);
+  --component-typography-code-md-bold-default-fontWeight: var(--semantic-typography-code-md-bold-default-fontWeight);
+  --component-typography-code-md-bold-default-lineHeight: var(--semantic-typography-code-md-bold-default-lineHeight);
+  --component-typography-code-md-bold-default-paragraphSpacing: var(
+    --semantic-typography-code-md-bold-default-paragraphSpacing
+  );
+  --component-typography-code-md-bold-default-letterSpacing: normal;
+  --component-typography-code-md-bold-default-textDecoration: var(
+    --semantic-typography-code-md-bold-default-textDecoration
+  );
+  --component-typography-code-md-bold-italic-fontFamily: var(--semantic-typography-code-md-bold-italic-fontFamily);
+  --component-typography-code-md-bold-italic-fontSize: var(--semantic-typography-code-md-bold-italic-fontSize);
+  --component-typography-code-md-bold-italic-fontWeight: var(--semantic-typography-code-md-bold-italic-fontWeight);
+  --component-typography-code-md-bold-italic-lineHeight: var(--semantic-typography-code-md-bold-italic-lineHeight);
+  --component-typography-code-md-bold-italic-paragraphSpacing: var(
+    --semantic-typography-code-md-bold-italic-paragraphSpacing
+  );
+  --component-typography-code-md-bold-italic-letterSpacing: normal;
+  --component-typography-code-md-bold-italic-textDecoration: var(
+    --semantic-typography-code-md-bold-italic-textDecoration
+  );
+  --component-typography-code-md-bold-underline-fontFamily: var(
+    --semantic-typography-code-md-bold-underline-fontFamily
+  );
+  --component-typography-code-md-bold-underline-fontSize: var(--semantic-typography-code-md-bold-underline-fontSize);
+  --component-typography-code-md-bold-underline-fontWeight: var(
+    --semantic-typography-code-md-bold-underline-fontWeight
+  );
+  --component-typography-code-md-bold-underline-lineHeight: var(
+    --semantic-typography-code-md-bold-underline-lineHeight
+  );
+  --component-typography-code-md-bold-underline-paragraphSpacing: var(
+    --semantic-typography-code-md-bold-underline-paragraphSpacing
+  );
+  --component-typography-code-md-bold-underline-letterSpacing: normal;
+  --component-typography-code-md-bold-underline-textDecoration: var(
+    --semantic-typography-code-md-bold-underline-textDecoration
+  );
+  --component-typography-code-md-bold-italicUnderline-fontFamily: var(
+    --semantic-typography-code-md-bold-italicUnderline-fontFamily
+  );
+  --component-typography-code-md-bold-italicUnderline-fontSize: var(
+    --semantic-typography-code-md-bold-italicUnderline-fontSize
+  );
+  --component-typography-code-md-bold-italicUnderline-fontWeight: var(
+    --semantic-typography-code-md-bold-italicUnderline-fontWeight
+  );
+  --component-typography-code-md-bold-italicUnderline-lineHeight: var(
+    --semantic-typography-code-md-bold-italicUnderline-lineHeight
+  );
+  --component-typography-code-md-bold-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-code-md-bold-italicUnderline-paragraphSpacing
+  );
+  --component-typography-code-md-bold-italicUnderline-letterSpacing: normal;
+  --component-typography-code-md-bold-italicUnderline-textDecoration: var(
+    --semantic-typography-code-md-bold-italicUnderline-textDecoration
+  );
+  --component-typography-code-sm-regular-default-fontFamily: var(
+    --semantic-typography-code-sm-regular-default-fontFamily
+  );
+  --component-typography-code-sm-regular-default-fontSize: var(--semantic-typography-code-sm-regular-default-fontSize);
+  --component-typography-code-sm-regular-default-fontWeight: var(
+    --semantic-typography-code-sm-regular-default-fontWeight
+  );
+  --component-typography-code-sm-regular-default-lineHeight: var(
+    --semantic-typography-code-sm-regular-default-lineHeight
+  );
+  --component-typography-code-sm-regular-default-paragraphSpacing: var(
+    --semantic-typography-code-sm-regular-default-paragraphSpacing
+  );
+  --component-typography-code-sm-regular-default-letterSpacing: normal;
+  --component-typography-code-sm-regular-default-textDecoration: var(
+    --semantic-typography-code-sm-regular-default-textDecoration
+  );
+  --component-typography-code-sm-regular-italic-fontFamily: var(
+    --semantic-typography-code-sm-regular-italic-fontFamily
+  );
+  --component-typography-code-sm-regular-italic-fontSize: var(--semantic-typography-code-sm-regular-italic-fontSize);
+  --component-typography-code-sm-regular-italic-fontWeight: var(
+    --semantic-typography-code-sm-regular-italic-fontWeight
+  );
+  --component-typography-code-sm-regular-italic-lineHeight: var(
+    --semantic-typography-code-sm-regular-italic-lineHeight
+  );
+  --component-typography-code-sm-regular-italic-paragraphSpacing: var(
+    --semantic-typography-code-sm-regular-italic-paragraphSpacing
+  );
+  --component-typography-code-sm-regular-italic-letterSpacing: normal;
+  --component-typography-code-sm-regular-italic-textDecoration: var(
+    --semantic-typography-code-sm-regular-italic-textDecoration
+  );
+  --component-typography-code-sm-regular-underline-fontFamily: var(
+    --semantic-typography-code-sm-regular-underline-fontFamily
+  );
+  --component-typography-code-sm-regular-underline-fontSize: var(
+    --semantic-typography-code-sm-regular-underline-fontSize
+  );
+  --component-typography-code-sm-regular-underline-fontWeight: var(
+    --semantic-typography-code-sm-regular-underline-fontWeight
+  );
+  --component-typography-code-sm-regular-underline-lineHeight: var(
+    --semantic-typography-code-sm-regular-underline-lineHeight
+  );
+  --component-typography-code-sm-regular-underline-paragraphSpacing: var(
+    --semantic-typography-code-sm-regular-underline-paragraphSpacing
+  );
+  --component-typography-code-sm-regular-underline-letterSpacing: normal;
+  --component-typography-code-sm-regular-underline-textDecoration: var(
+    --semantic-typography-code-sm-regular-underline-textDecoration
+  );
+  --component-typography-code-sm-regular-italicUnderline-fontFamily: var(
+    --semantic-typography-code-sm-regular-italicUnderline-fontFamily
+  );
+  --component-typography-code-sm-regular-italicUnderline-fontSize: var(
+    --semantic-typography-code-sm-regular-italicUnderline-fontSize
+  );
+  --component-typography-code-sm-regular-italicUnderline-fontWeight: var(
+    --semantic-typography-code-sm-regular-italicUnderline-fontWeight
+  );
+  --component-typography-code-sm-regular-italicUnderline-lineHeight: var(
+    --semantic-typography-code-sm-regular-italicUnderline-lineHeight
+  );
+  --component-typography-code-sm-regular-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-code-sm-regular-italicUnderline-paragraphSpacing
+  );
+  --component-typography-code-sm-regular-italicUnderline-letterSpacing: normal;
+  --component-typography-code-sm-regular-italicUnderline-textDecoration: var(
+    --semantic-typography-code-sm-regular-italicUnderline-textDecoration
+  );
+  --component-typography-code-sm-bold-default-fontFamily: var(--semantic-typography-code-sm-bold-default-fontFamily);
+  --component-typography-code-sm-bold-default-fontSize: var(--semantic-typography-code-sm-bold-default-fontSize);
+  --component-typography-code-sm-bold-default-fontWeight: var(--semantic-typography-code-sm-bold-default-fontWeight);
+  --component-typography-code-sm-bold-default-lineHeight: var(--semantic-typography-code-sm-bold-default-lineHeight);
+  --component-typography-code-sm-bold-default-paragraphSpacing: var(
+    --semantic-typography-code-sm-bold-default-paragraphSpacing
+  );
+  --component-typography-code-sm-bold-default-letterSpacing: normal;
+  --component-typography-code-sm-bold-default-textDecoration: var(
+    --semantic-typography-code-sm-bold-default-textDecoration
+  );
+  --component-typography-code-sm-bold-italic-fontFamily: var(--semantic-typography-code-sm-bold-italic-fontFamily);
+  --component-typography-code-sm-bold-italic-fontSize: var(--semantic-typography-code-sm-bold-italic-fontSize);
+  --component-typography-code-sm-bold-italic-fontWeight: var(--semantic-typography-code-sm-bold-italic-fontWeight);
+  --component-typography-code-sm-bold-italic-lineHeight: var(--semantic-typography-code-sm-bold-italic-lineHeight);
+  --component-typography-code-sm-bold-italic-paragraphSpacing: var(
+    --semantic-typography-code-sm-bold-italic-paragraphSpacing
+  );
+  --component-typography-code-sm-bold-italic-letterSpacing: normal;
+  --component-typography-code-sm-bold-italic-textDecoration: var(
+    --semantic-typography-code-sm-bold-italic-textDecoration
+  );
+  --component-typography-code-sm-bold-underline-fontFamily: var(
+    --semantic-typography-code-sm-bold-underline-fontFamily
+  );
+  --component-typography-code-sm-bold-underline-fontSize: var(--semantic-typography-code-sm-bold-underline-fontSize);
+  --component-typography-code-sm-bold-underline-fontWeight: var(
+    --semantic-typography-code-sm-bold-underline-fontWeight
+  );
+  --component-typography-code-sm-bold-underline-lineHeight: var(
+    --semantic-typography-code-sm-bold-underline-lineHeight
+  );
+  --component-typography-code-sm-bold-underline-paragraphSpacing: var(
+    --semantic-typography-code-sm-bold-underline-paragraphSpacing
+  );
+  --component-typography-code-sm-bold-underline-letterSpacing: normal;
+  --component-typography-code-sm-bold-underline-textDecoration: var(
+    --semantic-typography-code-sm-bold-underline-textDecoration
+  );
+  --component-typography-code-sm-bold-italicUnderline-fontFamily: var(
+    --semantic-typography-code-sm-bold-italicUnderline-fontFamily
+  );
+  --component-typography-code-sm-bold-italicUnderline-fontSize: var(
+    --semantic-typography-code-sm-bold-italicUnderline-fontSize
+  );
+  --component-typography-code-sm-bold-italicUnderline-fontWeight: var(
+    --semantic-typography-code-sm-bold-italicUnderline-fontWeight
+  );
+  --component-typography-code-sm-bold-italicUnderline-lineHeight: var(
+    --semantic-typography-code-sm-bold-italicUnderline-lineHeight
+  );
+  --component-typography-code-sm-bold-italicUnderline-paragraphSpacing: var(
+    --semantic-typography-code-sm-bold-italicUnderline-paragraphSpacing
+  );
+  --component-typography-code-sm-bold-italicUnderline-letterSpacing: normal;
+  --component-typography-code-sm-bold-italicUnderline-textDecoration: var(
+    --semantic-typography-code-sm-bold-italicUnderline-textDecoration
+  );
+  --component-typography-icon-labelPaired-regular-xl-fontFamily: var(
+    --semantic-typography-icon-labelPaired-regular-xl-fontFamily
+  );
+  --component-typography-icon-labelPaired-regular-xl-fontSize: var(
+    --semantic-typography-icon-labelPaired-regular-xl-fontSize
+  );
+  --component-typography-icon-labelPaired-regular-xl-fontWeight: var(
+    --semantic-typography-icon-labelPaired-regular-xl-fontWeight
+  );
+  --component-typography-icon-labelPaired-regular-xl-lineHeight: var(
+    --semantic-typography-icon-labelPaired-regular-xl-lineHeight
+  );
+  --component-typography-icon-labelPaired-regular-xl-letterSpacing: normal;
+  --component-typography-icon-labelPaired-regular-lg-fontFamily: var(
+    --semantic-typography-icon-labelPaired-regular-lg-fontFamily
+  );
+  --component-typography-icon-labelPaired-regular-lg-fontSize: var(
+    --semantic-typography-icon-labelPaired-regular-lg-fontSize
+  );
+  --component-typography-icon-labelPaired-regular-lg-fontWeight: var(
+    --semantic-typography-icon-labelPaired-regular-lg-fontWeight
+  );
+  --component-typography-icon-labelPaired-regular-lg-lineHeight: var(
+    --semantic-typography-icon-labelPaired-regular-lg-lineHeight
+  );
+  --component-typography-icon-labelPaired-regular-lg-letterSpacing: normal;
+  --component-typography-icon-labelPaired-regular-md-fontFamily: var(
+    --semantic-typography-icon-labelPaired-regular-md-fontFamily
+  );
+  --component-typography-icon-labelPaired-regular-md-fontSize: var(
+    --semantic-typography-icon-labelPaired-regular-md-fontSize
+  );
+  --component-typography-icon-labelPaired-regular-md-fontWeight: var(
+    --semantic-typography-icon-labelPaired-regular-md-fontWeight
+  );
+  --component-typography-icon-labelPaired-regular-md-lineHeight: var(
+    --semantic-typography-icon-labelPaired-regular-md-lineHeight
+  );
+  --component-typography-icon-labelPaired-regular-md-letterSpacing: normal;
+  --component-typography-icon-labelPaired-regular-sm-fontFamily: var(
+    --semantic-typography-icon-labelPaired-regular-sm-fontFamily
+  );
+  --component-typography-icon-labelPaired-regular-sm-fontSize: var(
+    --semantic-typography-icon-labelPaired-regular-sm-fontSize
+  );
+  --component-typography-icon-labelPaired-regular-sm-fontWeight: var(
+    --semantic-typography-icon-labelPaired-regular-sm-fontWeight
+  );
+  --component-typography-icon-labelPaired-regular-sm-lineHeight: var(
+    --semantic-typography-icon-labelPaired-regular-sm-lineHeight
+  );
+  --component-typography-icon-labelPaired-regular-sm-letterSpacing: normal;
+  --component-typography-icon-labelPaired-regular-caption-fontFamily: var(
+    --semantic-typography-icon-labelPaired-regular-caption-fontFamily
+  );
+  --component-typography-icon-labelPaired-regular-caption-fontSize: var(
+    --semantic-typography-icon-labelPaired-regular-caption-fontSize
+  );
+  --component-typography-icon-labelPaired-regular-caption-fontWeight: var(
+    --semantic-typography-icon-labelPaired-regular-caption-fontWeight
+  );
+  --component-typography-icon-labelPaired-regular-caption-lineHeight: var(
+    --semantic-typography-icon-labelPaired-regular-caption-lineHeight
+  );
+  --component-typography-icon-labelPaired-regular-caption-letterSpacing: normal;
+  --component-typography-icon-labelPaired-bold-xl-fontFamily: var(
+    --semantic-typography-icon-labelPaired-bold-xl-fontFamily
+  );
+  --component-typography-icon-labelPaired-bold-xl-fontSize: var(
+    --semantic-typography-icon-labelPaired-bold-xl-fontSize
+  );
+  --component-typography-icon-labelPaired-bold-xl-fontWeight: var(
+    --semantic-typography-icon-labelPaired-bold-xl-fontWeight
+  );
+  --component-typography-icon-labelPaired-bold-xl-lineHeight: var(
+    --semantic-typography-icon-labelPaired-bold-xl-lineHeight
+  );
+  --component-typography-icon-labelPaired-bold-xl-letterSpacing: normal;
+  --component-typography-icon-labelPaired-bold-lg-fontFamily: var(
+    --semantic-typography-icon-labelPaired-bold-lg-fontFamily
+  );
+  --component-typography-icon-labelPaired-bold-lg-fontSize: var(
+    --semantic-typography-icon-labelPaired-bold-lg-fontSize
+  );
+  --component-typography-icon-labelPaired-bold-lg-fontWeight: var(
+    --semantic-typography-icon-labelPaired-bold-lg-fontWeight
+  );
+  --component-typography-icon-labelPaired-bold-lg-lineHeight: var(
+    --semantic-typography-icon-labelPaired-bold-lg-lineHeight
+  );
+  --component-typography-icon-labelPaired-bold-lg-letterSpacing: normal;
+  --component-typography-icon-labelPaired-bold-md-fontFamily: var(
+    --semantic-typography-icon-labelPaired-bold-md-fontFamily
+  );
+  --component-typography-icon-labelPaired-bold-md-fontSize: var(
+    --semantic-typography-icon-labelPaired-bold-md-fontSize
+  );
+  --component-typography-icon-labelPaired-bold-md-fontWeight: var(
+    --semantic-typography-icon-labelPaired-bold-md-fontWeight
+  );
+  --component-typography-icon-labelPaired-bold-md-lineHeight: var(
+    --semantic-typography-icon-labelPaired-bold-md-lineHeight
+  );
+  --component-typography-icon-labelPaired-bold-md-letterSpacing: normal;
+  --component-typography-icon-labelPaired-bold-sm-fontFamily: var(
+    --semantic-typography-icon-labelPaired-bold-sm-fontFamily
+  );
+  --component-typography-icon-labelPaired-bold-sm-fontSize: var(
+    --semantic-typography-icon-labelPaired-bold-sm-fontSize
+  );
+  --component-typography-icon-labelPaired-bold-sm-fontWeight: var(
+    --semantic-typography-icon-labelPaired-bold-sm-fontWeight
+  );
+  --component-typography-icon-labelPaired-bold-sm-lineHeight: var(
+    --semantic-typography-icon-labelPaired-bold-sm-lineHeight
+  );
+  --component-typography-icon-labelPaired-bold-sm-letterSpacing: normal;
+  --component-typography-icon-labelPaired-bold-caption-fontFamily: var(
+    --semantic-typography-icon-labelPaired-bold-caption-fontFamily
+  );
+  --component-typography-icon-labelPaired-bold-caption-fontSize: var(
+    --semantic-typography-icon-labelPaired-bold-caption-fontSize
+  );
+  --component-typography-icon-labelPaired-bold-caption-fontWeight: var(
+    --semantic-typography-icon-labelPaired-bold-caption-fontWeight
+  );
+  --component-typography-icon-labelPaired-bold-caption-lineHeight: var(
+    --semantic-typography-icon-labelPaired-bold-caption-lineHeight
+  );
+  --component-typography-icon-labelPaired-bold-caption-letterSpacing: normal;
+  --component-typography-icon-labelPaired-fill-xl-fontFamily: var(
+    --semantic-typography-icon-labelPaired-fill-xl-fontFamily
+  );
+  --component-typography-icon-labelPaired-fill-xl-fontSize: var(
+    --semantic-typography-icon-labelPaired-fill-xl-fontSize
+  );
+  --component-typography-icon-labelPaired-fill-xl-fontWeight: var(
+    --semantic-typography-icon-labelPaired-fill-xl-fontWeight
+  );
+  --component-typography-icon-labelPaired-fill-xl-lineHeight: var(
+    --semantic-typography-icon-labelPaired-fill-xl-lineHeight
+  );
+  --component-typography-icon-labelPaired-fill-xl-letterSpacing: normal;
+  --component-typography-icon-labelPaired-fill-lg-fontFamily: var(
+    --semantic-typography-icon-labelPaired-fill-lg-fontFamily
+  );
+  --component-typography-icon-labelPaired-fill-lg-fontSize: var(
+    --semantic-typography-icon-labelPaired-fill-lg-fontSize
+  );
+  --component-typography-icon-labelPaired-fill-lg-fontWeight: var(
+    --semantic-typography-icon-labelPaired-fill-lg-fontWeight
+  );
+  --component-typography-icon-labelPaired-fill-lg-lineHeight: var(
+    --semantic-typography-icon-labelPaired-fill-lg-lineHeight
+  );
+  --component-typography-icon-labelPaired-fill-lg-letterSpacing: normal;
+  --component-typography-icon-labelPaired-fill-md-fontFamily: var(
+    --semantic-typography-icon-labelPaired-fill-md-fontFamily
+  );
+  --component-typography-icon-labelPaired-fill-md-fontSize: var(
+    --semantic-typography-icon-labelPaired-fill-md-fontSize
+  );
+  --component-typography-icon-labelPaired-fill-md-fontWeight: var(
+    --semantic-typography-icon-labelPaired-fill-md-fontWeight
+  );
+  --component-typography-icon-labelPaired-fill-md-lineHeight: var(
+    --semantic-typography-icon-labelPaired-fill-md-lineHeight
+  );
+  --component-typography-icon-labelPaired-fill-md-letterSpacing: normal;
+  --component-typography-icon-labelPaired-fill-sm-fontFamily: var(
+    --semantic-typography-icon-labelPaired-fill-sm-fontFamily
+  );
+  --component-typography-icon-labelPaired-fill-sm-fontSize: var(
+    --semantic-typography-icon-labelPaired-fill-sm-fontSize
+  );
+  --component-typography-icon-labelPaired-fill-sm-fontWeight: var(
+    --semantic-typography-icon-labelPaired-fill-sm-fontWeight
+  );
+  --component-typography-icon-labelPaired-fill-sm-lineHeight: var(
+    --semantic-typography-icon-labelPaired-fill-sm-lineHeight
+  );
+  --component-typography-icon-labelPaired-fill-sm-letterSpacing: normal;
+  --component-typography-icon-labelPaired-fill-caption-fontFamily: var(
+    --semantic-typography-icon-labelPaired-fill-caption-fontFamily
+  );
+  --component-typography-icon-labelPaired-fill-caption-fontSize: var(
+    --semantic-typography-icon-labelPaired-fill-caption-fontSize
+  );
+  --component-typography-icon-labelPaired-fill-caption-fontWeight: var(
+    --semantic-typography-icon-labelPaired-fill-caption-fontWeight
+  );
+  --component-typography-icon-labelPaired-fill-caption-lineHeight: var(
+    --semantic-typography-icon-labelPaired-fill-caption-lineHeight
+  );
+  --component-typography-icon-labelPaired-fill-caption-letterSpacing: normal;
+  --component-typography-icon-labelPaired-brand-xl-fontFamily: var(
+    --semantic-typography-icon-labelPaired-brand-xl-fontFamily
+  );
+  --component-typography-icon-labelPaired-brand-xl-fontSize: var(
+    --semantic-typography-icon-labelPaired-brand-xl-fontSize
+  );
+  --component-typography-icon-labelPaired-brand-xl-fontWeight: var(
+    --semantic-typography-icon-labelPaired-brand-xl-fontWeight
+  );
+  --component-typography-icon-labelPaired-brand-xl-lineHeight: var(
+    --semantic-typography-icon-labelPaired-brand-xl-lineHeight
+  );
+  --component-typography-icon-labelPaired-brand-xl-letterSpacing: normal;
+  --component-typography-icon-labelPaired-brand-lg-fontFamily: var(
+    --semantic-typography-icon-labelPaired-brand-lg-fontFamily
+  );
+  --component-typography-icon-labelPaired-brand-lg-fontSize: var(
+    --semantic-typography-icon-labelPaired-brand-lg-fontSize
+  );
+  --component-typography-icon-labelPaired-brand-lg-fontWeight: var(
+    --semantic-typography-icon-labelPaired-brand-lg-fontWeight
+  );
+  --component-typography-icon-labelPaired-brand-lg-lineHeight: var(
+    --semantic-typography-icon-labelPaired-brand-lg-lineHeight
+  );
+  --component-typography-icon-labelPaired-brand-lg-letterSpacing: normal;
+  --component-typography-icon-labelPaired-brand-md-fontFamily: var(
+    --semantic-typography-icon-labelPaired-brand-md-fontFamily
+  );
+  --component-typography-icon-labelPaired-brand-md-fontSize: var(
+    --semantic-typography-icon-labelPaired-brand-md-fontSize
+  );
+  --component-typography-icon-labelPaired-brand-md-fontWeight: var(
+    --semantic-typography-icon-labelPaired-brand-md-fontWeight
+  );
+  --component-typography-icon-labelPaired-brand-md-lineHeight: var(
+    --semantic-typography-icon-labelPaired-brand-md-lineHeight
+  );
+  --component-typography-icon-labelPaired-brand-md-letterSpacing: normal;
+  --component-typography-icon-labelPaired-brand-sm-fontFamily: var(
+    --semantic-typography-icon-labelPaired-brand-sm-fontFamily
+  );
+  --component-typography-icon-labelPaired-brand-sm-fontSize: var(
+    --semantic-typography-icon-labelPaired-brand-sm-fontSize
+  );
+  --component-typography-icon-labelPaired-brand-sm-fontWeight: var(
+    --semantic-typography-icon-labelPaired-brand-sm-fontWeight
+  );
+  --component-typography-icon-labelPaired-brand-sm-lineHeight: var(
+    --semantic-typography-icon-labelPaired-brand-sm-lineHeight
+  );
+  --component-typography-icon-labelPaired-brand-sm-letterSpacing: normal;
+  --component-typography-icon-labelPaired-brand-caption-fontFamily: var(
+    --semantic-typography-icon-labelPaired-brand-caption-fontFamily
+  );
+  --component-typography-icon-labelPaired-brand-caption-fontSize: var(
+    --semantic-typography-icon-labelPaired-brand-caption-fontSize
+  );
+  --component-typography-icon-labelPaired-brand-caption-fontWeight: var(
+    --semantic-typography-icon-labelPaired-brand-caption-fontWeight
+  );
+  --component-typography-icon-labelPaired-brand-caption-lineHeight: var(
+    --semantic-typography-icon-labelPaired-brand-caption-lineHeight
+  );
+  --component-typography-icon-labelPaired-brand-caption-letterSpacing: normal;
+  --component-typography-icon-standalone-regular-2xl-fontFamily: var(
+    --semantic-typography-icon-standalone-regular-2xl-fontFamily
+  );
+  --component-typography-icon-standalone-regular-2xl-fontSize: var(
+    --semantic-typography-icon-standalone-regular-2xl-fontSize
+  );
+  --component-typography-icon-standalone-regular-2xl-fontWeight: var(
+    --semantic-typography-icon-standalone-regular-2xl-fontWeight
+  );
+  --component-typography-icon-standalone-regular-2xl-lineHeight: var(
+    --semantic-typography-icon-standalone-regular-2xl-lineHeight
+  );
+  --component-typography-icon-standalone-regular-2xl-letterSpacing: normal;
+  --component-typography-icon-standalone-regular-xl-fontFamily: var(
+    --semantic-typography-icon-standalone-regular-xl-fontFamily
+  );
+  --component-typography-icon-standalone-regular-xl-fontSize: var(
+    --semantic-typography-icon-standalone-regular-xl-fontSize
+  );
+  --component-typography-icon-standalone-regular-xl-fontWeight: var(
+    --semantic-typography-icon-standalone-regular-xl-fontWeight
+  );
+  --component-typography-icon-standalone-regular-xl-lineHeight: var(
+    --semantic-typography-icon-standalone-regular-xl-lineHeight
+  );
+  --component-typography-icon-standalone-regular-xl-letterSpacing: normal;
+  --component-typography-icon-standalone-regular-lg-fontFamily: var(
+    --semantic-typography-icon-standalone-regular-lg-fontFamily
+  );
+  --component-typography-icon-standalone-regular-lg-fontSize: var(
+    --semantic-typography-icon-standalone-regular-lg-fontSize
+  );
+  --component-typography-icon-standalone-regular-lg-fontWeight: var(
+    --semantic-typography-icon-standalone-regular-lg-fontWeight
+  );
+  --component-typography-icon-standalone-regular-lg-lineHeight: var(
+    --semantic-typography-icon-standalone-regular-lg-lineHeight
+  );
+  --component-typography-icon-standalone-regular-lg-letterSpacing: normal;
+  --component-typography-icon-standalone-regular-md-fontFamily: var(
+    --semantic-typography-icon-standalone-regular-md-fontFamily
+  );
+  --component-typography-icon-standalone-regular-md-fontSize: var(
+    --semantic-typography-icon-standalone-regular-md-fontSize
+  );
+  --component-typography-icon-standalone-regular-md-fontWeight: var(
+    --semantic-typography-icon-standalone-regular-md-fontWeight
+  );
+  --component-typography-icon-standalone-regular-md-lineHeight: var(
+    --semantic-typography-icon-standalone-regular-md-lineHeight
+  );
+  --component-typography-icon-standalone-regular-md-letterSpacing: normal;
+  --component-typography-icon-standalone-regular-sm-fontFamily: var(
+    --semantic-typography-icon-standalone-regular-sm-fontFamily
+  );
+  --component-typography-icon-standalone-regular-sm-fontSize: var(
+    --semantic-typography-icon-standalone-regular-sm-fontSize
+  );
+  --component-typography-icon-standalone-regular-sm-fontWeight: var(
+    --semantic-typography-icon-standalone-regular-sm-fontWeight
+  );
+  --component-typography-icon-standalone-regular-sm-lineHeight: var(
+    --semantic-typography-icon-standalone-regular-sm-lineHeight
+  );
+  --component-typography-icon-standalone-regular-sm-letterSpacing: normal;
+  --component-typography-icon-standalone-regular-xs-fontFamily: var(
+    --semantic-typography-icon-standalone-regular-xs-fontFamily
+  );
+  --component-typography-icon-standalone-regular-xs-fontSize: var(
+    --semantic-typography-icon-standalone-regular-xs-fontSize
+  );
+  --component-typography-icon-standalone-regular-xs-fontWeight: var(
+    --semantic-typography-icon-standalone-regular-xs-fontWeight
+  );
+  --component-typography-icon-standalone-regular-xs-lineHeight: var(
+    --semantic-typography-icon-standalone-regular-xs-lineHeight
+  );
+  --component-typography-icon-standalone-regular-xs-letterSpacing: normal;
+  --component-typography-icon-standalone-bold-2xl-fontFamily: var(
+    --semantic-typography-icon-standalone-bold-2xl-fontFamily
+  );
+  --component-typography-icon-standalone-bold-2xl-fontSize: var(
+    --semantic-typography-icon-standalone-bold-2xl-fontSize
+  );
+  --component-typography-icon-standalone-bold-2xl-fontWeight: var(
+    --semantic-typography-icon-standalone-bold-2xl-fontWeight
+  );
+  --component-typography-icon-standalone-bold-2xl-lineHeight: var(
+    --semantic-typography-icon-standalone-bold-2xl-lineHeight
+  );
+  --component-typography-icon-standalone-bold-2xl-letterSpacing: normal;
+  --component-typography-icon-standalone-bold-xl-fontFamily: var(
+    --semantic-typography-icon-standalone-bold-xl-fontFamily
+  );
+  --component-typography-icon-standalone-bold-xl-fontSize: var(--semantic-typography-icon-standalone-bold-xl-fontSize);
+  --component-typography-icon-standalone-bold-xl-fontWeight: var(
+    --semantic-typography-icon-standalone-bold-xl-fontWeight
+  );
+  --component-typography-icon-standalone-bold-xl-lineHeight: var(
+    --semantic-typography-icon-standalone-bold-xl-lineHeight
+  );
+  --component-typography-icon-standalone-bold-xl-letterSpacing: normal;
+  --component-typography-icon-standalone-bold-lg-fontFamily: var(
+    --semantic-typography-icon-standalone-bold-lg-fontFamily
+  );
+  --component-typography-icon-standalone-bold-lg-fontSize: var(--semantic-typography-icon-standalone-bold-lg-fontSize);
+  --component-typography-icon-standalone-bold-lg-fontWeight: var(
+    --semantic-typography-icon-standalone-bold-lg-fontWeight
+  );
+  --component-typography-icon-standalone-bold-lg-lineHeight: var(
+    --semantic-typography-icon-standalone-bold-lg-lineHeight
+  );
+  --component-typography-icon-standalone-bold-lg-letterSpacing: normal;
+  --component-typography-icon-standalone-bold-md-fontFamily: var(
+    --semantic-typography-icon-standalone-bold-md-fontFamily
+  );
+  --component-typography-icon-standalone-bold-md-fontSize: var(--semantic-typography-icon-standalone-bold-md-fontSize);
+  --component-typography-icon-standalone-bold-md-fontWeight: var(
+    --semantic-typography-icon-standalone-bold-md-fontWeight
+  );
+  --component-typography-icon-standalone-bold-md-lineHeight: var(
+    --semantic-typography-icon-standalone-bold-md-lineHeight
+  );
+  --component-typography-icon-standalone-bold-md-letterSpacing: normal;
+  --component-typography-icon-standalone-bold-sm-fontFamily: var(
+    --semantic-typography-icon-standalone-bold-sm-fontFamily
+  );
+  --component-typography-icon-standalone-bold-sm-fontSize: var(--semantic-typography-icon-standalone-bold-sm-fontSize);
+  --component-typography-icon-standalone-bold-sm-fontWeight: var(
+    --semantic-typography-icon-standalone-bold-sm-fontWeight
+  );
+  --component-typography-icon-standalone-bold-sm-lineHeight: var(
+    --semantic-typography-icon-standalone-bold-sm-lineHeight
+  );
+  --component-typography-icon-standalone-bold-sm-letterSpacing: normal;
+  --component-typography-icon-standalone-bold-xs-fontFamily: var(
+    --semantic-typography-icon-standalone-bold-xs-fontFamily
+  );
+  --component-typography-icon-standalone-bold-xs-fontSize: var(--semantic-typography-icon-standalone-bold-xs-fontSize);
+  --component-typography-icon-standalone-bold-xs-fontWeight: var(
+    --semantic-typography-icon-standalone-bold-xs-fontWeight
+  );
+  --component-typography-icon-standalone-bold-xs-lineHeight: var(
+    --semantic-typography-icon-standalone-bold-xs-lineHeight
+  );
+  --component-typography-icon-standalone-bold-xs-letterSpacing: normal;
+  --component-typography-icon-standalone-fill-2xl-fontFamily: var(
+    --semantic-typography-icon-standalone-fill-2xl-fontFamily
+  );
+  --component-typography-icon-standalone-fill-2xl-fontSize: var(
+    --semantic-typography-icon-standalone-fill-2xl-fontSize
+  );
+  --component-typography-icon-standalone-fill-2xl-fontWeight: var(
+    --semantic-typography-icon-standalone-fill-2xl-fontWeight
+  );
+  --component-typography-icon-standalone-fill-2xl-lineHeight: var(
+    --semantic-typography-icon-standalone-fill-2xl-lineHeight
+  );
+  --component-typography-icon-standalone-fill-2xl-letterSpacing: normal;
+  --component-typography-icon-standalone-fill-xl-fontFamily: var(
+    --semantic-typography-icon-standalone-fill-xl-fontFamily
+  );
+  --component-typography-icon-standalone-fill-xl-fontSize: var(--semantic-typography-icon-standalone-fill-xl-fontSize);
+  --component-typography-icon-standalone-fill-xl-fontWeight: var(
+    --semantic-typography-icon-standalone-fill-xl-fontWeight
+  );
+  --component-typography-icon-standalone-fill-xl-lineHeight: var(
+    --semantic-typography-icon-standalone-fill-xl-lineHeight
+  );
+  --component-typography-icon-standalone-fill-xl-letterSpacing: normal;
+  --component-typography-icon-standalone-fill-lg-fontFamily: var(
+    --semantic-typography-icon-standalone-fill-lg-fontFamily
+  );
+  --component-typography-icon-standalone-fill-lg-fontSize: var(--semantic-typography-icon-standalone-fill-lg-fontSize);
+  --component-typography-icon-standalone-fill-lg-fontWeight: var(
+    --semantic-typography-icon-standalone-fill-lg-fontWeight
+  );
+  --component-typography-icon-standalone-fill-lg-lineHeight: var(
+    --semantic-typography-icon-standalone-fill-lg-lineHeight
+  );
+  --component-typography-icon-standalone-fill-lg-letterSpacing: normal;
+  --component-typography-icon-standalone-fill-md-fontFamily: var(
+    --semantic-typography-icon-standalone-fill-md-fontFamily
+  );
+  --component-typography-icon-standalone-fill-md-fontSize: var(--semantic-typography-icon-standalone-fill-md-fontSize);
+  --component-typography-icon-standalone-fill-md-fontWeight: var(
+    --semantic-typography-icon-standalone-fill-md-fontWeight
+  );
+  --component-typography-icon-standalone-fill-md-lineHeight: var(
+    --semantic-typography-icon-standalone-fill-md-lineHeight
+  );
+  --component-typography-icon-standalone-fill-md-letterSpacing: normal;
+  --component-typography-icon-standalone-fill-sm-fontFamily: var(
+    --semantic-typography-icon-standalone-fill-sm-fontFamily
+  );
+  --component-typography-icon-standalone-fill-sm-fontSize: var(--semantic-typography-icon-standalone-fill-sm-fontSize);
+  --component-typography-icon-standalone-fill-sm-fontWeight: var(
+    --semantic-typography-icon-standalone-fill-sm-fontWeight
+  );
+  --component-typography-icon-standalone-fill-sm-lineHeight: var(
+    --semantic-typography-icon-standalone-fill-sm-lineHeight
+  );
+  --component-typography-icon-standalone-fill-sm-letterSpacing: normal;
+  --component-typography-icon-standalone-fill-xs-fontFamily: var(
+    --semantic-typography-icon-standalone-fill-xs-fontFamily
+  );
+  --component-typography-icon-standalone-fill-xs-fontSize: var(--semantic-typography-icon-standalone-fill-xs-fontSize);
+  --component-typography-icon-standalone-fill-xs-fontWeight: var(
+    --semantic-typography-icon-standalone-fill-xs-fontWeight
+  );
+  --component-typography-icon-standalone-fill-xs-lineHeight: var(
+    --semantic-typography-icon-standalone-fill-xs-lineHeight
+  );
+  --component-typography-icon-standalone-fill-xs-letterSpacing: normal;
+  --component-typography-icon-standalone-brand-2xl-fontFamily: var(
+    --semantic-typography-icon-standalone-brand-2xl-fontFamily
+  );
+  --component-typography-icon-standalone-brand-2xl-fontSize: var(
+    --semantic-typography-icon-standalone-brand-2xl-fontSize
+  );
+  --component-typography-icon-standalone-brand-2xl-fontWeight: var(
+    --semantic-typography-icon-standalone-brand-2xl-fontWeight
+  );
+  --component-typography-icon-standalone-brand-2xl-lineHeight: var(
+    --semantic-typography-icon-standalone-brand-2xl-lineHeight
+  );
+  --component-typography-icon-standalone-brand-2xl-letterSpacing: normal;
+  --component-typography-icon-standalone-brand-xl-fontFamily: var(
+    --semantic-typography-icon-standalone-brand-xl-fontFamily
+  );
+  --component-typography-icon-standalone-brand-xl-fontSize: var(
+    --semantic-typography-icon-standalone-brand-xl-fontSize
+  );
+  --component-typography-icon-standalone-brand-xl-fontWeight: var(
+    --semantic-typography-icon-standalone-brand-xl-fontWeight
+  );
+  --component-typography-icon-standalone-brand-xl-lineHeight: var(
+    --semantic-typography-icon-standalone-brand-xl-lineHeight
+  );
+  --component-typography-icon-standalone-brand-xl-letterSpacing: normal;
+  --component-typography-icon-standalone-brand-lg-fontFamily: var(
+    --semantic-typography-icon-standalone-brand-lg-fontFamily
+  );
+  --component-typography-icon-standalone-brand-lg-fontSize: var(
+    --semantic-typography-icon-standalone-brand-lg-fontSize
+  );
+  --component-typography-icon-standalone-brand-lg-fontWeight: var(
+    --semantic-typography-icon-standalone-brand-lg-fontWeight
+  );
+  --component-typography-icon-standalone-brand-lg-lineHeight: var(
+    --semantic-typography-icon-standalone-brand-lg-lineHeight
+  );
+  --component-typography-icon-standalone-brand-lg-letterSpacing: normal;
+  --component-typography-icon-standalone-brand-md-fontFamily: var(
+    --semantic-typography-icon-standalone-brand-md-fontFamily
+  );
+  --component-typography-icon-standalone-brand-md-fontSize: var(
+    --semantic-typography-icon-standalone-brand-md-fontSize
+  );
+  --component-typography-icon-standalone-brand-md-fontWeight: var(
+    --semantic-typography-icon-standalone-brand-md-fontWeight
+  );
+  --component-typography-icon-standalone-brand-md-lineHeight: var(
+    --semantic-typography-icon-standalone-brand-md-lineHeight
+  );
+  --component-typography-icon-standalone-brand-md-letterSpacing: normal;
+  --component-typography-icon-standalone-brand-sm-fontFamily: var(
+    --semantic-typography-icon-standalone-brand-sm-fontFamily
+  );
+  --component-typography-icon-standalone-brand-sm-fontSize: var(
+    --semantic-typography-icon-standalone-brand-sm-fontSize
+  );
+  --component-typography-icon-standalone-brand-sm-fontWeight: var(
+    --semantic-typography-icon-standalone-brand-sm-fontWeight
+  );
+  --component-typography-icon-standalone-brand-sm-lineHeight: var(
+    --semantic-typography-icon-standalone-brand-sm-lineHeight
+  );
+  --component-typography-icon-standalone-brand-sm-letterSpacing: normal;
+  --component-typography-icon-standalone-brand-xs-fontFamily: var(
+    --semantic-typography-icon-standalone-brand-xs-fontFamily
+  );
+  --component-typography-icon-standalone-brand-xs-fontSize: var(
+    --semantic-typography-icon-standalone-brand-xs-fontSize
+  );
+  --component-typography-icon-standalone-brand-xs-fontWeight: var(
+    --semantic-typography-icon-standalone-brand-xs-fontWeight
+  );
+  --component-typography-icon-standalone-brand-xs-lineHeight: var(
+    --semantic-typography-icon-standalone-brand-xs-lineHeight
+  );
+  --component-typography-icon-standalone-brand-xs-letterSpacing: normal;
+  --component-progressBar-label-typography: var(--component-typography-body-md-regular-default);
+  --component-progressBar-label-color: var(--component-textIcon-normal-default);
+  --component-progressBar-message-typography: var(--component-typography-caption-regular-default);
+  --component-progressBar-message-color: var(--component-textIcon-normal-subtle);
+  --component-progressBar-counter-typography: var(--component-typography-caption-regular-default);
+  --component-progressBar-counter-color: var(--component-textIcon-normal-subtle);
+  --component-progressBar-indicator-fail: var(--semantic-color-red-solid-surface-normal-highest);
+  --component-progressBar-indicator-danger: var(--semantic-color-yellow-solid-surface-normal-highest);
+  --component-progressBar-indicator-success: var(--semantic-color-green-solid-surface-normal-highest);
+  --component-progressBar-indicator-information: var(--semantic-color-blue-solid-surface-normal-highest);
+  --component-progressBar-indicator-default: var(--semantic-color-slate-solid-surface-inverse-lowest);
+  --component-progressBar-track: var(--semantic-color-monochrome-surface-normal-low);
+  --component-progressBar-border-radius: var(--semantic-borderRadius-pill);
+  --component-progressBar-spacing-sm: var(--semantic-spacing-general-xs);
+  --component-progressBar-spacing-md: var(--semantic-spacing-general-sm);
+  --component-progressBar-height-sm: var(--core-size-200);
+  --component-progressBar-height-md: var(--core-size-400);
+  --component-stepper-label-typography-sm: var(--component-typography-body-sm-bold-default);
+  --component-stepper-label-typography-md: var(--component-typography-body-sm-bold-default);
+  --component-stepper-label-typography-lg: var(--component-typography-body-md-bold-default);
+  --component-stepper-label-color-incomplete: var(--component-textIcon-normal-subtle);
+  --component-stepper-label-color-active: var(--component-textIcon-normal-prominent);
+  --component-stepper-label-color-complete: var(--component-textIcon-normal-prominent);
+  --component-stepper-label-color-fail: var(--component-textIcon-normal-prominent);
+  --component-stepper-label-color-warning: var(--component-textIcon-normal-prominent);
+  --component-stepper-description-typography-sm: var(--component-typography-caption-regular-default);
+  --component-stepper-description-typography-md: var(--component-typography-caption-regular-default);
+  --component-stepper-description-typography-lg: var(--component-typography-caption-regular-default);
+  --component-stepper-description-color-incomplete: var(--component-textIcon-normal-subtle);
+  --component-stepper-description-color-active: var(--component-textIcon-normal-prominent);
+  --component-stepper-description-color-complete: var(--component-textIcon-normal-prominent);
+  --component-stepper-description-color-fail: var(--component-textIcon-normal-prominent);
+  --component-stepper-description-color-warning: var(--component-textIcon-normal-prominent);
+  --component-stepper-node-bg-complete: var(--semantic-color-slate-solid-surface-inverse-lowest);
+  --component-stepper-node-bg-fail: var(--semantic-color-red-solid-surface-inverse-mid);
+  --component-stepper-node-bg-warning: var(--semantic-color-yellow-solid-surface-inverse-mid);
+  --component-stepper-node-border-width: var(--borderWidth-sm);
+  --component-stepper-node-border-radius: var(--semantic-borderRadius-pill);
+  --component-stepper-node-border-color-incomplete: var(--semantic-color-monochrome-border-normal-highest);
+  --component-stepper-node-border-color-active: var(--semantic-color-slate-solid-border-inverse-lowest);
+  --component-stepper-node-size-sm: var(--core-size-1000);
+  --component-stepper-node-size-md: var(--core-size-1200);
+  --component-stepper-node-size-lg: var(--core-size-1600);
+  --component-stepper-number-typography-sm: var(--component-typography-caption-bold-default);
+  --component-stepper-number-typography-md: var(--component-typography-body-sm-bold-default);
+  --component-stepper-number-typography-lg: var(--component-typography-body-md-bold-default);
+  --component-stepper-number-color-incomplete: var(--component-textIcon-normal-disabled);
+  --component-stepper-number-color-active: var(--component-textIcon-normal-prominent);
+  --component-stepper-number-color-complete: var(--component-textIcon-inverse-prominent);
+  --component-stepper-icon-incomplete: var(--component-textIcon-normal-disabled);
+  --component-stepper-icon-active: var(--component-textIcon-normal-prominent);
+  --component-stepper-icon-complete: var(--component-textIcon-normal-prominent);
+  --component-stepper-icon-completeWhite: var(--component-textIcon-inverse-prominent);
+  --component-stepper-icon-fail: var(--component-textIcon-statusNormal-danger);
+  --component-stepper-icon-failWhite: var(--component-textIcon-inverse-prominent);
+  --component-stepper-icon-warning: var(--component-textIcon-statusNormal-warning);
+  --component-stepper-icon-warningWhite: var(--component-textIcon-inverse-prominent);
+  --component-stepper-track-color-default: var(--semantic-color-monochrome-surface-normal-midHigh);
+  --component-stepper-track-color-enabled: var(--semantic-color-slate-solid-surface-inverse-lowest);
+  --component-stepper-track-height-sm: var(--core-size-100);
+  --component-stepper-track-height-md: var(--core-size-400);
+  --component-stepper-track-width: var(--core-size-100);
+  --component-stepper-spacing-3xs: var(--core-spacing-200);
+  --component-stepper-spacing-2xs: var(--core-spacing-300);
+  --component-stepper-spacing-xs: 7.5px;
+  --component-stepper-spacing-sm: var(--core-spacing-400);
+  --component-stepper-spacing-md: 11px;
+  --component-stepper-spacing-lg: 13px;
+  --component-stepper-spacing-xl: var(--core-spacing-800);
+  --component-stepper-width-sm: var(--core-size-1000);
+  --component-stepper-width-md: var(--core-size-1200);
+  --component-stepper-width-lg: var(--core-size-1600);
+  --component-stepper-width-max: 1200px;
+  --component-stepper-height-sm: var(--core-size-1000);
+  --component-stepper-height-md: var(--core-size-1200);
+  --component-stepper-height-lg: var(--core-size-1600);
 }
 @media (min-width: 640px) {
   :root {
