@@ -2809,6 +2809,8 @@
   --component-field-spacing-padding-md: var(--semantic-spacing-general-md);
   --component-field-spacing-gap-xs: var(--semantic-spacing-gap-sm);
   --component-field-spacing-gap-sm: var(--semantic-spacing-gap-md);
+  --component-field-spacing-gap-md: var(--semantic-spacing-gap-lg);
+  --component-field-spacing-gap-lg: var(--semantic-spacing-gap-xl);
   --component-field-height-sm: var(--core-size-1600);
   --component-field-height-md: var(--core-size-2800);
   --component-toggle-bg-default: var(--semantic-color-monochrome-surface-normal-midLow);
@@ -5287,7 +5289,7 @@
   --component-progressBar-counter-typography: var(--component-typography-caption-regular-default);
   --component-progressBar-counter-color: var(--component-textIcon-normal-subtle);
   --component-progressBar-indicator-fail: var(--semantic-color-red-solid-surface-normal-highest);
-  --component-progressBar-indicator-danger: var(--semantic-color-yellow-solid-surface-normal-highest);
+  --component-progressBar-indicator-warning: var(--semantic-color-yellow-solid-surface-normal-highest);
   --component-progressBar-indicator-success: var(--semantic-color-green-solid-surface-normal-highest);
   --component-progressBar-indicator-information: var(--semantic-color-blue-solid-surface-normal-highest);
   --component-progressBar-indicator-default: var(--semantic-color-slate-solid-surface-inverse-lowest);

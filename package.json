@@ -11,7 +11,7 @@
     "build": "npm run clean && npx ts-node index.ts",
     "clean": "rimraf sd-tokens dist",
     "format": "eslint src/**/*.ts --fix",
-    "generate:styles": "node scripts/transformer.js &&  npx prettier --write lib/styles",
+    "generate:styles": "node scripts/shaper.js && node scripts/transformer.js &&  npx prettier --write lib/styles",
     "lint": "eslint src/**/*.ts",
     "test": "jest",
     "test:ci": "jest --coverage",
