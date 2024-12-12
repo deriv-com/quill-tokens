@@ -61,5 +61,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deriv-com/quill-tokens.git"
+  },
+  "overrides": {
+    "cross-spawn": "^7.0.6"
   }
 }
