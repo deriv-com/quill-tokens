@@ -35846,6 +35846,14 @@
             "sm": {
               "value": "{semantic.spacing.gap.md}",
               "type": "spacing"
+            },
+            "md": {
+              "value": "{semantic.spacing.gap.lg}",
+              "type": "spacing"
+            },
+            "lg": {
+              "value": "{semantic.spacing.gap.xl}",
+              "type": "spacing"
             }
           }
         },
@@ -42125,7 +42133,7 @@
             "value": "{semantic.color.red.solid.surface.normal.highest}",
             "type": "color"
           },
-          "danger": {
+          "warning": {
             "value": "{semantic.color.yellow.solid.surface.normal.highest}",
             "type": "color"
           },
