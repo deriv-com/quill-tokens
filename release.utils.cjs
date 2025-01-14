@@ -153,6 +153,12 @@ const customTransform = (commit, context) => {
     // Create a shallow copy of the commit object
     const newCommit = { ...commit };
 
+    // Validate and format the date
+    if (newCommit.date && !(new Date(newCommit.date) instanceof Date)) {
+        console.error("Invalid commit.date:", newCommit.date);
+        newCommit.date = new Date().toISOString(); // Default to current date if invalid
+    }
+
     if (newCommit.notes) {
         newCommit.notes = newCommit.notes.map((note) => ({
             ...note,
@@ -214,6 +220,7 @@ const customTransform = (commit, context) => {
 
     return newCommit;
 };
+
 
 
 module.exports = customTransform;
