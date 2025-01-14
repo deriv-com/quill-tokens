@@ -45,13 +45,24 @@ module.exports = {
         [
             "@semantic-release/release-notes-generator",
             {
-                parserOpts: {
-                    mergePattern: /^Merge pull request #(\d+) from (.*)$/,
-                    mergeCorrespondence: ["id", "source"],
-                },
-                writerOpts: { transform: transform },
+              parserOpts: {
+                mergePattern: /^Merge pull request #(\d+) from (.*)$/,
+                mergeCorrespondence: ["id", "source"],
+              },
+              writerOpts: {
+                transform: transform,
+                // Adding a fallback for Date handling to avoid the TypeError
+                processCommitDate: (commit) => {
+                  if (commit.date && !(commit.date instanceof Date)) {
+                    // If the commit date is not a valid Date, set it to a fallback Date
+                    commit.date = new Date(commit.date);
+                  }
+                  return commit;
+                }
+              },
             },
-        ],
+          ],
+          
         "@semantic-release/changelog",
         [
             "@semantic-release/npm",
