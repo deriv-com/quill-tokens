@@ -50,19 +50,18 @@ module.exports = {
           mergeCorrespondence: ['id', 'source'],
         },
         writerOpts: {
-          transform: transform,
-          // Adding a fallback for Date handling to avoid the TypeError
-          processCommitDate: (commit) => {
-            if (commit.date && !(commit.date instanceof Date)) {
-              // If the commit date is not a valid Date, set it to a fallback Date
-              commit.date = new Date(commit.date);
+          transform: (commit) => {
+            try {
+              return commit;
+            } catch (error) {
+              // Log the error and continue processing the next commit
+              console.error(`Error processing commit: ${commit.message}`, error);
+              return null; // This will skip the problematic commit
             }
-            return commit;
           },
         },
       },
     ],
-
     '@semantic-release/changelog',
     [
       '@semantic-release/npm',
