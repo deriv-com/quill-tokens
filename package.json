@@ -1,6 +1,6 @@
 {
   "name": "@deriv-com/quill-tokens",
-  "version": "0.0.0",
+  "version": "2.0.17",
   "private": false,
   "description": "",
   "main": "index.js",
@@ -17,7 +17,8 @@
     "test:ci": "jest --coverage",
     "test:update": "jest --updateSnapshot",
     "prepare": "husky install",
-    "prepublish": "babel src --out-dir dist && cp -r lib/styles/* dist && for f in dist/*.scss; do sass \"$f\" \"${f%.scss}.css\"; done"
+    "prepublish": "babel src --out-dir dist && cp -r lib/styles/* dist && for f in dist/*.scss; do sass \"$f\" \"${f%.scss}.css\"; done",
+    "publish": "npm run build && npm run prepublish && npm publish"
   },
   "keywords": [],
   "author": "Michio",
