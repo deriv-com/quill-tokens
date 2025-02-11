@@ -4,20 +4,17 @@
   "private": false,
   "description": "",
   "main": "index.js",
+  "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "npm run clean && npx ts-node index.ts",
-    "clean": "rimraf sd-tokens dist",
+    "build": "cp -r lib/styles/* dist && for f in dist/*.scss; do sass \"$f\" \"${f%.scss}.css\"; done",
     "format": "eslint src/**/*.ts --fix",
     "generate:styles": "node scripts/shaper.js && node scripts/transformer.js &&  npx prettier --write lib/styles",
     "lint": "eslint src/**/*.ts",
-    "test": "jest",
-    "test:ci": "jest --coverage",
-    "test:update": "jest --updateSnapshot",
     "prepare": "husky install",
-    "prepublish": "babel src --out-dir dist && cp -r lib/styles/* dist && for f in dist/*.scss; do sass \"$f\" \"${f%.scss}.css\"; done",
+    "prepublish": "npm run build",
     "publish": "npm run build && npm run prepublish && npm publish"
   },
   "keywords": [],
