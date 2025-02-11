@@ -52,6 +52,13 @@ module.exports = {
         writerOpts: {
           transform: (commit) => {
             try {
+              if (commit.committerDate) {
+                // Convert future dates to current date
+                const date = new Date(commit.committerDate);
+                if (date > new Date()) {
+                  commit.committerDate = new Date().toISOString();
+                }
+              }
               return commit;
             } catch (error) {
               // Log the error and continue processing the next commit
