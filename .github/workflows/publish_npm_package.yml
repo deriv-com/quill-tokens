@@ -1,42 +1,49 @@
-name: Publish Package to NPM
+name: Release
 on:
-  push:
-    branches: [ master ]
+    release:
+        types: [published]
+    push:
+        branches: [master]
+
+permissions:
+  contents: read # for checkout
 
 jobs:
-  publish:
+  release:
+    name: Release
     runs-on: ubuntu-latest
+    environment: Production
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     steps:
-      - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
+      - name: Checkout
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           fetch-depth: 0
-          persist-credentials: false
       - name: Setup Node.js
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
-          node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
-      - name: Configure Git
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git config --global url."https://github.com/".insteadOf "git@github.com:"
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          node-version: '20'
+      - name: Update to latest npm (temporary fix for audit below)
+        run: npm install --global npm
       - name: Install dependencies
-        run: npm ci
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPOSITORY_URL: https://github.com/${GITHUB_REPOSITORY}.git
+        run: npm clean-install
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
+      - name: Prepublish
+        run: npm run prepublish
+      - name: Debug Git History
         run: |
-          node --version
-          npm --version
-          git log -10 --pretty=format:"%h %ad %s" --date=iso
-          echo "Semantic Release Version:"
-          npx semantic-release --version
-          echo "Running semantic-release with debug:"
-          NODE_DEBUG=semantic-release npx semantic-release --debug
+          echo "Last 20 commits with their dates:"
+          git log -20 --pretty=format:"%h - %aD - %s" --date=rfc
+      - name: Release
+        if: success()
+        env:
+          CI: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
+          NODE_DEBUG: semantic-release
+        run: npx semantic-release --debug
