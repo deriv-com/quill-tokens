@@ -15,30 +15,7 @@ module.exports = {
       '@semantic-release/commit-analyzer',
       {
         releaseRules: [
-          {
-            type: 'bump',
-            release: 'major',
-          },
-          {
-            type: 'feat',
-            release: 'minor',
-          },
-          {
-            type: 'build',
-            release: 'patch',
-          },
-          {
-            type: 'ci',
-            release: 'patch',
-          },
-          {
-            type: 'chore',
-            release: 'patch',
-          },
-          {
-            type: 'fix',
-            release: 'patch',
-          },
+          { type: 'bump', release: process.env.RELEASE_TYPE || 'patch' }
         ],
       },
     ],
@@ -74,6 +51,7 @@ module.exports = {
       '@semantic-release/npm',
       {
         npmPublish: true,
+        nextVersion: process.env.NEXT_VERSION,
       },
     ],
     '@semantic-release/github',
