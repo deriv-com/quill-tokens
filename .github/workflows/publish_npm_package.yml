@@ -42,5 +42,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
         run: |
-          git fetch --unshallow
-          npx semantic-release
+          node --version
+          npm --version
+          git log -10 --pretty=format:"%h %ad %s" --date=iso
+          echo "Semantic Release Version:"
+          npx semantic-release --version
+          echo "Running semantic-release with debug:"
+          NODE_DEBUG=semantic-release npx semantic-release --debug
