@@ -15,7 +15,7 @@
     "lint": "eslint src/**/*.ts",
     "prepare": "husky install",
     "prepublish": "npm run build",
-    "publish": "npm run build && npm run prepublish && npm publish"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "Michio",
