@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "cp -r lib/styles/* dist && for f in dist/*.scss; do sass \"$f\" \"${f%.scss}.css\"; done",
+    "build": "mkdir -p dist && cp -r lib/styles/* dist && for f in dist/*.scss; do sass \"$f\" \"${f%.scss}.css\"; done",
     "format": "eslint src/**/*.ts --fix",
     "generate:styles": "node scripts/shaper.js && node scripts/transformer.js &&  npx prettier --write lib/styles",
     "lint": "eslint src/**/*.ts",
