@@ -15,7 +15,9 @@ module.exports = {
       '@semantic-release/commit-analyzer',
       {
         releaseRules: [
-          { type: 'bump', release: process.env.RELEASE_TYPE || 'patch' }
+          { type: 'bump', release: 'patch' },
+          // Force release regardless of commit types
+          { type: '*', release: 'patch' }
         ],
       },
     ],
