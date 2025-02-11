@@ -1,9 +1,8 @@
 name: Release
 on:
-    release:
-        types: [published]
-    push:
-        branches: [master]
+  pull_request:
+    types: [closed]
+    branches: [master]
 
 permissions:
   contents: read # for checkout
@@ -11,6 +10,7 @@ permissions:
 jobs:
   release:
     name: Release
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     environment: Production
     permissions:
@@ -19,31 +19,53 @@ jobs:
       pull-requests: write # to be able to comment on released pull requests
       id-token: write # to enable use of OIDC for npm provenance
     steps:
+      - name: Check PR Comments
+        id: check-comments
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number
+            });
+            const hasReleaseComment = comments.some(comment => 
+              comment.body.toLowerCase().includes('npm-release')
+            );
+            core.setOutput('has-release-comment', hasReleaseComment);
+
       - name: Checkout
+        if: steps.check-comments.outputs.has-release-comment == 'true'
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           fetch-depth: 0
+          
       - name: Setup Node.js
+        if: steps.check-comments.outputs.has-release-comment == 'true'
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: '20'
+          
       - name: Update to latest npm (temporary fix for audit below)
+        if: steps.check-comments.outputs.has-release-comment == 'true'
         run: npm install --global npm
+        
       - name: Install dependencies
+        if: steps.check-comments.outputs.has-release-comment == 'true'
         run: npm clean-install
+        
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        if: steps.check-comments.outputs.has-release-comment == 'true'
         run: npm audit signatures
+        
       - name: Prepublish
+        if: steps.check-comments.outputs.has-release-comment == 'true'
         run: npm run prepublish
-      - name: Debug Git History
-        run: |
-          echo "Last 50 commits with their dates:"
-          git log -50 --pretty=format:"%h - %aD - %s" --date=rfc
+        
       - name: Release
-        if: success()
+        if: steps.check-comments.outputs.has-release-comment == 'true'
         env:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
-          NODE_DEBUG: semantic-release
-        run: npx semantic-release --debug
+        run: npx semantic-release
