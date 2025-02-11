@@ -48,8 +48,8 @@ jobs:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
+          NEXT_VERSION: ${{ inputs.version }}
         run: |
-          # Update package.json version
-          npm version ${{ inputs.version }} --no-git-tag-version
-          # Run semantic-release to handle release notes and publishing
-          npx semantic-release
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          npx semantic-release --extends ./release.config.cjs
