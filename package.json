@@ -13,9 +13,6 @@
     "format": "eslint src/**/*.ts --fix",
     "generate:styles": "node scripts/shaper.js && node scripts/transformer.js &&  npx prettier --write lib/styles",
     "lint": "eslint src/**/*.ts",
-    "test": "jest",
-    "test:ci": "jest --coverage",
-    "test:update": "jest --updateSnapshot",
     "prepare": "husky install",
     "prepublish": "cp -r lib/styles/* dist && for f in dist/*.scss; do sass \"$f\" \"${f%.scss}.css\"; done",
     "publish": "npm run build && npm run prepublish && npm publish"
