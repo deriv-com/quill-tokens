@@ -16,7 +16,6 @@ module.exports = {
       {
         releaseRules: [
           { type: 'bump', release: 'patch' },
-          // Force release regardless of commit types
           { type: '*', release: 'patch' }
         ],
       },
@@ -32,7 +31,6 @@ module.exports = {
           transform: (commit) => {
             try {
               if (commit.committerDate) {
-                // Convert future dates to current date
                 const date = new Date(commit.committerDate);
                 if (date > new Date()) {
                   commit.committerDate = new Date().toISOString();
@@ -40,9 +38,8 @@ module.exports = {
               }
               return commit;
             } catch (error) {
-              // Log the error and continue processing the next commit
               console.error(`Error processing commit: ${commit.message}`, error);
-              return null; // This will skip the problematic commit
+              return null;
             }
           },
         },
@@ -53,16 +50,13 @@ module.exports = {
       '@semantic-release/npm',
       {
         npmPublish: true,
-        nextVersion: process.env.NEXT_VERSION,
+        nextVersion: process.env.NEXT_VERSION
       },
     ],
     '@semantic-release/github',
   ],
   analyzeCommits: () => {
     console.log('Version from input:', process.env.NEXT_VERSION);
-    return {
-      type: 'manual',
-      version: process.env.NEXT_VERSION
-    };
+    return process.env.RELEASE_TYPE || 'patch';
   }
 };
