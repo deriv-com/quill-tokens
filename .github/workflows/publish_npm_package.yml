@@ -37,8 +37,8 @@ jobs:
         run: npm run prepublish
       - name: Debug Git History
         run: |
-          echo "Last 20 commits with their dates:"
-          git log -20 --pretty=format:"%h - %aD - %s" --date=rfc
+          echo "Last 50 commits with their dates:"
+          git log -50 --pretty=format:"%h - %aD - %s" --date=rfc
       - name: Release
         if: success()
         env:
