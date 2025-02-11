@@ -6,14 +6,6 @@ on:
         description: 'Version to release (major.minor.patch)'
         required: true
         type: string
-      type:
-        description: 'Release type'
-        required: true
-        type: choice
-        options:
-          - patch
-          - minor
-          - major
 
 permissions:
   contents: read # for checkout
@@ -56,6 +48,8 @@ jobs:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
-          NEXT_VERSION: ${{ inputs.version }}
-          RELEASE_TYPE: ${{ inputs.type }}
-        run: npx semantic-release --no-ci --no-verify
+        run: |
+          # Update package.json version
+          npm version ${{ inputs.version }} --no-git-tag-version
+          # Run semantic-release to handle release notes and publishing
+          npx semantic-release
