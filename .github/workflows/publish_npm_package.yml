@@ -6,6 +6,15 @@ on:
         description: 'Version to release (major.minor.patch)'
         required: true
         type: string
+      type:
+        description: 'Release type'
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+        default: 'patch'
 
 permissions:
   contents: read # for checkout
@@ -49,7 +58,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
           NEXT_VERSION: ${{ inputs.version }}
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          npx semantic-release --extends ./release.config.cjs
+          RELEASE_TYPE: ${{ inputs.type }}
+        run: npx semantic-release
