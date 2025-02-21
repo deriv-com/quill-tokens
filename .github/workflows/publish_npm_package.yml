@@ -2,10 +2,6 @@ name: Release
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: 'Version to release (major.minor.patch)'
-        required: true
-        type: string
       type:
         description: 'Release type'
         required: true
@@ -34,29 +30,28 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           fetch-depth: 0
-          
+
       - name: Setup Node.js
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: '20'
-          
+
       - name: Update to latest npm (temporary fix for audit below)
         run: npm install --global npm
-        
+
       - name: Install dependencies
         run: npm clean-install
-        
+
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
-        
+
       - name: Prepublish
         run: npm run prepublish
-        
+
       - name: Release
         env:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
-          NEXT_VERSION: ${{ inputs.version }}
           RELEASE_TYPE: ${{ inputs.type }}
         run: npx semantic-release

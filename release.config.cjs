@@ -49,14 +49,13 @@ module.exports = {
     [
       '@semantic-release/npm',
       {
-        npmPublish: true,
-        nextVersion: process.env.NEXT_VERSION
+        npmPublish: true
       },
     ],
     '@semantic-release/github',
   ],
   analyzeCommits: () => {
-    console.log('Version from input:', process.env.NEXT_VERSION);
+    console.log('Release type:', process.env.RELEASE_TYPE);
     return process.env.RELEASE_TYPE || 'patch';
   }
 };
