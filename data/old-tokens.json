@@ -37041,55 +37041,55 @@
                 "type": "color"
               },
               "hover": {
-                "value": "{semantic.color.slate.opacity.surface.high}",
+                "value": "{semantic.color.monochrome.surface.normal.high}",
                 "type": "color"
               },
               "active": {
-                "value": "{semantic.color.slate.opacity.surface.highest}",
+                "value": "{semantic.color.monochrome.surface.normal.highest}",
                 "type": "color"
               },
               "expand": {
-                "value": "{semantic.color.slate.opacity.surface.highest}",
+                "value": "{semantic.color.monochrome.surface.normal.highest}",
                 "type": "color"
               },
               "loading": {
-                "value": "{semantic.color.slate.opacity.surface.highest}",
+                "value": "{semantic.color.monochrome.surface.normal.highest}",
                 "type": "color"
               }
             },
             "secondary": {
               "hover": {
-                "value": "{semantic.color.slate.opacity.surface.low}",
+                "value": "{semantic.color.monochrome.surface.normal.low}",
                 "type": "color"
               },
               "active": {
-                "value": "{semantic.color.slate.opacity.surface.midLow}",
+                "value": "{semantic.color.monochrome.surface.normal.midLow}",
                 "type": "color"
               },
               "expand": {
-                "value": "{semantic.color.slate.opacity.surface.midLow}",
+                "value": "{semantic.color.monochrome.surface.normal.midLow}",
                 "type": "color"
               },
               "loading": {
-                "value": "{semantic.color.slate.opacity.surface.midLow}",
+                "value": "{semantic.color.monochrome.surface.normal.midLow}",
                 "type": "color"
               }
             },
             "tertiary": {
               "hover": {
-                "value": "{semantic.color.slate.opacity.surface.low}",
+                "value": "{semantic.color.monochrome.surface.normal.low}",
                 "type": "color"
               },
               "active": {
-                "value": "{semantic.color.slate.opacity.surface.midLow}",
+                "value": "{semantic.color.monochrome.surface.normal.midLow}",
                 "type": "color"
               },
               "expand": {
-                "value": "{semantic.color.slate.opacity.surface.midLow}",
+                "value": "{semantic.color.monochrome.surface.normal.midLow}",
                 "type": "color"
               },
               "loading": {
-                "value": "{semantic.color.slate.opacity.surface.midLow}",
+                "value": "{semantic.color.monochrome.surface.normal.midLow}",
                 "type": "color"
               }
             }

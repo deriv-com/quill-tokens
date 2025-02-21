@@ -3297,9 +3297,9 @@
   --component-badge-notification-label-color: var(--semantic-color-slate-solid-surface-static-lowest);
   --component-badge-notification-bg: var(--semantic-color-red-solid-surface-static-mid);
   --component-badge-notification-border-radius: var(--semantic-borderRadius-pill);
-  --component-badge-notification-spacing-padding-sm: 5px;
-  --component-badge-notification-spacing-padding-md: 7px;
-  --component-badge-notification-spacing-padding-lg: 10.5px;
+  --component-badge-notification-spacing-padding-sm: 7px;
+  --component-badge-notification-spacing-padding-md: var(--core-spacing-400);
+  --component-badge-notification-spacing-padding-lg: var(--core-spacing-500);
   --component-badge-status-bg-success: var(--semantic-color-green-solid-surface-static-mid);
   --component-badge-status-bg-warning: var(--semantic-color-yellow-solid-surface-static-mid);
   --component-badge-status-bg-danger: var(--semantic-color-red-solid-surface-static-mid);
