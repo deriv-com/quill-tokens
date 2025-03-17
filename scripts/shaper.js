@@ -41,17 +41,36 @@ const transformValueKeys = (obj, rootKey, currentPath = '') => {
   }
 };
 
+// A function to handle path replacements - Designers recently reorganized the paths for the semantic viewport and theme
+const replaceSemanticPaths = (jsonData) => {
+  const stringified = JSON.stringify(jsonData);
+  
+  // Perform replacements in order
+  let updated = stringified
+    // First replace the most specific pattern
+    .replace(/semanticViewport\/global/g, 'semantic/global')
+    // Then replace the remaining semanticViewport patterns
+    .replace(/semanticViewport\//g, 'semantic/viewPort/')
+    // Finally replace semanticTheme
+    .replace(/semanticTheme/g, 'semantic/theme');
+  
+  return JSON.parse(updated);
+};
+
 async function processJson() {
   try {
     // Read the input JSON file
     const jsonData = JSON.parse(await fs.readFile(inputFilePath, 'utf8'));
 
-    // Transform the JSON data, assuming the root key is empty for the root level
+    // Transform the JSON data
     transformValueKeys(jsonData, 'root');
 
+    // Apply semantic path replacements
+    const updatedJson = replaceSemanticPaths(jsonData);
+
     // Write the updated JSON to the output file
-    await fs.writeFile(inputFilePath, JSON.stringify(jsonData, null, 2), 'utf8');
-    console.log('JSON transformation complete. Updated file saved as tokens-updated.json');
+    await fs.writeFile(inputFilePath, JSON.stringify(updatedJson, null, 2), 'utf8');
+    console.log('JSON transformation complete. File updated with new semantic paths.');
   } catch (error) {
     console.error('Error processing JSON file:', error);
   }
