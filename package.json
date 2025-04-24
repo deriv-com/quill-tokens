@@ -9,9 +9,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "mkdir -p dist && cp -r lib/styles/* dist && for f in dist/*.scss; do sass \"$f\" \"${f%.scss}.css\"; done",
+    "build": "npm run generate:variables && mkdir -p dist && cp -r lib/styles/* dist && cp data/variables.js dist/ && for f in dist/*.scss; do sass \"$f\" \"${f%.scss}.css\"; done",
     "format": "eslint src/**/*.ts --fix",
     "generate:styles": "node scripts/shaper.js && node scripts/transformer.js &&  npx prettier --write lib/styles",
+    "generate:variables": "node scripts/variable-extractor.js",
     "lint": "eslint src/**/*.ts",
     "prepare": "husky install",
     "prepublish": "npm run build",
