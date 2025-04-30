@@ -600,7 +600,7 @@
     var(--core-color-opacity-overflow-300) 1.63%,
     var(--core-color-solid-slate-1200) 49.98%
   );
-  --core-elevation-shadow-50: 0px 0px 0px 0px;
+  --core-elevation-shadow-50: 0px 0px 0px 0px rgba(0, 0, 0, 0%), 0px 0px 0px 0px rgba(0, 0, 0, 0%);
   --core-elevation-shadow-110: 0px -1px 2px 0px rgba(0, 0, 0, 6%), 0px -1px 2px 0px rgba(0, 0, 0, 3%);
   --core-elevation-shadow-120: 1px 0px 2px 0px rgba(0, 0, 0, 6%), 1px 0px 2px 0px rgba(0, 0, 0, 3%);
   --core-elevation-shadow-130: 0px 1px 2px 0px rgba(0, 0, 0, 6%), 0px 1px 2px 0px rgba(0, 0, 0, 3%);
@@ -3069,12 +3069,12 @@
   --component-button-icon-fail-primary: var(--core-color-solid-slate-50);
   --component-button-icon-fail-secondary: var(--core-color-solid-red-700);
   --component-button-icon-fail-tertiary: var(--core-color-solid-red-700);
-  --component-button-icon-google-primary: var(--core-color-solid-slate-1400);
-  --component-button-icon-google-secondary: var(--core-color-solid-slate-1400);
-  --component-button-icon-facebook-primary: var(--core-color-solid-slate-50);
-  --component-button-icon-facebook-secondary: var(--core-color-solid-slate-1400);
-  --component-button-icon-apple-primary: var(--core-color-solid-slate-50);
-  --component-button-icon-apple-secondary: var(--core-color-solid-slate-1400);
+  --component-button-icon-google-primary: var(--component-textIcon-normal-prominent);
+  --component-button-icon-google-secondary: var(--component-textIcon-normal-prominent);
+  --component-button-icon-facebook-primary: var(--component-textIcon-static-prominentDark);
+  --component-button-icon-facebook-secondary: var(--component-textIcon-normal-prominent);
+  --component-button-icon-apple-primary: var(--component-textIcon-inverse-prominent);
+  --component-button-icon-apple-secondary: var(--component-textIcon-normal-prominent);
   --component-button-label-typography-primary-sm-fontFamily: var(--core-fontFamily-inter);
   --component-button-label-typography-primary-sm-fontSize: var(--core-fontSize-50);
   --component-button-label-typography-primary-sm-fontWeight: var(--core-fontWeight-extraBold);
@@ -3669,7 +3669,8 @@
   --component-notification-spacing-gap-xs: var(--core-spacing-200);
   --component-notification-spacing-gap-sm: var(--core-spacing-800);
   --component-notification-spacing-gap-md: var(--core-spacing-1600);
-  --component-notification-sizing-banner: 360px;
+  --component-notification-sizing-banner-width: 360px;
+  --component-notification-sizing-item-height: var(--core-size-4800);
   --component-notification-elevation-shadow: var(--core-elevation-shadow-330);
   --component-breadcrumb-label-typography-sm-default: var(--component-typography-body-sm-regular-default);
   --component-breadcrumb-label-typography-sm-active: var(--component-typography-body-sm-regular-underline);
