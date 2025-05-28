@@ -3464,6 +3464,7 @@
   --component-actionSheet-width-bottom-min: 320px;
   --component-actionSheet-width-bottom-max: 800px;
   --component-actionSheet-width-side: 360px;
+  --component-actionSheet-height-header-title: var(--core-spacing-2400);
   --component-snackbar-icon-neutral: var(--component-textIcon-inverse-prominent);
   --component-snackbar-icon-fail: var(--component-textIcon-static-prominentDark);
   --component-snackbar-label-typography: var(--component-typography-body-sm-regular-default);
@@ -3776,8 +3777,12 @@
   --component-sectionMessage-bg-information: var(--semantic-color-blue-opacity-surface-low);
   --component-sectionMessage-bg-default: var(--semantic-color-monochrome-surface-normal-lowest);
   --component-sectionMessage-border-radius: var(--core-borderRadius-800);
+  --component-sectionMessage-spacing-2xs: var(--core-spacing-100);
+  --component-sectionMessage-spacing-xs: var(--core-spacing-300);
   --component-sectionMessage-spacing-sm: var(--core-spacing-400);
-  --component-sectionMessage-spacing-md: var(--core-spacing-800);
+  --component-sectionMessage-spacing-md: var(--core-spacing-600);
+  --component-sectionMessage-spacing-lg: var(--core-spacing-700);
+  --component-sectionMessage-spacing-xl: var(--core-spacing-800);
   --component-navigationBar-icon-default: var(--component-textIcon-normal-default);
   --component-navigationBar-icon-selected: var(--component-textIcon-normal-prominent);
   --component-navigationBar-label-typography-xs: var(--component-typography-caption-regular-default);
