@@ -39574,6 +39574,14 @@
             "value": "360",
             "type": "sizing"
           }
+        },
+        "height": {
+          "header": {
+            "title": {
+              "value": "{core.spacing.2400}",
+              "type": "sizing"
+            }
+          }
         }
       },
       "snackbar": {
@@ -41152,11 +41160,27 @@
           }
         },
         "spacing": {
+          "2xs": {
+            "value": "{core.spacing.100}",
+            "type": "spacing"
+          },
+          "xs": {
+            "value": "{core.spacing.300}",
+            "type": "spacing"
+          },
           "sm": {
             "value": "{core.spacing.400}",
             "type": "spacing"
           },
           "md": {
+            "value": "{core.spacing.600}",
+            "type": "spacing"
+          },
+          "lg": {
+            "value": "{core.spacing.700}",
+            "type": "spacing"
+          },
+          "xl": {
             "value": "{core.spacing.800}",
             "type": "spacing"
           }
@@ -50266,23 +50290,23 @@
         "semantic.borderRadius.xl": "5603697b98bed826e40764a514fce6f476794ded",
         "semantic.borderRadius.2xl": "c87f4111a6ef3a083e4cbfb6ce2a0b5a6cfb96d1",
         "semantic.borderRadius.pill": "70ba5328a578866860c341e841e5d49d4dee9eb7",
-        "borderWidth.none": "e98a45b565f90bdb255f09623ecd783754ca3e5d",
-        "borderWidth.xs": "74275fa8571da26c6a8eeb8ca51e65423d99cef9",
-        "borderWidth.sm": "f1c15e2690c7a26acdfa8cc2bc2c095440bf7524",
-        "borderWidth.md": "cdb1cbcb7c692de23bce0e870236dc696538343d",
-        "borderWidth.lg": "50f4865215e8a829b07d31efedeffeca766abe78",
-        "size.generic.2xs": "5d5593b6ba36333fb1cf75ddd503851c9359183d",
-        "size.generic.xs": "3bd3b9f7d78837acc354f29b2d9966ac14f907b9",
-        "size.generic.sm": "4cfa1fb1d58da493e815a69a0fad0447b826e713",
-        "size.generic.md": "cd8d39f70518e8feaf638c27b53bde510656ff01",
-        "size.generic.lg": "51063ce8a9d46ab8a085d69a88145148a2135c76",
-        "size.generic.xl": "df577787d866659dfd702e8e461ce1f0c49d32f7",
-        "size.generic.2xl": "b3a18d7bd6463d63f5d1e97923b0e8d693470b59",
-        "size.generic.3xl": "25d5ce3272dac7800751957c3f50254a02d98033",
-        "size.generic.4xl": "55d8f8a7aa99851a108b5a28abec254e9603f0bc",
-        "size.generic.5xl": "f25cf0f71cc83dd4034b1014d6ed8a2cc4b631db",
-        "opacity.overlay": "17b58896de27817b5bd501b4099fc1e29e1ce74a",
-        "opacity.disabled": "e5c6e17ea672b92868549e7f4844e690197e614f"
+        "borderWidth.none": "486837f35dea5049f9b77b41d1dbebfe2948bc37",
+        "borderWidth.xs": "2d5af2d02e7b7e3b2ecef8ade9a92c9127d8cac7",
+        "borderWidth.sm": "3886ab101d2e596287e3ecfda6cda20889d5ed86",
+        "borderWidth.md": "1643af01bb2b3bb48e12358a7429e58396a27241",
+        "borderWidth.lg": "c2575ecff1e5bd4dc0ffda86658bb9499cf9ccec",
+        "size.generic.2xs": "4032f973faf87523489230e516552a85ddceccc5",
+        "size.generic.xs": "ea1dac9d6c593d94e1528af3fff4d0420c35cc14",
+        "size.generic.sm": "735bedb3bb78424649a09a2a32fb6141b8df75da",
+        "size.generic.md": "36b26da228374e32dfb2498c39d5bb33628ca6a9",
+        "size.generic.lg": "c29f4a36b14d303b53baa1a28f61a64259285b8e",
+        "size.generic.xl": "3a986709a2171f4cd185489586322166cb2a659e",
+        "size.generic.2xl": "e55d4541f505e33a3350f842d93fd34a2fed8152",
+        "size.generic.3xl": "f2b7e1eb44d3da32b7ae9cb51ac3030682af1511",
+        "size.generic.4xl": "94445f56a68a8ca16fde3427c24947d16835a3ff",
+        "size.generic.5xl": "e92fb11b9c5aa25fa41199f950f22b72660b036c",
+        "opacity.overlay": "d167228bb053f63029d280532347e4d7d1732864",
+        "opacity.disabled": "47c8de09ef7675836b370ced5500105cee58388f"
       }
     },
     {
@@ -52981,6 +53005,7 @@
         "component.actionSheet.width.bottom.min": "777749ed44e1d63c46f1e2143e24b152ae5a1eeb",
         "component.actionSheet.width.bottom.max": "ee7b3946978b43be82a63cbc7aa54f04cbb7bbdd",
         "component.actionSheet.width.side": "9c35b3f353f0c9f12bca4b7694af1571cbe32eac",
+        "component.actionSheet.height.header.title": "7dd809c88a93aa7ac810fbb99b10f8a9dba298b4",
         "component.snackbar.icon.neutral": "9b50f76f252f7861a518675cc0b2e106e91f9b59",
         "component.snackbar.icon.fail": "106c6dd62f40fe126abf578e878c73577877afd7",
         "component.snackbar.label.color.neutral": "0a48bc87e3bb6406aca98857f9a050c34b27df9d",
@@ -53155,6 +53180,7 @@
         "component.notification.spacing.gap.sm": "5a13ff2a11434013284b98f009e772e705552c2d",
         "component.notification.spacing.gap.md": "0c9c0dc9d30ccee62b600d5625c60c65d8c9fafa",
         "component.notification.sizing.banner.width": "1ef89f60f9d04d041c9fd2d2d53028a358648383",
+        "component.notification.sizing.item.height": "a7279fa2de45df4f5d0e58b3491bb921565a2456",
         "component.breadcrumb.label.color.default": "e42f86e2fb6918d330a789bbedfc3023a1843463",
         "component.breadcrumb.label.color.hover": "cf21b4829cfc7b6dbffa4362334aa93740751d09",
         "component.breadcrumb.label.color.active": "0707d038fb5744a2882f37d438272707fed22cec",
@@ -53219,8 +53245,12 @@
         "component.sectionMessage.bg.information": "e7684b0a35586533fa7f0625117831d4c0271c30",
         "component.sectionMessage.bg.default": "076dadecb17f7f8fc24894a2bd73db919832bbac",
         "component.sectionMessage.border.radius": "3fdd5dc4497a056f093849426b31d9198c7895ad",
+        "component.sectionMessage.spacing.2xs": "7b678075994d25b24440b5b50cc3621f99c31187",
+        "component.sectionMessage.spacing.xs": "2ca1b931c6839c4b5fec6d71e70023d94470f488",
         "component.sectionMessage.spacing.sm": "a6c76a08e6736ae2b96947a469dbac153ed69348",
         "component.sectionMessage.spacing.md": "b5a1b3c6eb2efaeba2a3fccdcaba3f295f39a039",
+        "component.sectionMessage.spacing.lg": "cceac112e50980e501d2e22c76acaa0b7de9df34",
+        "component.sectionMessage.spacing.xl": "ade1169713e75913bfd82c4d4cb200eaa89f3632",
         "component.navigationBar.icon.default": "26314b661c8cf4cec7aa5e94f5ad6bfd8b6f5373",
         "component.navigationBar.icon.selected": "250b3c3d0bbde235ff776cfa3779c343d268b9b0",
         "component.navigationBar.label.color.default": "10a77f854b164c5c965d2c498a1dc43a3fb4f6a3",
@@ -53338,8 +53368,7 @@
         "component.card.height.lg": "645307f3d91e4bfc973e12200365a12dae2150b2",
         "component.card.height.xl": "1cf10086fb572544f99eac49b7872f5519743e06",
         "component.card.height.2xl": "f7b0cdd0f526d564279b7e05baf303ab92727e99",
-        "component.card.height.3xl": "e940fae941eeb9d906260c5577d3d15360799097",
-        "component.notification.sizing.item.height": "a7279fa2de45df4f5d0e58b3491bb921565a2456"
+        "component.card.height.3xl": "e940fae941eeb9d906260c5577d3d15360799097"
       }
     }
   ],
