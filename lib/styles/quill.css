@@ -3025,7 +3025,12 @@
   --component-toggle-spacing-padding: var(--semantic-spacing-general-2xs);
   --component-toggle-width: var(--core-size-2200);
   --component-toggle-height: var(--core-size-1200);
-  --component-modal-title-typography: var(--component-typography-heading-h4);
+  --component-modal-title-typography-fontFamily: var(--core-fontFamily-inter);
+  --component-modal-title-typography-fontSize: var(--core-fontSize-400);
+  --component-modal-title-typography-fontWeight: var(--core-fontWeight-extraBold);
+  --component-modal-title-typography-lineHeight: var(--core-lineHeight-600);
+  --component-modal-title-typography-paragraphSpacing: var(--core-paragraphSpacing-400);
+  --component-modal-title-typography-letterSpacing: normal;
   --component-modal-description-typography: var(--component-typography-body-md-regular-default);
   --component-modal-bg: var(--semantic-color-slate-solid-surface-frame-low);
   --component-modal-border-radius-bottom: var(--core-borderRadius-800);
@@ -3456,7 +3461,12 @@
   --component-pagination-height-number: var(--core-size-1600);
   --component-pagination-height-bullet: var(--core-size-400);
   --component-pagination-height-button: var(--core-size-1600);
-  --component-actionSheet-title-typography: var(--component-typography-heading-h5);
+  --component-actionSheet-title-typography-fontFamily: var(--core-fontFamily-inter);
+  --component-actionSheet-title-typography-fontSize: var(--core-fontSize-300);
+  --component-actionSheet-title-typography-fontWeight: var(--core-fontWeight-extraBold);
+  --component-actionSheet-title-typography-lineHeight: var(--core-lineHeight-400);
+  --component-actionSheet-title-typography-paragraphSpacing: var(--core-paragraphSpacing-300);
+  --component-actionSheet-title-typography-letterSpacing: normal;
   --component-actionSheet-description-typography: var(--component-typography-body-md-regular-default);
   --component-actionSheet-bg: var(--semantic-color-slate-solid-surface-frame-low);
   --component-actionSheet-border-radius: var(--core-borderRadius-800);
