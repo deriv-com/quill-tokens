@@ -37543,8 +37543,25 @@
       "modal": {
         "title": {
           "typography": {
-            "value": "{component.typography.heading.h4}",
-            "type": "typography"
+            "type": "typography",
+            "fontFamily": {
+              "value": "{core.fontFamily.inter}"
+            },
+            "fontSize": {
+              "value": "{core.fontSize.400}"
+            },
+            "fontWeight": {
+              "value": "{core.fontWeight.extraBold}"
+            },
+            "lineHeight": {
+              "value": "{core.lineHeight.600}"
+            },
+            "paragraphSpacing": {
+              "value": "{core.paragraphSpacing.400}"
+            },
+            "letterSpacing": {
+              "value": ""
+            }
           }
         },
         "description": {
@@ -39525,8 +39542,25 @@
       "actionSheet": {
         "title": {
           "typography": {
-            "value": "{component.typography.heading.h5}",
-            "type": "typography"
+            "type": "typography",
+            "fontFamily": {
+              "value": "{core.fontFamily.inter}"
+            },
+            "fontSize": {
+              "value": "{core.fontSize.300}"
+            },
+            "fontWeight": {
+              "value": "{core.fontWeight.extraBold}"
+            },
+            "lineHeight": {
+              "value": "{core.lineHeight.400}"
+            },
+            "paragraphSpacing": {
+              "value": "{core.paragraphSpacing.300}"
+            },
+            "letterSpacing": {
+              "value": ""
+            }
           }
         },
         "description": {
