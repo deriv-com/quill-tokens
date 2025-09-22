@@ -42,7 +42,7 @@
     "prettier": "^3.0.3",
     "rimraf": "^5.0.1",
     "sass": "^1.77.2",
-    "sd-tailwindcss-transformer": "^1.4.0",
+    "sd-tailwindcss-transformer": "^2.2.1",
     "style-dictionary": "^5.0.4",
     "token-transformer": "^0.0.33",
     "ts-node": "^10.9.1",
