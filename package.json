@@ -28,7 +28,7 @@
     "@babel/preset-typescript": "^7.22.11",
     "@prettier/sync": "^0.6.1",
     "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/github": "^11.0.3",
+    "@semantic-release/github": "^12.0.10",
     "@semantic-release/npm": "^12.0.1",
     "@semantic-release/release-notes-generator": "^14.0.1",
     "@tokens-studio/sd-transforms": "^0.11.0",
