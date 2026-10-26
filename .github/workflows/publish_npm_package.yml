@@ -24,7 +24,7 @@ jobs:
       contents: write # to be able to publish a GitHub release
       issues: write # to be able to comment on released issues
       pull-requests: write # to be able to comment on released pull requests
-      id-token: write # to enable use of OIDC for npm provenance
+      id-token: write # to enable OIDC for npm trusted publishing and provenance
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
@@ -34,10 +34,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
-          node-version: '20'
+          node-version: '24'
 
-      - name: Update to latest npm (temporary fix for audit below)
-        run: npm install --global npm
+      - name: Update to latest npm (trusted publishing requires npm >= 11.5.1)
+        run: npm install --global npm@latest
 
       - name: Install dependencies
         run: npm clean-install
@@ -52,6 +52,5 @@ jobs:
         env:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN}}
           RELEASE_TYPE: ${{ inputs.type }}
         run: npx semantic-release
